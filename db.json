@@ -1,3 +1,89 @@
 {
-    "users": []
+  "users": [],
+  "products": [
+    {
+      "id": 1,
+      "title": "Ưu đãi Hội Viên - Tặng coupon miễn phí sản phẩm mới BST Tearamisu",
+      "image": "mua1.jpg",
+      "views": 100
+    },
+    {
+      "id": 2,
+      "title": "🎄Đón Giáng Sinh cùng Ly Gấu Phúc Long đổi màu cool blink ✨",
+      "image": "mua2.jpg",
+      "views": 200
+    },
+    {
+      "id": 3,
+      "title": "HAPPY HALLOWEEN - TẶNG COUPON MUA 1 TẶNG 1",
+      "image": "mua3.jpg",
+      "views": 150
+    },
+    {
+      "id": 4,
+      "title": "Ưu đãi cho Hội Viên - Tặng coupon Mua 1 tặng 1 khi mua BST mới 'Kim Cúc Mộc Tê'",
+      "image": "mua4.jpg",
+      "views": 180
+    },
+    {
+      "id": 5,
+      "title": "Ưu đãi bánh trung thu đến 15% dành riêng cho Hội Viên",
+      "image": "mua5.jpg",
+      "views": 150
+    },
+    {
+      "id": 6,
+      "title": "Phúc Long thêm tuổi mới, Hội Viên có thêm quà!",
+      "image": "mua6.jpg",
+      "views": 150
+    },
+    {
+      "id": 7,
+      "title": "PHÚC LONG NIÊN - THƯỞNG MINH NGUYỆT",
+      "image": "mua5.jpg",
+      "views": 150
+    },
+    {
+      "id": 8,
+      "title": "Phúc Long thêm tuổi mới, Hội Viên có thêm quà!",
+      "image": "mua6.jpg",
+      "views": 150
+    },
+    {
+      "id": 9,
+      "title": "Phúc Long thêm tuổi mới, Hội Viên có thêm quà!",
+      "image": "mua6.jpg",
+      "views": 150
+    },
+    {
+      "id": 10,
+      "title": "Phúc Long thêm tuổi mới, Hội Viên có thêm quà!",
+      "image": "mua6.jpg",
+      "views": 150
+    },
+    {
+      "id": 11,
+      "title": "Phúc Long thêm tuổi mới, Hội Viên có thêm quà!",
+      "image": "mua6.jpg",
+      "views": 150
+    },
+    {
+      "id": 12,
+      "title": "Phúc Long thêm tuổi mới, Hội Viên có thêm quà!",
+      "image": "mua6.jpg",
+      "views": 150
+    },
+    {
+      "id": 13,
+      "title": "Phúc Long thêm tuổi mới, Hội Viên có thêm quà!",
+      "image": "mua6.jpg",
+      "views": 150
+    },
+    {
+      "id": 14,
+      "title": "Phúc Long thêm tuổi mới, Hội Viên có thêm quà!",
+      "image": "mua6.jpg",
+      "views": 150
+    }
+  ]
 }
