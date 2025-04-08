@@ -1,14 +1,6 @@
 <template>
-    <div class="container-lg">
-        <div class="row">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb text-decoration-none">
-                    <li class="breadcrumb-item"><RouterLink to="#" class="text-success text-decoration-none link-danger">Trang
-                            chủ</RouterLink></li>
-                    <li class="breadcrumb-item active">Thanh toán</li>
-                </ol>
-            </nav>
-        </div>
+    <div class="container-lg mt-3">
+        <Breadcrumb title="Thanh toán"/>
         <div class="row g-3 flex-lg-row-reverse">
             <div class="col-lg-6">
                 <div class="card">
@@ -38,12 +30,7 @@
                                                     class="bi bi-pencil"></i></button>
                                             <button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
                                         </div>
-                                        <div class="d-flex justify-content-center">
-                                            <button class="btn btn-outline-danger rounded-start-pill">−</button>
-                                            <input type="text" id="quantity" class="text-center bg-white" value="1"
-                                                disabled>
-                                            <button class="btn btn-outline-success rounded-end-pill">+</button>
-                                        </div>
+                                        <QuantityButton/>
                                     </div>
                                 </div>
                             </li>
@@ -65,12 +52,7 @@
                                                     class="bi bi-pencil"></i></button>
                                             <button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
                                         </div>
-                                        <div class="d-flex justify-content-center">
-                                            <button class="btn btn-outline-danger rounded-start-pill">−</button>
-                                            <input type="text" id="quantity" class="text-center bg-white" value="1"
-                                                disabled>
-                                            <button class="btn btn-outline-success rounded-end-pill">+</button>
-                                        </div>
+                                        <QuantityButton/>
                                     </div>
                                 </div>
                             </li>
@@ -380,6 +362,8 @@
 
 <script setup>
 import { RouterLink } from 'vue-router';
+import QuantityButton from '../components/QuantityButton.vue';
+import Breadcrumb from '../components/Breadcrumb.vue';
 </script>
 
 <style scoped>
@@ -428,10 +412,6 @@ import { RouterLink } from 'vue-router';
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.card-product input {
-    width: 40px;
 }
 
 .check-input-custom {

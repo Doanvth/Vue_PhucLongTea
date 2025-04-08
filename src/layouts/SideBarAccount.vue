@@ -20,32 +20,32 @@
                         <span class="ms-2">Ưu đãi của tôi</span>
                     </RouterLink>
                 </li>
-                <li class="list-group-item gap-3">
-                    <RouterLink to="" class="text-decoration-none text-black">
+                <li class="list-group-item gap-3" :class="{ 'active': isActive('/account/address') }">
+                    <RouterLink to="/account/address" class="text-decoration-none text-black">
                         <img :src="ImgAddress" alt="">
                         <span class="ms-2">Sổ địa chỉ</span>
                     </RouterLink>
                 </li>
-                <li class="list-group-item gap-3">
-                    <RouterLink to="" class="text-decoration-none text-black">
+                <li class="list-group-item gap-3" :class="{ 'active': isActive('/account/customer-order') }">
+                    <RouterLink to="/account/customer-order" class="text-decoration-none text-black">
                         <img :src="ImgOrder" alt="">
                         <span class="ms-2">Đơn hàng</span>
                     </RouterLink>
                 </li>
-                <li class="list-group-item gap-3">
-                    <RouterLink to="" class="text-decoration-none text-black">
+                <li class="list-group-item gap-3" :class="{ 'active': isActive('/account/product-favorite') }">
+                    <RouterLink to="/account/product-favorite" class="text-decoration-none text-black">
                         <img :src="ImgLike" alt="">
                         <span class="ms-2">Sản phẩm yêu thích</span>
                     </RouterLink>
                 </li>
-                <li class="list-group-item gap-3">
-                    <RouterLink to="" class="text-decoration-none text-black">
+                <li class="list-group-item gap-3" :class="{ 'active': isActive('/account/ordered-product') }">
+                    <RouterLink to="/account/ordered-product" class="text-decoration-none text-black">
                         <img :src="ImgProduct" alt="">
                         <span class="ms-2">Sản phẩm đã đặt</span>
                     </RouterLink>
                 </li>
-                <li class="list-group-item gap-3">
-                    <RouterLink to="" class="text-decoration-none text-black">
+                <li class="list-group-item gap-3" :class="{ 'active': isActive('/account/help-center') }">
+                    <RouterLink to="/account/help-center" class="text-decoration-none text-black">
                         <img :src="ImgSupport" alt="">
                         <span class="ms-2">Trung tâm trợ giúp</span>
                     </RouterLink>
