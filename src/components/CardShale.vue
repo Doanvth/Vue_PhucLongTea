@@ -16,7 +16,7 @@
             </span>
         </div>
         <div class="card-body">
-            <router-link :to="props.url" href="" class="card-title text-decoration-none">{{ props.title }}</router-link>
+            <router-link :to="props.url"class="card-title text-decoration-none">{{ props.title }}</router-link>
         </div>
     </div>
 </template>
@@ -27,7 +27,7 @@
       title: String,
       image: String,
       time: String,
-      view: String,
+      view: Number,
       url: String
     });
     
