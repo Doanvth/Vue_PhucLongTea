@@ -1,7 +1,7 @@
 <template>
     <div class="card">
             <div class="box-img">
-              <router-link :href="props.url">
+              <router-link :to="props.url">
                 <img :src="props.image" alt="img">
               </router-link>
               <div v-if="props.seller" class="seller">
