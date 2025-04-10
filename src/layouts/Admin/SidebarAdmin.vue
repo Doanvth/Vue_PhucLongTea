@@ -6,39 +6,35 @@
                     <i class="bi bi-grid"></i>
                 </button>
                 <div class="sidebar-logo">
-                    <RouterLink to="#"><img src="" alt=""></RouterLink>
+                    <RouterLink to="#"><img src="" alt="">Coffee & Tea</RouterLink>
                 </div>
             </div>
             <ul class="sidebar-nav">
-                <li class="sidebar-item"><RouterLink to="/admin/dashboard" class="sidebar-link"> <i class="bi bi-houses"></i>
+                <li class="sidebar-item"><RouterLink to="" class="sidebar-link"> <i class="bi bi-houses"></i>
                         <span>Bảng điều khiển</span>
                     </RouterLink></li>
     
                 <li class="sidebar-item"><RouterLink to="#" class="sidebar-link has-dropdown collapsed"
-                        data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="film"> <i
-                            class="bi bi-film"></i> <span>Menu</span>
+                        data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="film"> 
+                        <i class="bi bi-hdd-stack"></i> <span>Menu</span>
                     </RouterLink>
                     <ul id="menu" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item"><RouterLink to="/admin/movie-table" class="sidebar-link">Nước uống</RouterLink>
+                        <li class="sidebar-item"><RouterLink to="" class="sidebar-link">Nước uống</RouterLink>
                         </li>
-                        <li class="sidebar-item"><RouterLink to="/admin/movie-insert" class="sidebar-link">Các loại bánh</RouterLink></li>
+                        <li class="sidebar-item"><RouterLink to="" class="sidebar-link">Các loại bánh</RouterLink></li>
                     </ul>
                 </li>
 
                 <li class="sidebar-item"><RouterLink to="#" class="sidebar-link has-dropdown collapsed"
-                        data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false" aria-controls="film"> <i
-                            class="bi bi-film"></i> <span>Sản phẩm đóng gói</span>
+                        data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false" aria-controls="film"> 
+                        <i class="bi bi-box2"></i> <span>Sản phẩm đóng gói</span>
                     </RouterLink>
                     <ul id="product" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item"><RouterLink to="/admin/movie-table" class="sidebar-link">Trà</RouterLink>
+                        <li class="sidebar-item"><RouterLink to="" class="sidebar-link">Trà</RouterLink>
                         </li>
-                        <li class="sidebar-item"><RouterLink to="/admin/movie-insert" class="sidebar-link">Cafe</RouterLink></li>
+                        <li class="sidebar-item"><RouterLink to="" class="sidebar-link">Cafe</RouterLink></li>
                     </ul>
                 </li>
-
-                <li class="sidebar-item"><RouterLink to="/admin/room-table" class="sidebar-link">
-                        <i class="bi bi-building"></i> <span>.....</span>
-                    </RouterLink></li>
 
                 <li class="sidebar-item">
                     <RouterLink to="/admin/user-management" class="sidebar-link">
@@ -47,12 +43,12 @@
                     </RouterLink>
                 </li>
                 <li class="sidebar-item">
-                    <RouterLink to="/admin/order-table" class="sidebar-link">
+                    <RouterLink to="" class="sidebar-link">
                         <i class="bi bi-ticket-perforated"></i>
                         <span>Danh sách đơn hàng</span>
                     </RouterLink>
                 </li>
-                <li class="sidebar-item"><RouterLink to="/admin/statistical" class="sidebar-link"> <i
+                <li class="sidebar-item"><RouterLink to="" class="sidebar-link"> <i
                             class="bi bi-bar-chart"></i>
                         <span>Thống kê</span>
                     </RouterLink></li>

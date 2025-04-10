@@ -15,6 +15,7 @@ import ProductPackDetailView from "../views/ProductPackDetailView.vue";
 import LayoutAdmin from "../views/AdminView/LayoutAdmin.vue";
 import LayoutAccount from "../views/AccountView/LayoutAccount.vue";
 import InsertProductView from "../views/AdminView/InsertProductView.vue";
+import UserManagementView from "../views/AdminView/UserManagementView.vue";
 
 const routes = [
   {
@@ -56,6 +57,7 @@ const routes = [
           // { path: 'update/:id', name: 'update', component: Update },
         ],
       },
+      { path: "user-management", name: "user-management", component: UserManagementView },
     ],
   },
 ];
