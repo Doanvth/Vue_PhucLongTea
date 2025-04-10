@@ -1,5 +1,5 @@
 <template>
-    <nav class="nav-bar mt-1">
+    <nav class="nav-bar mt-1 ">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
                 <a class="navbar-brand d-lg-none" href="#" width="60px">
@@ -11,97 +11,134 @@
                     <i class="bi bi-list text-success"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="container">
-                            <ul class="navbar-nav my-0 d-flex justify-content-center align-items-center gap-5">
-                                <li class="nav-item active">
-                                    <a href="" class="nav-link fw-semibold">Trang chủ</a>
-                                </li>
-                                <li class="nav-item position-relative menu-toggle">
-                                    <a class="nav-link fw-semibold">Menu</a>
-                                    <div class="child-menu position-absolute">
-                                        <div class="py-2 d-flex">
-                                            <i class="bi bi-caret-up-fill position-absolute translate-middle mt-1"></i>
-                                            <div v-for="item in menuData.child">
-                                                <p class="menu-title mb-2">{{ item.title }}</p>
-                                                <div v-if="item.child && item.child.length">
-                                                    <RecursiveMenu :child="item.child" />
-                                                </div>
+                    <div class="container">
+                        <ul class="navbar-nav my-0 d-flex justify-content-center align-items-center gap-lg-5">
+                            <li class="nav-item active">
+                                <a href="" class="nav-link fw-semibold">Trang chủ</a>
+                            </li>
+                            <li class="nav-item position-relative menu-toggle">
+                                <a class="nav-link fw-semibold">Menu</a>
+                                <div class="child-menu position-absolute">
+                                    <div class="py-2 d-flex">
+                                        <i class="bi bi-caret-up-fill position-absolute translate-middle mt-1"></i>
+                                        <div>
+                                            <p class="menu-title mb-2">Thức uống</p>
+                                            <div>
+                                                <ul class="menu-list">
+                                                    <li class="menu-item">
+                                                        <a class="menu-link">Trà trái cây</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link">Trà sữa</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link">Kem silky</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link">Cà phê</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link">Đá xay</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link">Trà nguyên bản</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="menu-title mb-2">Bánh</p>
+                                            <div>
+                                                <ul class="menu-list">
+                                                    <li class="menu-item">
+                                                        <a class="menu-link">Bánh lạnh</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link">Bánh cookies - croissant</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a class="menu-link">Bánh mì</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="nav-item position-relative san-pham-toggle">
-                                    <a href="" class="nav-link fw-semibold">Sản phẩm đóng gói</a>
-                                    <div class="child-menu-sp position-absolute py-4 d-none">
-                                        <i class="bi bi-caret-up-fill position-absolute translate-middle mt-1"></i>
-                                        <div v-for="item in spdgData.child">
-                                            <p class="menu-title mb-2">{{ item.title }}</p>
-                                            <div v-if="item.child && item.child.length">
-                                                <RecursiveMenu :child="item.child" />
-                                            </div>
-                                        </div>
+                                </div>
+                            </li>
+                            <li class="nav-item position-relative san-pham-toggle">
+                                <a href="" class="nav-link fw-semibold">Sản phẩm đóng gói</a>
+                                <div class="child-menu-sp position-absolute py-4 d-none">
+                                    <i class="bi bi-caret-up-fill position-absolute translate-middle mt-1"></i>
+                                    <div>
+                                        <p class="menu-title mb-2">Trà</p>
+                                        <ul class="menu-list">
+                                            <li class="menu-item">
+                                                <a class="menu-link">Trà hộp giấy</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link">Trà gói cao cấp</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link">Trà túi lọc</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link">Trà túi tam giác</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link">Trà lài</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link">Trà xanh</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link">Trà sen</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a class="menu-link">Trà đen</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </li>
-                                <li class="nav-item position-relative vct-toggle">
-                                    <a href="" class="nav-link fw-semibold">Về chúng tôi</a>
-                                    <div class="child-menu-vct position-absolute py-4 d-none">
-                                        <i class="bi bi-caret-up-fill position-absolute translate-middle mt-1"></i>
-                                        <div class="child">
-                                            <p class="menu-title mb-2">Về phúc long</p>
-                                            <ul>
-                                                <li><a href="">Giới thiệu công ty</a></li>
-                                                <li><a href="">Thư viện hình ảnh</a></li>
-                                                <li><a href="">Liên hệ</a></li>
-                                                <li><a href="">Hình ảnh menu</a></li>
-                                            </ul>
-                                        </div>
+                                    <div>
+                                        <p class="menu-title mb-2">Cà phê</p>
+                                        <ul class="menu-list">
+                                            <li class="menu-item">
+                                                <a class="menu-link">Cà phê hạt không bơ</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link fw-semibold">Khuyến mãi</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" class="nav-link fw-semibold">Hội viên</a>
-                                </li>
-                            </ul>
-                        </div>
-
+                                </div>
+                            </li>
+                            <li class="nav-item position-relative vct-toggle">
+                                <a href="" class="nav-link fw-semibold">Về chúng tôi</a>
+                                <div class="child-menu-vct position-absolute py-4 d-none">
+                                    <i class="bi bi-caret-up-fill position-absolute translate-middle mt-1"></i>
+                                    <div class="child">
+                                        <p class="menu-title mb-2">Về phúc long</p>
+                                        <ul>
+                                            <li><a class="menu-link" href="">Giới thiệu công ty</a></li>
+                                            <li><a  class="menu-link" href="">Thư viện hình ảnh</a></li>
+                                            <li><a class="menu-link" href="">Liên hệ</a></li>
+                                            <li><a class="menu-link" href="">Hình ảnh menu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link fw-semibold">Khuyến mãi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link fw-semibold">Hội viên</a>
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
+            </div>
         </nav>
     </nav>
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
-import axios from 'axios';
-import RecursiveMenu from "./RecursiveMenu.vue";
-
-const API_URL_MENU = "http://localhost:3000/menu";
-const API_URL_SPDG = "http://localhost:3000/san-pham-dong-goi";
-const spdgData = ref([]);
-const menuData = ref([]);
-
-const getMenu = async () => {
-    try {
-        const response = await axios.get(API_URL_MENU);
-        menuData.value = response.data;
-    } catch (error) {
-        console.error("Lỗi khi lấy dữ liệu menu:", error);
-    }
-};
-onMounted(getMenu);
-
-const getSPDG = async () => {
-    try {
-        const response = await axios.get(API_URL_SPDG);
-        spdgData.value = response.data;
-    } catch (error) {
-        console.error("Lỗi khi lấy dữ liệu menu:", error);
-    }
-};
-onMounted(getSPDG);
-
 
 </script>
 
@@ -113,14 +150,14 @@ onMounted(getSPDG);
     padding-block: 10px;
 }
 
-.nav-item a {
+.nav-item .nav-link {
     text-transform: uppercase;
     font-size: 14px;
     color: var(--primary-gray-text);
     text-decoration: none;
 }
 
-.nav-item a:hover {
+.nav-item .nav-link:hover {
     color: var(--primary-green);
 }
 
@@ -133,6 +170,7 @@ onMounted(getSPDG);
     width: 500px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     transition: 0.3s ease;
+    z-index: 10;
 }
 
 .child-menu i,
@@ -140,7 +178,7 @@ onMounted(getSPDG);
 .child-menu-vct i {
     top: -15px;
     font-size: 25px;
-    color: rgb(252, 252, 252);
+    color: rgb(204, 201, 201);
 }
 
 .child-menu-sp i {
@@ -151,9 +189,10 @@ onMounted(getSPDG);
     left: 40%;
 }
 
-.child-menu-vct i{
+.child-menu-vct i {
     left: 33%;
 }
+
 .child-menu-sp,
 .child-menu-vct {
     position: absolute;
@@ -161,6 +200,7 @@ onMounted(getSPDG);
     background-color: white;
     left: -100%;
     width: 500px;
+    z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
@@ -198,13 +238,30 @@ onMounted(getSPDG);
     color: var(--white);
 }
 
-@media(max-width:990px) {
-    .menu-toggle:hover .child-menu, 
-    .san-pham-toggle:hover .child-menu-sp, 
-    .vct-toggle:hover .child-menu-vct {
-    display: none;
+.menu-link {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
 }
 
+.menu-item {
+    padding: 8px 0;
+}
 
+.menu-link:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+@media(max-width:990px) {
+    .menu-toggle:hover .child-menu,
+    .san-pham-toggle:hover .child-menu-sp,
+    .vct-toggle:hover .child-menu-vct {
+        display: none !important;
+    }
+
+    .nav-link{
+
+    }
 }
 </style>
