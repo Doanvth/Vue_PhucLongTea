@@ -19,7 +19,6 @@
                                 <li class="nav-item position-relative menu-toggle">
                                     <a class="nav-link fw-semibold">Menu</a>
                                     <div class="child-menu position-absolute">
-                                        <p class="my-2 top-title">Bst "tea latte" và bánh banaberry mới!</p>
                                         <div class="py-2 d-flex">
                                             <i class="bi bi-caret-up-fill position-absolute translate-middle mt-1"></i>
                                             <div v-for="item in menuData.child">
@@ -87,7 +86,6 @@ const getMenu = async () => {
     try {
         const response = await axios.get(API_URL_MENU);
         menuData.value = response.data;
-        console.log(menuData.value)
     } catch (error) {
         console.error("Lỗi khi lấy dữ liệu menu:", error);
     }
@@ -98,7 +96,6 @@ const getSPDG = async () => {
     try {
         const response = await axios.get(API_URL_SPDG);
         spdgData.value = response.data;
-        console.log(spdgData.value)
     } catch (error) {
         console.error("Lỗi khi lấy dữ liệu menu:", error);
     }
@@ -176,7 +173,7 @@ onMounted(getSPDG);
 }
 
 .menu-toggle:hover .child-menu {
-    display: block !important
+    display: block;
 }
 
 .san-pham-toggle:hover .child-menu-sp {
@@ -202,7 +199,12 @@ onMounted(getSPDG);
 }
 
 @media(max-width:990px) {
+    .menu-toggle:hover .child-menu, 
+    .san-pham-toggle:hover .child-menu-sp, 
+    .vct-toggle:hover .child-menu-vct {
+    display: none;
+}
 
-    
+
 }
 </style>
