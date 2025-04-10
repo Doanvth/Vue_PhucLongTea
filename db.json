@@ -1,98 +1,1846 @@
 {
-    "menu" : {
-      "title": "Menu",
-      "child": [
-        {
-          "title": "Thức uống",
-          "child": [
-            {
-              "title": "Bst mới tea latte"
-            },
-            {
-              "title": "Best seller"
-            },
-            {
-              "title": "Trà trái cây"
-            },
-            {
-              "title": "Trà sữa"
-            },
-            {
-              "title": "Kem silky"
-            },
-            {
-              "title": "Cà phê"
-            },
-            {
-              "title": "Đá xay"
-            },
-            {
-              "title": "Trà nguyên bản"
-            }
-          ]
-        },
-        {
-          "title": "Bánh",
-          "child": [
-            {
-              "title": "Bánh lạnh"
-            },
-            {
-              "title": "Bánh cookies - croissant"
-            },
-            {
-              "title": "Bánh mì"
-            }
-          ]
-        }
-      ]
-    },
-    "san-pham-dong-goi" :{
-      "title": "Sản phẩm đóng gói",
-      "child": [
-        {
-          "title": "Trà",
-          "child": [
-            {
-              "title": "Trà hộp giấy"
-            },
-            {
-              "title": "Trà gói cao cấp"
-            },
-            {
-              "title": "Trà túi lọc"
-            },
-            {
-              "title": "Trà túi tam giác"
-            },
-            {
-              "title": "Trà lài"
-            },
-            {
-              "title": "Trà xanh"
-            },
-            {
-              "title": "Trà sen"
-            },
-            {
-              "title": "Trà đen"
-            }
-          ]
-        },
-        {
-          "title": "Bánh",
-          "child": [
-            {
-              "title": "Cà phê hạt không bơ"
-            },
-            {
-              "title": "Bánh cookies - croissant"
-            },
-            {
-              "title": "Bánh mì"
-            }
-          ]
-        }
-      ]
-    }
+  "menu": {
+    "title": "Menu",
+    "child": [
+      {
+        "title": "Thức uống",
+        "child": [
+          {
+            "title": "Trà trái cây",
+            "products": [
+              {
+                "SKU": 65000105,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216081/i0so70zxnyr4ysnrfgd5.png",
+                "name": "Hồng Trà Chanh (L)",
+                "price": 35000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label" : "M",
+                    "adjusted_price": -5000
+                  },
+                  {
+                    "id": 2,
+                    "label" : "L",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice":true
+                }
+              },
+              {
+                "SKU": 65000100,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216076/bj2abhlmqpwvwgb15je6.png",
+                "name": "Hồng Trà Đào (L)",
+                "price": 50000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label" : "M",
+                    "adjusted_price": -5000
+                  },
+                  {
+                    "id": 2,
+                    "label" : "L",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice":true
+                }
+              },
+              {
+                "SKU": 65000114,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216076/pjdfcnzv43nsd1l9oya6.png",
+                "name": "Trà Vải Lài (L)",
+                "price": 60000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label" : "M",
+                    "adjusted_price": -15000
+                  },
+                  {
+                    "id": 2,
+                    "label" : "L",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice":true
+                }
+              },
+              {
+                "SKU": 65000126,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216075/vlapg2rex55eyw5bztpn.png",
+                "name": "Trà Nhãn Sen (L)",
+                "price": 50000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label" : "M",
+                    "adjusted_price": -5000
+                  },
+                  {
+                    "id": 2,
+                    "label" : "L",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice":true
+                }
+              },
+              {
+                "SKU": 65000128,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216075/ehqiayhs5qp7gagt7opw.png",
+                "name": "Trà Nhãn Lài (L)",
+                "price": 50000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -15000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice":true
+                }
+              },
+              {
+                "SKU": 65000134,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216075/ykmwnhitaasqy2tunoyu.png",
+                "name": "Trà Lài Đắc Thơm (L)",
+                "price": 50000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": 5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice":true
+                }
+                
+              },
+              {
+                "SKU": 65000120,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216076/kxjfjkoj18lj5yvmwxuk.png",
+                "name": "Trà Lucky Tea (L)",
+                "price": 50000,
+                "description": "Best Seller",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": 5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice":true
+                }
+              },
+              {
+                "SKU": 65000107,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216077/a5v38tkwbik85cqv1vq9.png",
+                "name": "Trà Ô Long Dâu (L)",
+                "price": 65000,
+                "description": "MỚI - BST TIRAMISU",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -10000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice":true
+                }
+              },
+              {
+                "SKU": 65000355,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216077/hfo2v2ve2mc1v4qjknpd.png",
+                "name": "Trà Lài Mãng Cầu Thạch Dừa Sợi (L)",
+                "price": 60000,
+                "description": "Best Seller",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000385,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216077/mzcgfjfiiso3wv4jntzm.png",
+                "name": "Trà Bá Tước Lựu Đỏ (L)",
+                "price": 60000,
+                "description": "BÁ TƯỚC HOÀNG GIA",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000396,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216076/mgbdw0fhpf5kubboldhs.png",
+                "name": "Trà Ô Long Lài Bưởi (L)",
+                "price": 60000,
+                "description": "Pomêly - Ô Long Lài(Mới)",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": 5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000344,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216077/raixdk1hbaiz90ymqnby.png",
+                "name": "Trà Lài Phúc Bồn Tử Thạch Dừa Sợi (L)",
+                "price": 65000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              }
+            ]
+          },
+          {
+            "title": "Trà sữa",
+            "products": [
+              {
+                "SKU": 65000102,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/iim89bnmgjcsjjxxk9fb.png",
+                "name": "Trà Sữa Phúc Long (L)",
+                "price": 55000,
+                "description": "Best Seller",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -15000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000101,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/iim89bnmgjcsjjxxk9fb.png",
+                "name": "Trà Sữa Ô Long (L)",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -15000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000333,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/iim89bnmgjcsjjxxk9fb.png",
+                "name": "Trà Sữa Ô Long Quế Hoa (L)",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000011,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/xhtwymzcbobnpphspb75.png",
+                "name": "Trà Sữa Socola (M)",
+                "price": 40000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 5000
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+                
+              },
+              {
+                "SKU": 65000099,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/iim89bnmgjcsjjxxk9fb.png",
+                "name": "Hồng Trà Sữa (L)",
+                "price": 50000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000106,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/iim89bnmgjcsjjxxk9fb.png",
+                "name": "Trà Sữa Matcha (L)",
+                "price": 45000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000105,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/iim89bnmgjcsjjxxk9fb.png",
+                "name": "Trà Sữa Lài (L)",
+                "price": 50000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000383,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/iim89bnmgjcsjjxxk9fb.png",
+                "name": "Trà Sữa Bá Tước (L)",
+                "price": 50000,
+                "description": "BÁ TƯỚC HOÀNG GIA",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000393,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/iim89bnmgjcsjjxxk9fb.png",
+                "name": "Trà Sữa Ô Long Lài Thạch Konjac (L)",
+                "price": 60000,
+                "description": "Pomêly - Ô Long Lài",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -10000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000307,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744217021/iim89bnmgjcsjjxxk9fb.png",
+                "name": "Trà Sữa Nhãn Sen (M)",
+                "price": 60000,
+                "description": "Pomêly - Ô Long Lài",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 10000
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              }
+            ]
+          },
+          {
+            "title": "Kem silky",
+            "products": [
+              {
+                "SKU": 65000337,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248269/znnef1lojkkgree16dlm.png",
+                "name": "Trà Phúc Long Kem Silky (L)",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000366,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248269/znnef1lojkkgree16dlm.png",
+                "name": "Trà Ô Long Kem Silky (L)",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 1,
+                    "label": "H",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000369,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248268/jmxu9ywhflqqvuqwzfbg.png",
+                "name": "Hồng Trà Kem Silky (L)",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 1,
+                    "label": "H",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000372,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248268/jmxu9ywhflqqvuqwzfbg.png",
+                "name": "Trà Lài Kem Silky (L)",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 1,
+                    "label": "H",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000335,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248268/jmxu9ywhflqqvuqwzfbg.png",
+                "name": "Trà Ô Long Quế Hoa Kem Silky (L)",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 1,
+                    "label": "H",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000351,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248269/ftjzj6xxprqmyljyj0nj.png",
+                "name": "Cà Phê Sữa Kem Silky (L)",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -10000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              }
+            ]
+          },
+          {
+            "title": "Cà phê",
+            "products": [
+              {
+                "SKU": 65000055,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248426/va6blp8rk940jnjfc24v.png",
+                "name": "Cà Phê Đen Đá (M)",
+                "price": 25000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 5000
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000176,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248426/lk5ez8babzslqzkpjeld.png",
+                "name": "Cà phê Cappuccino (L)",
+                "price": 25000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000056,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248427/ncu1zcyxsne0caklb1mh.png",
+                "name": "Cà Phê Sữa Đá (M)",
+                "price": 30000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 10000
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000174,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248426/wwhhgf1xuccjfxmy0y47.png",
+                "name": "Cà phê Latte (M)",
+                "price": 40000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 5000
+                  },
+                  {
+                    "id": 2,
+                    "label": "M",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              }
+            ]
+          },
+          {
+            "title": "Đá xay",
+            "products": [
+              {
+                "SKU": 65000047,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248594/nacnzflxgeabgvfbz7xp.png",
+                "name": "Oreo Kem Đá Xay",
+                "price": 55000,
+                "description": "Must-try",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": false,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000075,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248595/jmdkocrqa29ii5gji198.png",
+                "name": "Đá xay Matcha",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000003,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248593/hlil7uxiguyuqwvv3sv5.png",
+                "name": "Cappuccino Đá Xay",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": true,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000135,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248594/u5d3dhc5wxxu3uvlkboq.png",
+                "name": "Hồng Trà Đác Cam Đá Xay",
+                "price": 60000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": false,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000073,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248593/ibzjha2bd57urxjezcnj.png",
+                "name": "Sữa Chua Xoài Đác Thơm",
+                "price": 60000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": true,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000072,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248593/h9tinxshgxbhg3vc3hqp.png",
+                "name": "Sữa Chua Phúc Bồn Tử Đác Cam",
+                "price": 70000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "L",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": true,
+                  "ice": false
+                }
+              },
+              {
+                "SKU": 65000070,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248593/zflzbw3anijtsbpomcjk.png",
+                "name": "Chanh Đá Xay",
+                "price": 55000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": false,
+                  "sugar": true,
+                  "ice": true
+                }
+              }
+            ]
+          },
+          {
+            "title": "Trà nguyên bản",
+            "products": [
+              {
+                "SKU": 65000282,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248780/ifewumgmhxcn54s355tl.png",
+                "name": "Trà Phúc Long (M)",
+                "price": 40000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "L",
+                    "adjusted_price": 5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000285,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248780/ifewumgmhxcn54s355tl.png",
+                "name": "Trà Ô Long (M)",
+                "price": 40000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "L",
+                    "adjusted_price": 5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000288,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248780/ifewumgmhxcn54s355tl.png",
+                "name": "Hồng Trà (M)",
+                "price": 40000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "L",
+                    "adjusted_price": 5000
+                  },
+                  {
+                    "id": 3,
+                    "label": "H",
+                    "adjusted_price": 5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000291,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248780/ifewumgmhxcn54s355tl.png",
+                "name": "Trà Lài (M)",
+                "price": 40000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "L",
+                    "adjusted_price": 5000
+                  },
+                  {
+                    "id": 3,
+                    "label": "H",
+                    "adjusted_price": 5000
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000294,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248780/ifewumgmhxcn54s355tl.png",
+                "name": "Trà Sen (M)",
+                "price": 40000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 2,
+                    "label": "L",
+                    "adjusted_price": 5000
+                  },
+                  {
+                    "id": 3,
+                    "label": "H",
+                    "adjusted_price": 5000
+                  }
+                ],
+               "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000291,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248780/ifewumgmhxcn54s355tl.png",
+                "name": "Trà Ô Long Quế Hoa (L)",
+                "price": 45000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  },
+                  {
+                    "id": 2,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 3,
+                    "label": "H",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000432,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248780/ifewumgmhxcn54s355tl.png",
+                "name": "Trà Bá Tước (L)",
+                "price": 45000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  },
+                  {
+                    "id": 2,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 3,
+                    "label": "H",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              },
+              {
+                "SKU": 65000435,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248780/ifewumgmhxcn54s355tl.png",
+                "name": "Trà Ô Long Lài (L)",
+                "price": 45000,
+                "description": "",
+                "size": [
+                  {
+                    "id": 1,
+                    "label": "M",
+                    "adjusted_price": -5000
+                  },
+                  {
+                    "id": 2,
+                    "label": "L",
+                    "adjusted_price": 0
+                  },
+                  {
+                    "id": 3,
+                    "label": "H",
+                    "adjusted_price": 0
+                  }
+                ],
+                "option":{
+                  "tea": true,
+                  "sugar": true,
+                  "ice": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bánh",
+        "child": [
+          {
+            "title": "Bánh lạnh",
+            "products": [
+              {
+                "SKU": 60000641,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248890/v4qmwnxn1srcpgqtbqry.png",
+                "name": "Bánh Flan Phúc Long",
+                "price": 20000,
+                "description": ""
+              },
+              {
+                "SKU": 60000644,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248886/ahjehqh5madry8c6m2gu.png",
+                "name": "Panna Cotta Chanh Dây 120g",
+                "price": 35000,
+                "description": ""
+              },
+              {
+                "SKU": 60000643,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248886/acnqdfqlfwfjiwikfhgx.png",
+                "name": "Bánh Tiramisu",
+                "price": 35000,
+                "description": ""
+              },
+              {
+                "SKU": 60001035,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248891/rlstocnbgdjvrwifjd8l.png",
+                "name": "Bánh Cuộn Dâu",
+                "price": 42000,
+                "description": ""
+              },
+              {
+                "SKU": 60001034,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248941/t1vbcgje8fivwser9df3.png",
+                "name": "Bánh Chuối Hạt Dinh Dưỡng",
+                "price": 39000,
+                "description": ""
+              }
+            ]
+          },
+          {
+            "title": "Bánh cookies - croissant",
+            "products": [
+              {
+                "SKU": 60000639,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248885/m54cu83kgxrxd50aeoam.png",
+                "name": "Bánh croissant choco 45g",
+                "price": 22000
+              },
+              {
+                "SKU": 60000648,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248887/csvx3fbcmalieqdqo8ez.png",
+                "name": "Bánh croissant 60g",
+                "price": 25000,
+                "description": ""
+              }
+            ]
+          },
+          {
+            "title": "Bánh mì",
+            "products": [
+              {
+                "SKU": 60000650,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248887/abwn4p8zjvs0olnaiprx.png",
+                "name": "Bánh mì Phúc Long 170g",
+                "price": 38000,
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "san-pham-dong-goi": {
+    "title": "Sản phẩm đóng gói",
+    "child": [
+      {
+        "title": "Trà",
+        "child": [
+          {
+            "title": "Trà hộp giấy",
+            "products": [
+              {
+                "SKU": 60000072,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249135/bgc25nppllxa7efabzrz.png",
+                "name": "Trà lài hộp giấy 150g",
+                "price": 75000,
+                "description": "",
+
+                "product_information": {
+                  "quy_cach": "150g",
+                  "mo_ta": "Trà lài là sự kết hợp hoàn hảo giữa lá trà xanh chất lượng cao và hoa lài. Trà được lên men và pha trộn với hoa lài, quá trình này được lặp lại nhiều lần giúp cho trà có mùi thơm tự nhiên của hoa lài, trà lài khi pha có màu vàng đẹp, vị ngọt của hoa lài và vị đắng nhẹ của trà tạo nên cảm giác khoan khoái và thư giãn cho người dùng."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Trà gói cao cấp",
+            "products": [
+              {
+                "SKU": 60000177,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249138/zzansaa59bma0vlxn1xq.png",
+                "name": "Trà ô long 80 - 100g",
+                "price": 130000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "100g",
+                  "mo_ta": "Trà Ô long là dòng trà có hương vị đặc trưng được biết đến như một đại danh trà. Trà Ô long được thu hoạch theo nguyên lý “1 búp 3 lá” chế biến độc đáo với cách thức bán lên men tự nhiên, khi thấy màu lá chuyển sang ba phần đỏ bảy phần đen là thời điểm ủ tốt nhất để có được mùi vị thơm ngon nhất. Trà Ô long thành phẩm có dạng viên hình cầu, khi pha trà có sắc xanh tươi mát hòa quyện cùng hương hoa cỏ thoang thoảng khiến tâm hồn thêm thư thái. Dư vị hậu đắng của trà mang lại cho người dùng trải nghiệm khó quên khi thưởng thức."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              },
+              {
+                "SKU": 60000184,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249138/zzansaa59bma0vlxn1xq.png",
+                "name": "Trà ô long 80 - 150g",
+                "price": 160000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "150g",
+                  "mo_ta": "Trà Ô long là dòng trà có hương vị đặc trưng được biết đến như một đại danh trà. Trà Ô long được thu hoạch theo nguyên lý “1 búp 3 lá” chế biến độc đáo với cách thức bán lên men tự nhiên, khi thấy màu lá chuyển sang ba phần đỏ bảy phần đen là thời điểm ủ tốt nhất để có được mùi vị thơm ngon nhất. Trà Ô long thành phẩm có dạng viên hình cầu, khi pha trà có sắc xanh tươi mát hòa quyện cùng hương hoa cỏ thoang thoảng khiến tâm hồn thêm thư thái. Dư vị hậu đắng của trà mang lại cho người dùng trải nghiệm khó quên khi thưởng thức."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Trà túi lọc",
+            "products": [
+              {
+                "SKU": 60000820,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249143/lzxql3uuddyrr0b4jods.png",
+                "name": "Trà hồng trà túi lọc 2g x 25gói x 20 hộp",
+                "price": 37000,
+                "description": ""
+              },
+              {
+                "SKU": 60000836,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249172/wd6inx8dqi9eqg3uvlto.png",
+                "name": "Trà xanh (túi lọc) 2g x 25gói x 20hộp",
+                "price": 30000,
+                "description": ""
+              },
+              {
+                "SKU": 60000825,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249144/r3rp5fsfy3puvmnugwbv.png",
+                "name": "Trà ô long (túi lọc) 2g x 25gói x 20hộp",
+                "price": 38000,
+                "description": ""
+              },
+              {
+                "SKU": 60000831,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249150/p7rhvizy7gfykkurs2kj.png",
+                "name": "Trà hương sen túi lọc 2g x 25gói x 20hộp",
+                "price": 38000,
+                "description": ""
+              },
+              {
+                "SKU": 60000824,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249144/l0s7d8hcusbwlx3vt8f3.png",
+                "name": "Trà hương lài túi lọc 2g x 25gói x 20hộp",
+                "price": 37000,
+                "description": ""
+              },
+              {
+                "SKU": 60000832,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249179/lmawab02zjo3rnb4djcj.png",
+                "name": "Trà hương vải túi lọc 2g x 25gói x 20hộp",
+                "price": 40000,
+                "description": ""
+              }
+            ]
+          },
+          {
+            "title": "Trà túi tam giác",
+            "products": [
+              {
+                "SKU": 60000162,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249137/iab8uzgqjuxuipxkbm7x.png",
+                "name": "Trà nõn tôm ủ lạnh túi tgiác CC 2gx12gói",
+                "price": 135000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": " 2g x 12 túi",
+                  "mo_ta": "Trà Nõn Tôm là loại trà thượng hạng được vun trồng tại vùng đất Tân Cương - Thái Nguyên. Xuyên suốt quá trình chế biến được thực hiện tỉ mỉ và chuẩn xác, từ thu hái và sao chế hoàn toàn bằng phương pháp thủ công nhằm gìn giữ đặc tính thượng hạng của lá trà. Khi pha tạo nên chất trà vàng xanh thắm đượm xen lẫn vị chát dịu, đậm đà, hoà quyện cùng hương thơm cốm mới thuần khiết. Vị chát đượm, hậu ngọt sâu - Sắc nước trong xanh - Dậy hương cốm non tươi mới đặc trưng của vùng đất Tân Cương, Thái Nguyên"
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Cho túi trà 2g vào bình hoặc chai chứa 350ml nước tinh khiết và đặt bình vào ngăn mát tủ lạnh khoảng 10-12 tiếng là có thể thưởng thức. \\n- Ngoài ra, có thể biến tấu hương vị trà ủ lạnh phù hợp khẩu vị bằng cách thêm vào những nguyên liệu quen thuộc như mật ong, chanh, gừng hay quế. \\n- Chai thủy tinh được khuyến khích sử dụng trong quá trình ủ lạnh để phản ánh trung thực vị trà, chất trà mềm mượt trọn vị, đồng thời thành phẩm không bị pha tạp mùi vị từ những chất liệu khác mang lại."
+                }
+              },
+              {
+                "SKU": 60000197,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249138/hemr9lmh8c7mngjqs85i.png",
+                "name": "Trà ô long túi tam giác 3g x10 gói",
+                "price": 90000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "3g x 10 gói",
+                  "mo_ta": "Trà Ô long là một giống trà có hương vị đặc trưng được biết đến như một đại danh trà. Trà Ô long được thu hoạch theo nguyên lý “1 búp 3 lá” chế biến độc đáo với cách thức bán lên men tự nhiên, khi thấy màu lá chuyển sang ba phần đỏ bảy phần đen là thời điểm ủ tốt nhất để có được mùi vị thơm ngon nhất. Khi pha trà có sắc xanh tươi mát hòa quyện cùng hương hoa cỏ thoang thoảng khiến tâm hồn thêm thư thái. Dư vị hậu đắng sau khi dùng của trà mang lại cho người dùng một trải nghiệm tinh tế về trà."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "Cho gói trà vào tách, đổ nước sôi vào. Ngâm khoảng 2 - 3 phút, nhúng gói trà 5 lần rồi lấy ra. Giờ bạn có thể thưởng thức"
+                }
+              },
+              {
+                "SKU": 60000093,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249136/xxomowel2qar0henzf4q.png",
+                "name": "Trà lài túi tam giác (3g x 10 gói)",
+                "price": 114000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "3g x 10 gói",
+                  "mo_ta": "Trà lài là sự kết hợp hoàn hảo giữa lá trà xanh chất lượng cao và hoa lài. Trà có mùi thơm tự nhiên của hoa lài, màu vàng đẹp, vị ngọt của hoa lài và vị đắng nhẹ của trà tạo nên cảm giác khoan khoái và thư giãn cho người dùng."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "Cho gói trà vào tách, đổ nước sôi vào. Ngâm khoảng 2 - 3 phút, nhúng gói trà 5 lần rồi lấy ra. Giờ bạn có thể thưởng thức"
+                }
+              },
+              {
+                "SKU": 60000355,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249142/u2sjbaqzqgvbb6uidf1v.png",
+                "name": "Trà xanh túi tam giác 3g x 10 gói",
+                "price": 80000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "3g x 10 gói",
+                  "mo_ta": "Trà xanh là thức uống truyền thống của người Châu Á từ ngàn xưa đến nay. Trà xanh được trồng tại khu vực Lâm Đồng nơi có khí hậu và thổ nhưỡng thích hợp để có được những cây trà phẩm chất tốt nhất, trà xanh được chế biến ngay sau khi thu hái để ngăn chặn quá trình lên men, giữ màu tự nhiên của lá trà cùng hương vị thuần nguyên. Trà xanh có màu vàng xanh, vị đắng, chát nhẹ khi uống và hương thơm tự nhiên."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "Cho gói trà vào tách, đổ nước sôi vào. Ngâm khoảng 2 - 3 phút, nhúng gói trà 5 lần rồi lấy ra. Giờ bạn có thể thưởng thức"
+                }
+              },
+              {
+                "SKU": 60000212,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249139/dwu4wzixdnsm6pnqin9b.png",
+                "name": "Trà ô long ủ lạnh túi tgiác CC 2gx12 gói",
+                "price": 135000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "2g x 12 gói",
+                  "mo_ta": "Trà Ô Long ủ lạnh được chế biến độc đáo với công thức lên men bán tự nhiên. Sau khi thu hoạch theo nguyên lý “một búp ba lá”, trà được ủ lên men, khi thấy màu lá chuyển sang ba phần đỏ, bảy phần đen, là thời điểm trà được sao ủ tốt nhất để có được mùi vị thơm ngon nhất. \\n Hương dịu nhẹ tự nhiên - Vị đắng đậm, hậu ngọt mát - Sắc nước vàng sánh trong xanh"
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Cho túi trà 2g vào bình hoặc chai chứa 350ml nước tinh khiết và đặt bình vào ngăn mát tủ lạnh khoảng 10-12 tiếng là có thể thưởng thức. \\n- Ngoài ra, có thể biến tấu hương vị trà ủ lạnh phù hợp khẩu vị bằng cách thêm vào những nguyên liệu quen thuộc như mật ong, chanh, gừng hay quế. \\n- Chai thủy tinh được khuyến khích sử dụng trong quá trình ủ lạnh để phản ánh trung thực vị trà, chất trà mềm mượt trọn vị, đồng thời thành phẩm không bị pha tạp mùi vị từ những chất liệu khác mang lại."
+                }
+              },
+              {
+                "SKU": 60000255,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249140/b2hskdhyvifay1k7gtco.png",
+                "name": "Trà hương sen túi tam giác 3g x 10 gói",
+                "price": 80000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "3g x 10 gói",
+                  "mo_ta": "Trà Sen là sự kết hợp tinh tế giữa trà xanh và hoa sen với quy trình ướp công phu và công nghệ sản xuất hiện đại tạo ra một sản phẩm mang hương vị và nét riêng cho trà Việt. Khi pha trà có mùi thoảng nhẹ hương sen, màu xanh vàng, vị đắng nhẹ của trà cùng vị ngọt dịu thanh mát."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "Cho gói trà vào tách, đổ nước sôi vào. Ngâm khoảng 2 - 3 phút, nhúng gói trà 5 lần rồi lấy ra. Giờ bạn có thể thưởng thức"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Trà lài",
+            "products": [
+              {
+                "SKU": 60000075,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249135/jsl1s5cklz81zhp2yfx3.jpg",
+                "name": "Trà lài 15 - 200g",
+                "price": 105000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Trà lài là sự kết hợp hoàn hảo giữa lá trà xanh chất lượng cao và hoa lài. Trà có mùi thơm tự nhiên của hoa lài, màu vàng đẹp, vị ngọt của hoa lài và vị đắng nhẹ của trà tạo nên cảm giác khoan khoái và thư giãn cho người dùng."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              },
+              {
+                "SKU": 60000076,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249136/xvztgwjplrffs0avzblk.jpg",
+                "name": "Trà lài 15 - 500g",
+                "price": 250000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "500g",
+                  "mo_ta": "Trà lài là sự kết hợp hoàn hảo giữa lá trà xanh chất lượng cao và hoa lài. Trà có mùi thơm tự nhiên của hoa lài, màu vàng đẹp, vị ngọt của hoa lài và vị đắng nhẹ của trà tạo nên cảm giác khoan khoái và thư giãn cho người dùng."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              },
+              {
+                "SKU": 60000079,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249136/xvztgwjplrffs0avzblk.jpg",
+                "name": "Trà lài đặc biệt (100g/ gói)",
+                "price": 85000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "100g",
+                  "mo_ta": "Trà lài là sự kết hợp hoàn hảo giữa lá trà xanh chất lượng cao và hoa lài. Trà có mùi thơm tự nhiên của hoa lài, màu vàng đẹp, vị ngọt của hoa lài và vị đắng nhẹ của trà tạo nên cảm giác khoan khoái và thư giãn cho người dùng."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Trà xanh",
+            "products": [
+              {
+                "SKU": 60000349,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249141/zixchdh1uyre0wraoyh7.jpg",
+                "name": "Trà xanh 15 - 500g",
+                "price": 150000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "500g",
+                  "mo_ta": "Trà xanh được trồng tại nơi có khí hậu và thổ nhưỡng thích hợp để có được những cây trà phẩm chất tốt nhất, thông qua sàng lọc và lựa chọn ra những đọt trà non tươi ngon nhất để chế biến thành sản phẩm chính vì vậy nên chất lượng của trà luôn được đảm bảo tốt nhất. Trà được phơi khô không qua công đoạn lên men nhằm mang lại hương vị thiên nhiên khi dùng, trà có màu xanh vàng và vị đắng chát mạnh."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Trà sen",
+            "products": [
+              {
+                "SKU": 60000239,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249140/bkwgipkjqx6mnpeqnqz8.jpg",
+                "name": "Trà hương sen đặc biệt 100g",
+                "price": 85000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "100g",
+                  "mo_ta": "Trà Sen là sự kết hợp tinh tế giữa trà xanh và hoa sen với quy trình ướp công phu và công nghệ sản xuất hiện đại tạo ra một sản phẩm mang hương vị và nét riêng cho trà Việt. Khi pha trà có mùi thoảng nhẹ hương sen, màu xanh vàng, vị đắng nhẹ của trà cùng vị ngọt dịu thanh mát."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Trà đen",
+            "products": [
+              {
+                "SKU": 60000019,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249135/g03wnbglxv4tllp1oz6a.png",
+                "name": "Trà đen Phúc Long 200g",
+                "price": 58000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Trà đen là trà xanh khi thu hoạch và được ủ lên men sau khi phơi khô. Phản ứng lên men giúp trà đen có mùi thơm đặc biệt và lá trà có màu sậm, từ đỏ hung đến đen tuyền. Trà đen với hậu vị chát đậm, khi uống chất trà thấm vào cơ thể nhẹ nhàng đánh thức các giác quan, tạo tâm trạng sảng khoái."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              },
+              {
+                "SKU": 60000021,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744249135/huvg5tahpnfceddiim8f.png",
+                "name": "Trà đen Phúc Long 500g",
+                "price": 135000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Trà đen là trà xanh khi thu hoạch và được ủ lên men sau khi phơi khô. Phản ứng lên men giúp trà đen có mùi thơm đặc biệt và lá trà có màu sậm, từ đỏ hung đến đen tuyền. Trà đen với hậu vị chát đậm, khi uống chất trà thấm vào cơ thể nhẹ nhàng đánh thức các giác quan, tạo tâm trạng sảng khoái."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cà Phê",
+        "child": [
+          {
+            "title": "Cà phê hạt không bơ",
+            "products": [
+              {
+                "SKU": 60000453,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252755/czetsbm2jnt1qzjgk9nm.png",
+                "name": "Cà phê rang pha trộn Arabica Culi 500g",
+                "price": 165000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "500g",
+                  "mo_ta": "Hương cà phê Arabica rất thơm, có vị chua, sau khi uống đọng lại cảm giác ngọt ở cổ họng. Arabica Cầu Đất có vị chua thanh xen lẫn với vị đắng nhẹ, nước pha màu nước nâu nhạt, trong trẻo của hổ phách. Mùi hương của Arabica rất thanh tao, quý phái, Arabica có mùi của si-rô, mùi của hoa trái, hòa quyện với mùi của mật ong, và cà mùi bánh mì nướng, mùi của cánh đồng rơm buổi trưa hè… Arabica chinh phục những con người sành điệu ẩm thực nhất trên thế giới."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000487,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252755/k4baqkyoz4cceoylywwo.png",
+                "name": "Cà phê rang nguyên hạt Culi 200g",
+                "price": 55000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Hạt cà phê Culi là những hạt cà phê no tròn. Đặc biệt là trong một trái chỉ có duy nhất một hạt. Vị đắng gắt, hương thơm say đắm, hàm lượng cafein cao, nuớc màu đen sánh đó là những gì mà Culi mang đến. Đó là quá trình kết hợp tinh túy của sự duy nhất.\nĐối với cà phê Culi Robusta, đây là loại cà phê có hương vị đậm đà hơn, đắng hơn, béo hơn, cafein nhiều hơn so với cà phê robusta thông thường, hương thơm sâu lắng, có vị chát, hậu vị đắng kéo dài. Phù hợp với người thích cafe đắng đậm, thích sự sâu lắng.\nTrên những cây Arabica hay Robusta có những trái cà phê bị đột biến chỉ cho 1 hạt thay vì 02 hạt bên trong trái như thông thường người ta gọi đó là hạt Culi. Hạt Culi tròn, có hương vị rất thơm, vị đắng hơn rất nhiều, có thể chất (body) rất dày. Hàm lượng cafein hạt Culi cũng cao hơn hẳn Robusta. Chính vì thế đây là gout dành cho những ai thích uống cà phê “nặng đô”."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000528,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252755/d5qicqpghdjitdvjsbnm.png",
+                "name": "Cà phê rang nguyên hạt Moka 500g",
+                "price": 215000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "500g",
+                  "mo_ta": "Cà phê Moka thuộc dòng sản phẩm của Arabica, hạt có hình dáng thon dài và đường rãnh lượn sóng ở giữa hạt. Cà phê Moka có hương thơm nhẹ nhàng quyến rũ rất đặc trưng, vị từ chua chuyển sang hậu đắng rất đặc biệt. Khi pha cà phê có màu nâu nhạt sánh. Cà phê Moka sẽ là lựa chọn tuyệt vời cho những ai yêu thích cà phê sữa."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000528,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252756/nlc1j7vgknnuz1z0llvz.png",
+                "name": "Cà phê rang nguyên hạt Moka 200g",
+                "price": 90000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Cà phê Moka thuộc dòng sản phẩm của Arabica, hạt có hình dáng thon dài và đường rãnh lượn sóng ở giữa hạt. Cà phê Moka có hương thơm nhẹ nhàng quyến rũ rất đặc trưng, vị từ chua chuyển sang hậu đắng rất đặc biệt. Khi pha cà phê có màu nâu nhạt sánh. Cà phê Moka sẽ là lựa chọn tuyệt vời cho những ai yêu thích cà phê sữa."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000553,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252756/bogfxkf7kot5m5hox7qg.png",
+                "name": "Cà phê rang pha trộn Robusta Culi 500g",
+                "price": 135000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "500g",
+                  "mo_ta": "Cà phê Robusta kết hợp cùng Culi cho vị ngon đậm đà thượng hạng mà vẫn thanh thoát đầy lôi cuốn."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000503,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252755/go6uls0tz31pnfc5l2yj.png",
+                "name": "Cà phê rang nguyên hạt King 500g",
+                "price": 195000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "500g",
+                  "mo_ta": "Cà phê King là sự kết hợp hài hòa giữa 3 loại hạt Arabica, Robusta và Culi. Hương thơm nồng và vị cà phê mạnh mẽ, màu đen sánh đậm."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000552,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252756/ojbcefbqxagdexp05p5k.png",
+                "name": "Cà phê rang pha trộn Robusta Culi 200g",
+                "price": 58000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Cà phê Robusta kết hợp cùng Culi cho vị ngon đậm đà thượng hạng mà vẫn thanh thoát đầy lôi cuốn."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000557,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252756/zqmth1odrb0upup6wvqc.png",
+                "name": "Cà phê rang nguyên hạt Robusta 200g",
+                "price": 60000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Hạt Cafe Robusta nhỏ hơn Arabica, vị đắng gắt, nhiều cafeine, loại này uống phê hơn. Hạt cà phê Robusta hình bàn cầu tròn và thường là 2 hạt trong 1 trái. Trải qua quá trình chế biến trên dây chuyền thiết bị hiện đại với công nghệ cao tạo cho loại cà phê Robusta có mùi thơm dịu, vị đắng gắt, nước có màu nâu sánh, không chua, hàm lượng cafein vừa đủ đã tạo nên một loại cà phê đặc sắc phù hợp với khẩu vị của người dân Việt Nam."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000502,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252755/kxtp0tslnwr3lrjkmztd.png",
+                "name": "Cà phê rang nguyên hạt King 200g",
+                "price": 80000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Cà phê King là sự kết hợp hài hòa giữa 3 loại hạt Arabica, Robusta và Culi. Hương thơm nồng và vị cà phê mạnh mẽ, màu đen sánh đậm."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000556,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252756/uisqe6h2gtpbt3rnulci.png",
+                "name": "Cà phê rang nguyên hạt Robusta 500g",
+                "price": 135000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "500g",
+                  "mo_ta": "Hạt Cafe Robusta nhỏ hơn Arabica, vị đắng gắt, nhiều cafeine, loại này uống phê hơn. Hạt cà phê Robusta hình bàn cầu tròn và thường là 2 hạt trong 1 trái. Trải qua quá trình chế biến trên dây chuyền thiết bị hiện đại với công nghệ cao tạo cho loại cà phê Robusta có mùi thơm dịu, vị đắng gắt, nước có màu nâu sánh, không chua, hàm lượng cafein vừa đủ đã tạo nên một loại cà phê đặc sắc phù hợp với khẩu vị của người dân Việt Nam."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000577,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252757/czfrrutxm5xuhwvolxlp.png",
+                "name": "Cà phê rang ng hạt Royal Special 200g",
+                "price": 75000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Sau khi pha chế, sản phẩm có nước pha màu nâu cánh gián đậm đẹp mắt với mùi thơm nhẹ, vị đắng đặc trưng của cà phê Việt Nam. Cà phê Royal được sản xuất từ những hạt cà phê được tuyển chọn kĩ càng và sản xuất theo dây chuyền công nghệ hiện đại và bí quyết riêng không thể sao chép cho hương thơm nhẹ nhàng quyến rũ. Bột cà phê không xay nhuyễn để khi pha giữ được vị ngon đậm đà thượng hạng mà vẫn thanh thoát đầy lôi cuốn."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000488,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252755/x663pagnftldwjsvx4wi.png",
+                "name": "Cà phê rang nguyên hạt Culi 500g",
+                "price": 130000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "500g",
+                  "mo_ta": "Hạt cà phê Culi là những hạt cà phê no tròn. Đặc biệt là trong một trái chỉ có duy nhất một hạt. Vị đắng gắt, hương thơm say đắm, hàm lượng cafein cao, nuớc màu đen sánh đó là những gì mà Culi mang đến. Đó là quá trình kết hợp tinh túy của sự duy nhất.\nĐối với cà phê Culi Robusta, đây là loại cà phê có hương vị đậm đà hơn, đắng hơn, béo hơn, cafein nhiều hơn so với cà phê robusta thông thường, hương thơm sâu lắng, có vị chát, hậu vị đắng kéo dài. Phù hợp với người thích cafe đắng đậm, thích sự sâu lắng.\nTrên những cây Arabica hay Robusta có những trái cà phê bị đột biến chỉ cho 1 hạt thay vì 02 hạt bên trong trái như thông thường người ta gọi đó là hạt Culi. Hạt Culi tròn, có hương vị rất thơm, vị đắng hơn rất nhiều, có thể chất (body) rất dày. Hàm lượng cafein hạt Culi cũng cao hơn hẳn Robusta. Chính vì thế đây là gout dành cho những ai thích uống cà phê “nặng đô”.\nCà phê Culi còn là lựa chọn lý tưởng cho những ai cần sự tỉnh táo cao độ trong công việc. Được rang ở nhiệt độ chuẩn, hạt Culi phát huy hết hương thơm đặc trưng và vị đậm đà hiếm có."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000452,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252754/kmmfwrb3hwyawtof63xc.jpg",
+                "name": "Cà phê rang pha trộn Arabica Culi 200g",
+                "price": 650000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "200g",
+                  "mo_ta": "Hương cà phê Arabica rất thơm, có vị chua, sau khi uống đọng lại cảm giác ngọt ở cổ họng. Arabica Cầu Đất có vị chua thanh xen lẫn với vị đắng nhẹ, nước pha màu nước nâu nhạt, trong trẻo của hổ phách. Mùi hương của Arabica rất thanh tao, quý phái, Arabica có mùi của si-rô, mùi của hoa trái, hòa quyện với mùi của mật ong, và cà mùi bánh mì nướng, mùi của cánh đồng rơm buổi trưa hè… Arabica chinh phục những con người sành điệu ẩm thực nhất trên thế giới."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              },
+              {
+                "SKU": 60000578,
+                "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744252757/swryuldwkiqcitsv0l85.png",
+                "name": "Cà phê rang ng hạt Royal Special 500g",
+                "price": 180000,
+                "description": "",
+                "product_information": {
+                  "quy_cach": "500g",
+                  "mo_ta": "Sau khi pha chế, sản phẩm có nước pha màu nâu cánh gián đậm đẹp mắt với mùi thơm nhẹ, vị đắng đặc trưng của cà phê Việt Nam. Cà phê Royal được sản xuất từ những hạt cà phê được tuyển chọn kĩ càng và sản xuất theo dây chuyền công nghệ hiện đại và bí quyết riêng không thể sao chép cho hương thơm nhẹ nhàng quyến rũ. Bột cà phê không xay nhuyễn để khi pha giữ được vị ngon đậm đà thượng hạng mà vẫn thanh thoát đầy lôi cuốn."
+                },
+                "instructions": {
+                  "bao_quan": "Nơi khô thoáng",
+                  "han_su_dung": "Xem trên bao bì",
+                  "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
