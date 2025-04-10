@@ -2,6 +2,7 @@
 import HeaderView from './layouts/HeaderView.vue'
 import NavBarView from './layouts/NavBarView.vue';
 import FooterView from './layouts/FooterView.vue';
+import MenuView from './views/MenuView.vue';
 </script>
 
 <template>
@@ -9,8 +10,8 @@ import FooterView from './layouts/FooterView.vue';
         <HeaderView/>
         <NavBarView/>
     </div>
-    <div height="100px" style="background-color: azure;">
-
+    <div class="container my-3">
+        <MenuView/>
     </div>
     <FooterView/>
 </template>
