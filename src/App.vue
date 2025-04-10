@@ -2,16 +2,16 @@
 import HeaderView from './layouts/HeaderView.vue'
 import NavBarView from './layouts/NavBarView.vue';
 import FooterView from './layouts/FooterView.vue';
-import MenuView from './views/MenuView.vue';
+import MenuLayoutView from './views/Menu/MenuLayoutView.vue'
 </script>
 
 <template>
-    <div style="background-color: var(--primary-gray);">
+    <div  style="background-color: var(--primary-gray);">
         <HeaderView/>
         <NavBarView/>
     </div>
     <div class="container my-3">
-        <MenuView/>
+        <MenuLayoutView />
     </div>
     <FooterView/>
 </template>
