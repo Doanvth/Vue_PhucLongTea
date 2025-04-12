@@ -274,12 +274,12 @@
           "id": "3",
           "name": "Trà Ô Long Dâu (L)",
           "price": 65000,
-          "quantity": 7,
+          "quantity": 6,
           "size": "Size L",
           "tea": "Trà: Bình Thường",
           "sugar": "Ngọt: Bình Thường",
           "ice": "Đá: Bình Thường",
-          "totalPrice": 455000
+          "totalPrice": 390000
         }
       ]
     },
