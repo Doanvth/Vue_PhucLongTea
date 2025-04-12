@@ -1,61 +1,47 @@
 <template>
     <div class="container-lg mt-3">
-        <Breadcrumb title="Thanh toán"/>
+        <Breadcrumb title="Thanh toán" />
         <div class="row g-3 flex-lg-row-reverse">
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-header bg-white">
                         <div class="text-success fs-4 fw-bold">
                             <i class="bi bi-bag-check-fill me-2"></i>
-                            <span>Giỏ hàng của bạn (2 món)</span>
+                            <span>Giỏ hàng của bạn ({{ orders.length }} món)</span>
                         </div>
                     </div>
                     <div class="card-body py-0">
                         <ol class="list-group list-group-flush border-0">
-                            <li class="list-group-item d-flex justify-content-between align-items-start p-0 gap-3 py-3">
-                                <div class="col-auto">
-                                    <div class="card card-product bg-secondary-subtle border-0">
-                                        <img src="" alt="">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="text-success fw-bold">Trà Vải Lài (L)</div>
-                                    <div>Kích cỡ: L, Ngọt: Bình thường, Đá: Bình thường</div>
-                                    <div class="text-success fw-bold">60.000 ₫</div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="card card-product border-0 d-flex justify-content-between">
-                                        <div class="mb-3 justify-content-center d-flex gap-1">
-                                            <button class="btn btn-outline-success"><i
-                                                    class="bi bi-pencil"></i></button>
-                                            <button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
+                            <template v-for="order in orders" :key="order.id">
+                                <template v-for="item in order.cartItems" :key="item.id">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 gap-3 py-3">
+                                        <div class="col-auto">
+                                            <div class="card card-product bg-secondary-subtle border-0">
+                                                <img src="" alt="">
+                                            </div>
                                         </div>
-                                        <QuantityButton :quantity="quantity" @updateQuantity="quantity = $event"/>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-start p-0 gap-3 py-3">
-                                <div class="col-auto">
-                                    <div class="card card-product bg-secondary-subtle border-0">
-                                        <img src="" alt="">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="text-success fw-bold">Trà Vải Lài (L)</div>
-                                    <div>Kích cỡ: L, Ngọt: Bình thường, Đá: Bình thường</div>
-                                    <div class="text-success fw-bold">60.000 ₫</div>
-                                </div>
-                                <div class="col-auto">
-                                    <div class="card card-product border-0 d-flex justify-content-between">
-                                        <div class="mb-3 justify-content-center d-flex gap-1">
-                                            <button class="btn btn-outline-success"><i
-                                                    class="bi bi-pencil"></i></button>
-                                            <button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
+                                        <div class="col">
+                                            <div class="text-success fw-bold">{{ item.name }}</div>
+                                            <div>{{ item.size }}, {{ item.tea }}, {{ item.sugar }}, {{ item.ice }}</div>
+                                            <div class="text-success fw-bold">{{ formatCurrency(item.totalPrice) }}</div>
                                         </div>
-                                        <QuantityButton :quantity="quantity" @updateQuantity="quantity = $event"/>
-                                    </div>
-                                </div>
-                            </li>
+                                        <div class="col-auto">
+                                            <div class="card card-product border-0 d-flex justify-content-between">
+                                                <div class="mb-3 justify-content-center d-flex gap-1">
+                                                    <button class="btn btn-outline-success"><i
+                                                            class="bi bi-pencil"></i></button>
+                                                    <button class="btn btn-outline-danger"><i
+                                                            class="bi bi-trash"></i></button>
+                                                </div>
+                                                <QuantityButton :quantity="item.quantity" :id="item.id" @updateQuantity="updateQuantity(item.id, $event)" />
+
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </template>
+                            </template>
+
                         </ol>
                     </div>
                     <div class="card-footer bg-white">
@@ -364,9 +350,52 @@
 import { RouterLink } from 'vue-router';
 import QuantityButton from '../components/QuantityButton.vue';
 import Breadcrumb from '../components/Breadcrumb.vue';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
 
-const quantity = ref(1);
+const orders = ref([]);
+
+const formatCurrency = (value) => {
+    return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value);
+};
+
+const fetchOrders = async () => {
+    try {
+        const response = await axios.get('http://localhost:3000/orders');
+
+        // Lọc đơn hàng của user đăng nhập (giả sử userId = "bd13")
+        orders.value = response.data.filter(order => order.userId === "bd10" && order.status === "pending");
+
+    } catch (error) {
+        console.error("Lỗi khi tải đơn hàng:", error);
+    }
+};
+
+onMounted(fetchOrders);
+
+const updateQuantity = (id, newQuantity) => {
+    // Tìm đơn hàng của user
+    const order = orders.value.find(order => order.cartItems.some(item => item.id === id));
+
+    if (order) {
+        // Tìm sản phẩm theo id
+        const itemIndex = order.cartItems.findIndex(item => item.id === id);
+        
+        if (itemIndex !== -1) {
+            order.cartItems[itemIndex].quantity = newQuantity;
+            order.cartItems[itemIndex].totalPrice = order.cartItems[itemIndex].quantity * order.cartItems[itemIndex].price;
+        }
+
+        // Cập nhật LocalStorage
+        localStorage.setItem('orders', JSON.stringify(orders.value));
+
+        axios.put(`http://localhost:3000/orders/${order.id}`, order)
+            .then(() => console.log("Đã cập nhật số lượng sản phẩm!"))
+            .catch(error => console.error("Lỗi khi cập nhật số lượng:", error));
+    }
+};
+
+
 
 </script>
 

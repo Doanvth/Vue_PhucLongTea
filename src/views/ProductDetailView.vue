@@ -144,7 +144,7 @@ const addToCart = async () => {
     const iceElement = document.querySelector('input[name="da"]:checked');
 
     const newItem = { 
-       // id: crypto.randomUUID(), 
+        id: crypto.randomUUID(), 
         name: "Trà Ô Long Dâu (L)", 
         price: 65000,
         quantity: quantity.value,
