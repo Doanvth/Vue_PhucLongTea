@@ -17,7 +17,7 @@
                                 <a href="" class="nav-link fw-semibold">Trang chủ</a>
                             </li>
                             <li class="nav-item position-relative menu-toggle">
-                                <a class="nav-link fw-semibold">Menu</a>
+                                <RouterLink to="/menu" class="nav-link fw-semibold">Menu</RouterLink>
                                 <div class="child-menu position-absolute">
                                     <div class="py-2 d-flex">
                                         <i class="bi bi-caret-up-fill position-absolute translate-middle mt-1"></i>
@@ -66,7 +66,7 @@
                                 </div>
                             </li>
                             <li class="nav-item position-relative san-pham-toggle">
-                                <a href="" class="nav-link fw-semibold">Sản phẩm đóng gói</a>
+                                <RouterLink to="/packaged-product" class="nav-link fw-semibold">Sản phẩm đóng gói</RouterLink>
                                 <div class="child-menu-sp position-absolute py-4 d-none">
                                     <i class="bi bi-caret-up-fill position-absolute translate-middle mt-1"></i>
                                     <div>
@@ -139,7 +139,7 @@
 </template>
 
 <script setup>
-
+import { RouterLink } from 'vue-router';
 </script>
 
 <style scoped>
