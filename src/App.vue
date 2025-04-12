@@ -4,7 +4,7 @@ import HeaderView from './layouts/HeaderView.vue'
 import NavBarView from './layouts/NavBarView.vue';
 import FooterView from './layouts/FooterView.vue';
 import MenuLayoutView from './views/Menu/MenuLayoutView.vue'
-import ListCakeView from './views/AdminView/MenuCake/ListCakeView.vue';
+import ListProductView from './views/AdminView/Product/ListProductView.vue'
 
 </script>
 
@@ -16,7 +16,7 @@ import ListCakeView from './views/AdminView/MenuCake/ListCakeView.vue';
     <div class="container my-3">
         <!-- <RouterView/> -->
 
-        <ListCakeView/>
+        <ListProductView/>
 
     </div>
     <FooterView/>
