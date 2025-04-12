@@ -1,4 +1,5 @@
 <script setup>
+import { RouterView } from 'vue-router';
 import HeaderView from './layouts/HeaderView.vue'
 import NavBarView from './layouts/NavBarView.vue';
 import FooterView from './layouts/FooterView.vue';
@@ -11,7 +12,7 @@ import MenuLayoutView from './views/Menu/MenuLayoutView.vue'
         <NavBarView/>
     </div>
     <div class="container my-3">
-        <MenuLayoutView />
+        <RouterView/>
     </div>
     <FooterView/>
 </template>
