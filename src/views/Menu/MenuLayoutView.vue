@@ -6,7 +6,6 @@
   </div>
   <div class="row">
     <div class="col-lg-2 sidebar mt-2">
-      <RouterLink class="fw-semibold d-block mb-2">Tất cả</RouterLink>
       <div>
         <a class="menu-title fw-semibold  mb-2 d-block cursor-pointer" @click="toggleMenu(0)">Thức uống</a>
         <div v-if="expandedIndex === 0">

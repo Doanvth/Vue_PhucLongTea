@@ -9,7 +9,7 @@
           </div>
           <div class="card-body">
             <RouterLink :title="item.name" class="text-success text-decoration-none fw-semibold text-truncate d-inline-block" style="max-width: 200px;">{{ item.name }}</RouterLink>
-            <p class="text-success fw-bold m-0">{{ item.price }}</p>
+            <p class="text-success fw-bold m-0">{{ formatPrice(item.price) }}</p>
           </div>
           <div class="card-button d-flex justify-content-center mb-3">
             <button class="btn btn-success w-75 fw-semibold">
@@ -73,6 +73,11 @@ function slugify(text) {
     .replace(/Đ/g, 'D')
     .replace(/\s+/g, '-')
     .toLowerCase()
+}
+
+   //format price
+   const formatPrice = (value) => {
+    return value.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
 }
 
 </script>
