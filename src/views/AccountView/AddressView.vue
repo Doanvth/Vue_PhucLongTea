@@ -76,6 +76,7 @@
 <script setup>
 import Breadcrumb from '../../components/Breadcrumb.vue';
 import SideBarAccount from '../../layouts/SideBarAccount.vue';
+
 </script>
 
 <style scoped></style>

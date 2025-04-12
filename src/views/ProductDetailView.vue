@@ -14,19 +14,19 @@
                     <div class="badge text-bg-danger text-uppercase">MỚI - BST TEARAMISU</div>
                     <div class="d-flex justify-content-between mt-3">
                         <h4 class="text-success">65.000 đ</h4>
-                        <QuantityButton />
+                        <QuantityButton :quantity="quantity" @updateQuantity="quantity = $event" />
                     </div>
                     <div class="row mb-3">
                         <div class="col-12 mb-2">
                             <div class="text-success mb-2 fw-bold">Chọn kích cỡ</div>
                             <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off" checked>
+                                <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off" value="Size M">
                                 <label class="btn btn-outline-success rounded-2 p-0" for="sizeM">
                                     <div class="border-bottom py-2 px-4">Size M</div>
                                     <div class="border-top">-10.000 đ</div>
                                 </label>
 
-                                <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off">
+                                <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off" value="Size L" checked>
                                 <label class="btn btn-outline-success rounded-2 p-0" for="sizeL">
                                     <div class="border-bottom py-2 px-4">Size L</div>
                                     <div class="border-top">0 đ</div>
@@ -36,15 +36,17 @@
                         <div class="col-12 mb-2">
                             <div class="text-success mb-2 fw-bold">Trà</div>
                             <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="tra" id="tra-it" autocomplete="off" checked>
+                                <input type="radio" class="btn-check" name="tra" id="tra-it" autocomplete="off" 
+                                    value="Trà: Ít">
                                 <label class="btn btn-outline-success rounded-2" for="tra-it">Ít</label>
 
                                 <input type="radio" class="btn-check" name="tra" id="tra-binhthuong"
-                                    value="tra-binhthuong" autocomplete="off">
+                                    value="Trà: Bình Thường" autocomplete="off" checked>
                                 <label class="btn btn-outline-success rounded-2" for="tra-binhthuong">Bình
                                     thường</label>
 
-                                <input type="radio" class="btn-check" name="tra" id="tra-nhieu" autocomplete="off">
+                                <input type="radio" class="btn-check" name="tra" id="tra-nhieu" autocomplete="off"
+                                    value="Trà: Nhiều">
                                 <label class="btn btn-outline-success rounded-2" for="tra-nhieu">Nhiều</label>
                             </div>
                         </div>
@@ -52,35 +54,39 @@
                             <div class="text-success mb-2 fw-bold">Ngọt</div>
                             <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
                                 <input type="radio" class="btn-check" name="ngot" id="ngot-it" autocomplete="off"
-                                    checked>
+                                    value="Ngọt: Ít">
                                 <label class="btn btn-outline-success rounded-2" for="ngot-it">Ít</label>
 
                                 <input type="radio" class="btn-check" name="ngot" id="ngot-binhthuong"
-                                    autocomplete="off">
+                                    autocomplete="off" value="Ngọt: Bình Thường" checked>
                                 <label class="btn btn-outline-success rounded-2" for="ngot-binhthuong">Bình
                                     thường</label>
 
-                                <input type="radio" class="btn-check" name="ngot" id="ngot-nhieu" autocomplete="off">
+                                <input type="radio" class="btn-check" name="ngot" id="ngot-nhieu" autocomplete="off"
+                                    value="Ngọt: Nhiều">
                                 <label class="btn btn-outline-success rounded-2" for="ngot-nhieu">Nhiều</label>
                             </div>
                         </div>
                         <div class="col-12 mb-2">
                             <div class="text-success mb-2 fw-bold">Đá</div>
                             <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="da" id="da-it" autocomplete="off" checked>
+                                <input type="radio" class="btn-check" name="da" id="da-it" autocomplete="off"
+                                    value="Đá: Ít">
                                 <label class="btn btn-outline-success rounded-2" for="da-it">Ít</label>
 
-                                <input type="radio" class="btn-check" name="da" id="da-binhthuong" autocomplete="off">
+                                <input type="radio" class="btn-check" name="da" id="da-binhthuong" autocomplete="off"
+                                    value="Đá: Bình Thường" checked>
                                 <label class="btn btn-outline-success rounded-2" for="da-binhthuong">Bình thường</label>
 
-                                <input type="radio" class="btn-check" name="da" id="da-nhieu" autocomplete="off">
+                                <input type="radio" class="btn-check" name="da" id="da-nhieu" autocomplete="off"
+                                    value="Đá; Nhiều">
                                 <label class="btn btn-outline-success rounded-2" for="da-nhieu">Nhiều</label>
                             </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center mb-3">
-                        <button class="btn btn-success px-5"><i class="bi bi-cart-plus-fill me-2"></i>Thêm vào giỏ hàng:
-                            <span>65.000 đ</span></button>
+                        <button class="btn btn-success px-5" @click="addToCart"><i class="bi bi-cart-plus-fill me-2"></i>Thêm vào giỏ hàng:
+                            <span>{{ formatCurrency(65000 * quantity) }}</span></button>
                     </div>
                     <div class="d-none">
                         <div class="infomation mb-3">
@@ -110,6 +116,7 @@
                 </div>
             </div>
         </div>
+        <ButtonShoppingCard :cartQuantity="cartQuantity"/>
     </div>
 </template>
 
@@ -117,6 +124,88 @@
 import Breadcrumb from '../components/Breadcrumb.vue';
 import ImgTraDau from '../assets/images/tra-o-long-dau.png'
 import QuantityButton from '../components/QuantityButton.vue';
+import ButtonShoppingCard from '../components/ButtonShoppingCard.vue';
+import { ref } from 'vue';
+import axios from 'axios';
+
+const quantity = ref(1);
+const cartQuantity = ref(0); 
+const cartItems = ref([]); 
+
+const formatCurrency = (value) => {
+    return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value);
+};
+
+const addToCart = async () => {
+   // localStorage.clear();
+    const sizeElement = document.querySelector('input[name="size"]:checked');
+    const teaElement = document.querySelector('input[name="tra"]:checked');
+    const sugarElement = document.querySelector('input[name="ngot"]:checked');
+    const iceElement = document.querySelector('input[name="da"]:checked');
+
+    const newItem = { 
+       // id: crypto.randomUUID(), 
+        name: "Trà Ô Long Dâu (L)", 
+        price: 65000,
+        quantity: quantity.value,
+        size: sizeElement?.closest('.d-none') ? "" : sizeElement?.value || "Size L",
+        tea: teaElement?.closest('.d-none') ? "" : teaElement?.value || "Bình thường",
+        sugar: sugarElement?.closest('.d-none') ? "" : sugarElement?.value || "Bình thường",
+        ice: iceElement?.closest('.d-none') ? "" : iceElement?.value || "Bình thường",
+        totalPrice: quantity.value * 65000
+    };
+
+    try {
+        let existingOrders = JSON.parse(localStorage.getItem('orders')) || [];
+        let userOrder = existingOrders.find(order => order.userId === "bd10");
+
+        if (!userOrder) {
+            // Nếu chưa có đơn hàng nào của user, tạo mới đơn hàng
+            userOrder = {
+                id: `ORDER${Date.now()}`,
+                userId: "bd10",
+                createdAt: new Date().toISOString(),
+                status: "pending",
+                cartItems: [newItem]
+            };
+            existingOrders.push(userOrder);
+            
+            await axios.post('http://localhost:3000/orders', userOrder);
+        } else {
+            // Kiểm tra xem sản phẩm đã có trong giỏ hàng chưa
+            const existingItem = userOrder.cartItems.find(item => 
+                item.name === newItem.name &&
+                item.size === newItem.size &&
+                item.tea === newItem.tea &&
+                item.sugar === newItem.sugar &&
+                item.ice === newItem.ice
+            );
+
+            if (existingItem) {
+                existingItem.quantity += newItem.quantity; // Nếu đã tồn tại, tăng số lượng
+                existingItem.totalPrice = existingItem.quantity * existingItem.price;
+            } else {
+                userOrder.cartItems.push(newItem); // Nếu chưa có, thêm sản phẩm mới vào giỏ hàng
+            }
+
+            await axios.put(`http://localhost:3000/orders/${userOrder.id}`, userOrder);
+        }
+
+        // Lưu lại danh sách đơn hàng vào LocalStorage
+        localStorage.setItem('orders', JSON.stringify(existingOrders));
+        console.log("Đơn hàng đã cập nhật!");
+
+        // Cập nhật số lượng sản phẩm trong biểu tượng giỏ hàng
+        cartQuantity.value = userOrder.cartItems.length;
+
+    } catch (error) {
+        console.error("Lỗi khi lưu giỏ hàng:", error);
+    }
+};
+
+
+
+
 
 </script>
 

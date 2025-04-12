@@ -1,34 +1,34 @@
 <template>
-    <div>
-      <div class="d-flex justify-content-center quantity">
-        <button @click="decrease" class="btn btn-outline-danger rounded-start-pill">−</button>
-        <input type="text" id="quantity" class="text-center bg-white" :value="quantity" disabled>
-        <button @click="increase" class="btn btn-outline-success rounded-end-pill">+</button>
-      </div>
+  <div>
+    <div class="d-flex justify-content-center quantity">
+      <button @click="decrease" class="btn btn-outline-danger rounded-start-pill">−</button>
+      <input type="text" id="quantity" class="text-center bg-white" :value="quantity" disabled>
+      <button @click="increase" class="btn btn-outline-success rounded-end-pill">+</button>
     </div>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue';
-  
-  const quantity = ref(1);
-  
-  const increase = () => {
-    if (quantity.value < 100) {
-      quantity.value++;
-    }
-  };
-  
-  const decrease = () => {
-    if (quantity.value > 1) {
-      quantity.value--;
-    }
-  };
-  </script>
-  
-  <style scoped>
-  .quantity input {
-    width: 40px;
+  </div>
+</template>
+
+<script setup>
+import { defineProps, defineEmits } from 'vue';
+
+const props = defineProps(['quantity']);
+const emit = defineEmits(['updateQuantity']);
+
+const increase = () => {
+  if (props.quantity < 100) {
+    emit('updateQuantity', props.quantity + 1);
   }
-  </style>
-  
+};
+
+const decrease = () => {
+  if (props.quantity > 1) {
+    emit('updateQuantity', props.quantity - 1);
+  }
+};
+</script>
+
+<style scoped>
+.quantity input {
+  width: 40px;
+}
+</style>

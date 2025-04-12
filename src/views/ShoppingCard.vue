@@ -30,7 +30,7 @@
                                                     class="bi bi-pencil"></i></button>
                                             <button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
                                         </div>
-                                        <QuantityButton/>
+                                        <QuantityButton :quantity="quantity" @updateQuantity="quantity = $event"/>
                                     </div>
                                 </div>
                             </li>
@@ -52,7 +52,7 @@
                                                     class="bi bi-pencil"></i></button>
                                             <button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
                                         </div>
-                                        <QuantityButton/>
+                                        <QuantityButton :quantity="quantity" @updateQuantity="quantity = $event"/>
                                     </div>
                                 </div>
                             </li>
@@ -364,6 +364,10 @@
 import { RouterLink } from 'vue-router';
 import QuantityButton from '../components/QuantityButton.vue';
 import Breadcrumb from '../components/Breadcrumb.vue';
+import { ref } from 'vue';
+
+const quantity = ref(1);
+
 </script>
 
 <style scoped>
