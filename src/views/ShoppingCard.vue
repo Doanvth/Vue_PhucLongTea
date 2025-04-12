@@ -363,7 +363,7 @@ const fetchOrders = async () => {
     try {
         const response = await axios.get('http://localhost:3000/orders');
 
-        // Lọc đơn hàng của user đăng nhập (giả sử userId = "bd13")
+        // Lọc đơn hàng của user đăng nhập 
         orders.value = response.data.filter(order => order.userId === "bd10" && order.status === "pending");
 
     } catch (error) {
