@@ -1,34 +1,100 @@
 {
-    "addresses": [
-        {
-            "id": "001",
-            "store_name": "HCM-CH 1012 Kha Van Can P.LC Q.TĐ",
-            "address": "1012 Kha Van Can P. Linh Chiểu TP. Thủ Đức Thành phố Hồ Chí Minh",
-            "phone_number": "(028) 7100 1968 (Ext 20318)",
-            "opening_hours": "07:00 - 22:30",
-            "img": "https://phuclong.com.vn/_next/static/images/phuclong-store-a0cba2f8c91fff15b6138d6d30982396.jpg",
-            "map": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62867.04042258638!2d105.75109468862307!3d10.0011567721267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1744267706783!5m2!1svi!2s",
-            "status": "Mở cửa"
-        },
-        {
-            "id": "002",
-            "store_name": "CTO - Sense Cần Thơ",
-            "address": "T-02, Sense City Cần Thơ, số 01 Đại Phường Tân An, Quận Ninh Kiều, Thành phố Cần Thơ",
-            "phone_number": "(028) 7100 1968 ( Ext.21318)",
-            "opening_hours": "07:00 - 22:00",
-            "img": "https://phuclong.com.vn/_next/static/images/phuclong-store-a0cba2f8c91fff15b6138d6d30982396.jpg",
-            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.789453267754!2d105.7833472747407!3d10.034225790072925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a062a1bb1f86b1%3A0xfbe50d7e7b046724!2zVFRUTSBTZW5zZSBDaXR5IEPhuqduIFRoxqE!5e0!3m2!1svi!2s!4v1744267877197!5m2!1svi!2s",
-            "status": "Mở cửa"
-        },
-        {
-            "id": "003",
-            "store_name": "CTO - Lotte Cần Thơ",
-            "address": "1F - 25, tầng 1, Lotte Mart Cần Thơ Phường An Hòa Quận Ninh Kiều Thành phố Cần Thơ",
-            "phone_number": "Đang cập nhật",
-            "opening_hours": "08:00 - 22:30",
-            "img": "https://phuclong.com.vn/_next/static/images/phuclong-store-a0cba2f8c91fff15b6138d6d30982396.jpg",
-            "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4217459904203!2d106.7533519747528!3d10.855492289298118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527971ff945b5%3A0x4cf253412f9abe2a!2zMTAxMiDEkC4gS2hhIFbhuqFuIEPDom4sIExpbmggQ2hp4buDdSwgVGjhu6cgxJDhu6ljLCBI4buTIENow60gTWluaCA3MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1744267974189!5m2!1svi!2s",
-            "status": "Mở cửa"
-        }
-    ]
+  "addresses": [
+    {
+      "id": "001",
+      "store_name": "HCM-CH 1012 Kha Van Can P.LC Q.TĐ",
+      "address": "1012 Kha Van Can P. Linh Chiểu TP. Thủ Đức Thành phố Hồ Chí Minh",
+      "phone_number": "(028) 7100 1968 (Ext 20318)",
+      "opening_hours": "07:00 - 22:30",
+      "img": "https://phuclong.com.vn/_next/static/images/phuclong-store-a0cba2f8c91fff15b6138d6d30982396.jpg",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62867.04042258638!2d105.75109468862307!3d10.0011567721267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1744267706783!5m2!1svi!2s",
+      "status": "Mở cửa"
+    },
+    {
+      "id": "002",
+      "store_name": "CTO - Sense Cần Thơ",
+      "address": "T-02, Sense City Cần Thơ, số 01 Đại Phường Tân An, Quận Ninh Kiều, Thành phố Cần Thơ",
+      "phone_number": "(028) 7100 1968 ( Ext.21318)",
+      "opening_hours": "07:00 - 22:00",
+      "img": "https://phuclong.com.vn/_next/static/images/phuclong-store-a0cba2f8c91fff15b6138d6d30982396.jpg",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.789453267754!2d105.7833472747407!3d10.034225790072925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a062a1bb1f86b1%3A0xfbe50d7e7b046724!2zVFRUTSBTZW5zZSBDaXR5IEPhuqduIFRoxqE!5e0!3m2!1svi!2s!4v1744267877197!5m2!1svi!2s",
+      "status": "Mở cửa"
+    },
+    {
+      "id": "003",
+      "store_name": "CTO - Lotte Cần Thơ",
+      "address": "1F - 25, tầng 1, Lotte Mart Cần Thơ Phường An Hòa Quận Ninh Kiều Thành phố Cần Thơ",
+      "phone_number": "Đang cập nhật",
+      "opening_hours": "08:00 - 22:30",
+      "img": "https://phuclong.com.vn/_next/static/images/phuclong-store-a0cba2f8c91fff15b6138d6d30982396.jpg",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4217459904203!2d106.7533519747528!3d10.855492289298118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527971ff945b5%3A0x4cf253412f9abe2a!2zMTAxMiDEkC4gS2hhIFbhuqFuIEPDom4sIExpbmggQ2hp4buDdSwgVGjhu6cgxJDhu6ljLCBI4buTIENow60gTWluaCA3MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1744267974189!5m2!1svi!2s",
+      "status": "Mở cửa"
+    }
+  ],
+  "news": [
+    {
+      "id": "001",
+      "title": "Chào Bạn Mới - Phúc Long mời bạn 1 ly Trà Đào",
+      "img": "https://hcm.fstorage.vn/phuclong/2025/04/image-20250409083419.png",
+      "description": "day la mo ta",
+      "view": 9,
+      "time_active": "14.02 - 16.02.2025"
+    },
+    {
+      "id": "002",
+      "title": "💖 ĂN BÁNH UỐNG TRÀ, KỂ CHUYỆN ĐÔI TA 💖",
+      "img": "https://hcm.fstorage.vn/phuclong/2025/02/lsm_dine-in_valentine_2025_combo-01-20250214063834.jpg",
+      "description": "day la mo ta",
+      "view": 100,
+      "time_active": ""
+    },
+    {
+      "id": "003",
+      "title": "KHỞI ĐẦU NGÀY MỚI ẤM ÊM CÙNG BST THỨC UỐNG “TEA LATTE” & BÁNH DINH DƯỠNG “BANABERRY” ",
+      "img": "https://hcm.fstorage.vn/phuclong/2025/03/picture1-20250302145559.jpg",
+      "description": "day la mo ta",
+      "view": 9,
+      "time_active": ""
+    },
+    {
+      "id": "004",
+      "title": "Sắc Việt trên áo, vị Việt trên tay",
+      "img": "https://hcm.fstorage.vn/phuclong/2025/03/vietphuc-1920x1080_zalo-20250321083435.jpg",
+      "description": "day la mo ta",
+      "view": 20,
+      "time_active": ""
+    },
+    {
+      "id": "005",
+      "title": "Tri ân Hội Viên - Phúc Long mời Hội Viên thưởng thức bánh Banaberry mới!",
+      "img": "https://hcm.fstorage.vn/images/2024/07/web_1280x543-20240709040025.jpg",
+      "description": "day la mo ta",
+      "view": 99,
+      "time_active": ""
+    },
+    {
+      "id": "006",
+      "title": "Phúc Long mời bạn 01 ly Trà Lucky",
+      "img": "https://hcm.fstorage.vn/phuclong/2024/12/pl-membership-2024-dec-19-lcd-20241220080134.jpg",
+      "description": "day la mo ta",
+      "view": 200,
+      "time_active": ""
+    },
+    {
+      "id": "007",
+      "title": "DANH SÁCH CỬA HÀNG HOẠT ĐỘNG ĐẾN 24H NGÀY 31/12/2024",
+      "img": "https://hcm.fstorage.vn/phuclong/2025/01/z6201436367271_1aa2c8db78ca7f6e3bd6024081a2fb06-20250106043828.jpg",
+      "description": "day la mo ta",
+      "view": 99,
+      "time_active": ""
+    },
+    {
+      "id": "008",
+      "title": "Tri ân Hội Viên - Phúc Long mời Hội Viên thưởng thức bánh Banaberry mới!",
+      "img": "https://hcm.fstorage.vn/phuclong/2025/03/z6360742319125_555151748b0e21699a7b7747a0d0c0f4-20250305013131.jpg",
+      "description": "day la mo ta",
+      "view": 99,
+      "time_active": ""
+    }
+  ]
 }
