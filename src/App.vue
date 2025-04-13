@@ -5,6 +5,7 @@ import NavBarView from './layouts/NavBarView.vue';
 import FooterView from './layouts/FooterView.vue';
 import MenuLayoutView from './views/Menu/MenuLayoutView.vue'
 import ListProductView from './views/AdminView/Product/ListProductView.vue'
+import CreateProductView from './views/AdminView/Product/CreateProductView.vue'
 
 </script>
 
@@ -14,9 +15,9 @@ import ListProductView from './views/AdminView/Product/ListProductView.vue'
         <NavBarView/>
     </div>
     <div class="container my-3">
-        <!-- <RouterView/> -->
+        <RouterView/>
 
-        <ListProductView/>
+        <!-- <CreateProductView/> -->
 
     </div>
     <FooterView/>
