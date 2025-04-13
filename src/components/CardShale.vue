@@ -1,6 +1,8 @@
 <template>
     <div class="card h-100">
-        <img :src="props.image" class="card-img-top rounded-1" alt="img">
+        <div class="img">
+          <img :src="props.image" class="img-fluid rounded-1" alt="img">
+        </div>
         <div class="view-date">
             <span>{{ props.time }}</span>
             <span class="view">
@@ -65,6 +67,16 @@
     -webkit-box-align: center;
     align-items: center;
     border-bottom: 1px solid rgb(155, 155, 155);
+}
+.img{
+  overflow: hidden;
+  max-width: 100%;
+  height: 200px;
+}
+img{ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .view-date span, svg{
