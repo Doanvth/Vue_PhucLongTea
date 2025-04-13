@@ -2,7 +2,7 @@
     <main>
         <div class="py-3 mb-2">
             <div>
-                <RouterLink to="" class="btn btn-success px-3">
+                <RouterLink to="/admin/product/create" class="btn btn-success px-3">
                     <i class="bi bi-plus-square me-1"></i>
                     Add Product
                 </RouterLink>
@@ -10,11 +10,6 @@
         </div>
         <div class="d-flex justify-content-between align-items-center gap-4 w-50 mb-3">
             <input type="text" class="form-control w-100" v-model="searchQuery" placeholder="Search by name product">
-            <div class="icons">
-                <a href="">
-                    <i class="bi bi-sort-down-alt fs-4 text-dark"></i>
-                </a>
-            </div>
         </div>
         <div class="list-user">
             <table class="table-design w-100">
@@ -31,15 +26,17 @@
                     <tr v-for="item in VisiblePagenation">
                         <td>{{ item.SKU }}</td>
                         <td>
-                            <img :src="item.image" alt="" height="80px">
+                            <div class="py-2">
+                                <img :src="item.image" alt="" height="100px">
+                            </div>
                         </td>
                         <td>{{ item.name }}</td>
                         <td>{{ item.price }}</td>
                         <td>
                             <div class="action btn d-flex gap-4">
-                                <a @click="editProducs(item.SKU)" class="btn btn-warning text-dark px-2 py-1 rounded"><i
+                                <a @click="editProducts(item.id)" class="btn btn-warning text-dark px-2 py-1 rounded"><i
                                         class="bi bi-pencil"></i></a>
-                                <a @click="deleteProduct(item.SKU)"
+                                <a @click="deleteProduct(item.id)"
                                     class="btn btn-danger text-light px-2 py-1 rounded"><i class="bi bi-trash"></i></a>
                             </div>
                         </td>
@@ -49,7 +46,7 @@
             <div v-if="VisiblePagenation.length <= 0">
                 <p class="text-danger text-center py-2">There are no products yet</p>
             </div>
-            <!-- Phân trang -->
+
             <nav aria-label="Page navigation" class="d-flex justify-content-center mt-3"
                 v-if="VisiblePagenation.length > 0">
                 <ul class="pagination">
@@ -79,13 +76,11 @@ const products = ref([]);
 const searchQuery = ref("");
 const router = useRouter();
 
-const API_GETALL = "http://localhost:3000/products"
-
-// const API_DELETE = "http://localhost:5287/api/Room/DeleteRoom/"
+const API = "http://localhost:3000/products"
 
 const productList = async () => {
     try {
-        const response = await axios.get(API_GETALL);
+        const response = await axios.get(API);
         products.value = response.data
     } catch (error) {
         console.log(error);
@@ -93,29 +88,24 @@ const productList = async () => {
 }
 onMounted(productList)
 
-//search by number and type room
 const filteredProduct = computed(() => {
     return products.value.filter(product =>
         product.name.toLowerCase().includes(searchQuery.value.toLowerCase())
     );
 });
 
-//Pass id room to edit page
-const editProducs = (id) => {
-    router.push(`/admin/products/edit-product/${id}`);
+const editProducts = (id) => {
+    router.push(`/admin/product/edit/${id}`);
 }
 
-//delete room
-// const deleteProduct = async (id) => {
-//     try {
-//         await axios.delete(API_DELETE + `${id}`);
-//         Swal.fire("Đã xóa!", "Dữ liệu đã được xóa thành công.", "success");
-//         await roomList();
-//     } catch (error) {
-//         console.error("Lỗi!", error);
-//         Swal.fire("Lỗi!", "Có lỗi xảy ra khi xóa.", "error");
-//     }
-// }
+const deleteProduct = async (id) => {
+    try {
+        await axios.delete(API + `${id}`);
+        await productList();
+    } catch (error) {
+        console.error("Lỗi!", error);
+    }
+}
 
 //pagination 
 const itemPerPage = ref(4);

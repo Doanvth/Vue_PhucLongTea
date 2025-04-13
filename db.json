@@ -1,79 +1,79 @@
 {
   "category": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Trà trái cây"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Trà sữa"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Kem silky"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Cà phê"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Đá xay"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Trà nguyên bản"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Bánh lạnh"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Bánh cookies - croissant"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Bánh mì"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Bánh cookies - croissant"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Trà hộp giấy"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Trà gói cao cấp"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Trà túi lọc"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Trà túi tam giác"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Trà lài"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Trà xanh"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Trà sen"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Trà đen"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Cà phê hạt không bơ"
     }
   ],
@@ -101,7 +101,10 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "product_information": {},
+      "instructions": {},
+      "id": "31cf"
     },
     {
       "SKU": 65000100,
@@ -126,7 +129,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "128a"
     },
     {
       "SKU": 65000114,
@@ -151,7 +155,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "70fe"
     },
     {
       "SKU": 65000126,
@@ -176,7 +181,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "3644"
     },
     {
       "SKU": 65000128,
@@ -201,7 +207,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "7f3b"
     },
     {
       "SKU": 65000134,
@@ -226,7 +233,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "b01a"
     },
     {
       "SKU": 65000120,
@@ -251,7 +259,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "aebc"
     },
     {
       "SKU": 65000107,
@@ -276,7 +285,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "8b7e"
     },
     {
       "SKU": 65000355,
@@ -301,7 +311,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "6ada"
     },
     {
       "SKU": 65000385,
@@ -326,7 +337,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "c95c"
     },
     {
       "SKU": 65000396,
@@ -351,7 +363,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "cbe4"
     },
     {
       "SKU": 65000344,
@@ -376,7 +389,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "96b8"
     },
     {
       "SKU": 65000102,
@@ -397,11 +411,12 @@
           "adjusted_price": -15000
         }
       ],
-      "option":{
+      "option": {
         "tea": true,
         "sugar": true,
         "ice": false
-      }
+      },
+      "id": "a1cc"
     },
     {
       "SKU": 65000101,
@@ -422,11 +437,12 @@
           "adjusted_price": -15000
         }
       ],
-      "option":{
+      "option": {
         "tea": true,
         "sugar": true,
         "ice": false
-      }
+      },
+      "id": "6ec7"
     },
     {
       "SKU": 65000333,
@@ -447,11 +463,12 @@
           "adjusted_price": -5000
         }
       ],
-      "option":{
+      "option": {
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "f49e"
     },
     {
       "SKU": 65000011,
@@ -472,12 +489,12 @@
           "adjusted_price": 0
         }
       ],
-      "option":{
+      "option": {
         "tea": true,
         "sugar": true,
         "ice": true
-      }
-      
+      },
+      "id": "ad38"
     },
     {
       "SKU": 65000099,
@@ -498,11 +515,12 @@
           "adjusted_price": -5000
         }
       ],
-      "option":{
+      "option": {
         "tea": true,
         "sugar": true,
         "ice": false
-      }
+      },
+      "id": "548e"
     },
     {
       "SKU": 65000106,
@@ -523,11 +541,12 @@
           "adjusted_price": -5000
         }
       ],
-      "option":{
+      "option": {
         "tea": true,
         "sugar": true,
         "ice": false
-      }
+      },
+      "id": "b2d3"
     },
     {
       "SKU": 65000105,
@@ -548,11 +567,12 @@
           "adjusted_price": -5000
         }
       ],
-      "option":{
+      "option": {
         "tea": true,
         "sugar": true,
         "ice": false
-      }
+      },
+      "id": "84db"
     },
     {
       "SKU": 65000383,
@@ -573,11 +593,12 @@
           "adjusted_price": -5000
         }
       ],
-      "option":{
+      "option": {
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "be48"
     },
     {
       "SKU": 65000393,
@@ -598,11 +619,12 @@
           "adjusted_price": -10000
         }
       ],
-      "option":{
+      "option": {
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "f0d7"
     },
     {
       "SKU": 65000307,
@@ -623,11 +645,12 @@
           "adjusted_price": 0
         }
       ],
-      "option":{
+      "option": {
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "c01c"
     },
     {
       "SKU": 65000337,
@@ -652,7 +675,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "af6a"
     },
     {
       "SKU": 65000366,
@@ -682,7 +706,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "9f8b"
     },
     {
       "SKU": 65000369,
@@ -712,7 +737,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "04ba"
     },
     {
       "SKU": 65000372,
@@ -742,7 +768,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "7357"
     },
     {
       "SKU": 65000335,
@@ -772,7 +799,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "a4ca"
     },
     {
       "SKU": 65000351,
@@ -797,7 +825,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "7eb8"
     },
     {
       "SKU": 65000055,
@@ -822,7 +851,8 @@
         "tea": false,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "6d30"
     },
     {
       "SKU": 65000176,
@@ -847,7 +877,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "4cfa"
     },
     {
       "SKU": 65000056,
@@ -872,7 +903,8 @@
         "tea": false,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "3046"
     },
     {
       "SKU": 65000174,
@@ -897,7 +929,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "8fb3"
     },
     {
       "SKU": 65000047,
@@ -917,7 +950,8 @@
         "tea": false,
         "sugar": false,
         "ice": false
-      }
+      },
+      "id": "1058"
     },
     {
       "SKU": 65000075,
@@ -937,7 +971,8 @@
         "tea": true,
         "sugar": true,
         "ice": false
-      }
+      },
+      "id": "4bbc"
     },
     {
       "SKU": 65000003,
@@ -957,7 +992,8 @@
         "tea": false,
         "sugar": true,
         "ice": false
-      }
+      },
+      "id": "804f"
     },
     {
       "SKU": 65000135,
@@ -977,7 +1013,8 @@
         "tea": true,
         "sugar": false,
         "ice": true
-      }
+      },
+      "id": "0d28"
     },
     {
       "SKU": 65000073,
@@ -997,7 +1034,8 @@
         "tea": false,
         "sugar": true,
         "ice": false
-      }
+      },
+      "id": "a763"
     },
     {
       "SKU": 65000072,
@@ -1017,7 +1055,8 @@
         "tea": false,
         "sugar": true,
         "ice": false
-      }
+      },
+      "id": "5465"
     },
     {
       "SKU": 65000070,
@@ -1037,7 +1076,8 @@
         "tea": false,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "8fc9"
     },
     {
       "SKU": 65000282,
@@ -1062,7 +1102,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "dcd1"
     },
     {
       "SKU": 65000285,
@@ -1087,7 +1128,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "1e48"
     },
     {
       "SKU": 65000288,
@@ -1117,7 +1159,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "9c92"
     },
     {
       "SKU": 65000291,
@@ -1147,7 +1190,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "7935"
     },
     {
       "SKU": 65000294,
@@ -1177,7 +1221,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "526d"
     },
     {
       "SKU": 65000291,
@@ -1207,7 +1252,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "df7f"
     },
     {
       "SKU": 65000432,
@@ -1237,7 +1283,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "36d9"
     },
     {
       "SKU": 65000435,
@@ -1267,7 +1314,8 @@
         "tea": true,
         "sugar": true,
         "ice": true
-      }
+      },
+      "id": "c5b5"
     },
     {
       "SKU": 60000641,
@@ -1275,7 +1323,8 @@
       "name": "Bánh Flan Phúc Long",
       "category": "Bánh lạnh",
       "price": 20000,
-      "description": ""
+      "description": "",
+      "id": "047c"
     },
     {
       "SKU": 60000644,
@@ -1283,7 +1332,8 @@
       "name": "Panna Cotta Chanh Dây 120g",
       "price": 35000,
       "category": "Bánh lạnh",
-      "description": ""
+      "description": "",
+      "id": "3d7f"
     },
     {
       "SKU": 60000643,
@@ -1291,7 +1341,8 @@
       "name": "Bánh Tiramisu",
       "price": 35000,
       "category": "Bánh lạnh",
-      "description": ""
+      "description": "",
+      "id": "5459"
     },
     {
       "SKU": 60001035,
@@ -1299,7 +1350,8 @@
       "name": "Bánh Cuộn Dâu",
       "price": 42000,
       "category": "Bánh lạnh",
-      "description": ""
+      "description": "",
+      "id": "d0d8"
     },
     {
       "SKU": 60001034,
@@ -1307,7 +1359,8 @@
       "name": "Bánh Chuối Hạt Dinh Dưỡng",
       "price": 39000,
       "category": "Bánh lạnh",
-      "description": ""
+      "description": "",
+      "id": "4f6d"
     },
     {
       "SKU": 60000639,
@@ -1315,7 +1368,8 @@
       "name": "Bánh croissant choco 45g",
       "price": 22000,
       "category": "Bánh cookies - croissant",
-      "description": ""
+      "description": "",
+      "id": "ec36"
     },
     {
       "SKU": 60000648,
@@ -1323,7 +1377,8 @@
       "name": "Bánh croissant 60g",
       "price": 25000,
       "category": "Bánh cookies - croissant",
-      "description": ""
+      "description": "",
+      "id": "ba21"
     },
     {
       "SKU": 60000650,
@@ -1331,7 +1386,8 @@
       "name": "Bánh mì Phúc Long 170g",
       "price": 38000,
       "category": "Bánh mì",
-      "description": ""
+      "description": "",
+      "id": "1d70"
     },
     {
       "SKU": 60000072,
@@ -1348,7 +1404,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "5e44"
     },
     {
       "SKU": 60000177,
@@ -1365,7 +1422,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "5bbe"
     },
     {
       "SKU": 60000184,
@@ -1382,7 +1440,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "dff9"
     },
     {
       "SKU": 60000820,
@@ -1390,7 +1449,8 @@
       "name": "Trà hồng trà túi lọc 2g x 25gói x 20 hộp",
       "price": 37000,
       "category": "Trà túi lọc",
-      "description": ""
+      "description": "",
+      "id": "e09b"
     },
     {
       "SKU": 60000836,
@@ -1398,7 +1458,8 @@
       "name": "Trà xanh (túi lọc) 2g x 25gói x 20hộp",
       "price": 30000,
       "category": "Trà túi lọc",
-      "description": ""
+      "description": "",
+      "id": "c51e"
     },
     {
       "SKU": 60000825,
@@ -1406,7 +1467,8 @@
       "name": "Trà ô long (túi lọc) 2g x 25gói x 20hộp",
       "price": 38000,
       "category": "Trà túi lọc",
-      "description": ""
+      "description": "",
+      "id": "8a76"
     },
     {
       "SKU": 60000831,
@@ -1414,7 +1476,8 @@
       "name": "Trà hương sen túi lọc 2g x 25gói x 20hộp",
       "price": 38000,
       "category": "Trà túi lọc",
-      "description": ""
+      "description": "",
+      "id": "34d5"
     },
     {
       "SKU": 60000824,
@@ -1422,7 +1485,8 @@
       "name": "Trà hương lài túi lọc 2g x 25gói x 20hộp",
       "price": 37000,
       "category": "Trà túi lọc",
-      "description": ""
+      "description": "",
+      "id": "30b5"
     },
     {
       "SKU": 60000832,
@@ -1430,7 +1494,8 @@
       "name": "Trà hương vải túi lọc 2g x 25gói x 20hộp",
       "price": 40000,
       "category": "Trà túi lọc",
-      "description": ""
+      "description": "",
+      "id": "0d35"
     },
     {
       "SKU": 60000162,
@@ -1447,7 +1512,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Cho túi trà 2g vào bình hoặc chai chứa 350ml nước tinh khiết và đặt bình vào ngăn mát tủ lạnh khoảng 10-12 tiếng là có thể thưởng thức. \\n- Ngoài ra, có thể biến tấu hương vị trà ủ lạnh phù hợp khẩu vị bằng cách thêm vào những nguyên liệu quen thuộc như mật ong, chanh, gừng hay quế. \\n- Chai thủy tinh được khuyến khích sử dụng trong quá trình ủ lạnh để phản ánh trung thực vị trà, chất trà mềm mượt trọn vị, đồng thời thành phẩm không bị pha tạp mùi vị từ những chất liệu khác mang lại."
-      }
+      },
+      "id": "e43f"
     },
     {
       "SKU": 60000197,
@@ -1464,7 +1530,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "Cho gói trà vào tách, đổ nước sôi vào. Ngâm khoảng 2 - 3 phút, nhúng gói trà 5 lần rồi lấy ra. Giờ bạn có thể thưởng thức"
-      }
+      },
+      "id": "ca04"
     },
     {
       "SKU": 60000093,
@@ -1481,7 +1548,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "Cho gói trà vào tách, đổ nước sôi vào. Ngâm khoảng 2 - 3 phút, nhúng gói trà 5 lần rồi lấy ra. Giờ bạn có thể thưởng thức"
-      }
+      },
+      "id": "8fae"
     },
     {
       "SKU": 60000355,
@@ -1498,7 +1566,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "Cho gói trà vào tách, đổ nước sôi vào. Ngâm khoảng 2 - 3 phút, nhúng gói trà 5 lần rồi lấy ra. Giờ bạn có thể thưởng thức"
-      }
+      },
+      "id": "4f94"
     },
     {
       "SKU": 60000212,
@@ -1515,7 +1584,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Cho túi trà 2g vào bình hoặc chai chứa 350ml nước tinh khiết và đặt bình vào ngăn mát tủ lạnh khoảng 10-12 tiếng là có thể thưởng thức. \\n- Ngoài ra, có thể biến tấu hương vị trà ủ lạnh phù hợp khẩu vị bằng cách thêm vào những nguyên liệu quen thuộc như mật ong, chanh, gừng hay quế. \\n- Chai thủy tinh được khuyến khích sử dụng trong quá trình ủ lạnh để phản ánh trung thực vị trà, chất trà mềm mượt trọn vị, đồng thời thành phẩm không bị pha tạp mùi vị từ những chất liệu khác mang lại."
-      }
+      },
+      "id": "7e41"
     },
     {
       "SKU": 60000255,
@@ -1532,7 +1602,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "Cho gói trà vào tách, đổ nước sôi vào. Ngâm khoảng 2 - 3 phút, nhúng gói trà 5 lần rồi lấy ra. Giờ bạn có thể thưởng thức"
-      }
+      },
+      "id": "5a55"
     },
     {
       "SKU": 60000075,
@@ -1549,7 +1620,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "086e"
     },
     {
       "SKU": 60000076,
@@ -1566,7 +1638,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "bb7a"
     },
     {
       "SKU": 60000079,
@@ -1583,7 +1656,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "1c41"
     },
     {
       "SKU": 60000349,
@@ -1600,7 +1674,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "a9f4"
     },
     {
       "SKU": 60000239,
@@ -1617,7 +1692,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "f447"
     },
     {
       "SKU": 60000019,
@@ -1634,7 +1710,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "277b"
     },
     {
       "SKU": 60000021,
@@ -1651,7 +1728,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
-      }
+      },
+      "id": "877c"
     },
     {
       "SKU": 60000453,
@@ -1668,7 +1746,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "59d9"
     },
     {
       "SKU": 60000487,
@@ -1685,7 +1764,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "b39e"
     },
     {
       "SKU": 60000528,
@@ -1702,7 +1782,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "823e"
     },
     {
       "SKU": 60000528,
@@ -1719,7 +1800,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "1b26"
     },
     {
       "SKU": 60000553,
@@ -1736,7 +1818,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "2022"
     },
     {
       "SKU": 60000503,
@@ -1753,7 +1836,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "0a7c"
     },
     {
       "SKU": 60000552,
@@ -1770,7 +1854,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "765c"
     },
     {
       "SKU": 60000557,
@@ -1787,7 +1872,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "bbcb"
     },
     {
       "SKU": 60000502,
@@ -1804,7 +1890,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "5615"
     },
     {
       "SKU": 60000556,
@@ -1821,7 +1908,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "71ff"
     },
     {
       "SKU": 60000577,
@@ -1838,7 +1926,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "b7a8"
     },
     {
       "SKU": 60000488,
@@ -1855,7 +1944,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "08d0"
     },
     {
       "SKU": 60000452,
@@ -1872,7 +1962,8 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "dd6f"
     },
     {
       "SKU": 60000578,
@@ -1889,7 +1980,25 @@
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
         "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
-      }
+      },
+      "id": "e362"
+    },
+    {
+      "id": "230c",
+      "SKU": 1234,
+      "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744530560/q9kwjo7uqhxphkrerazl.jpg",
+      "name": "Cà Phê",
+      "price": 50000,
+      "category": "Cà phê hạt không bơ",
+      "description": "",
+      "size": [],
+      "option": {
+        "tea": false,
+        "sugar": false,
+        "ice": false
+      },
+      "product_information": {},
+      "instructions": {}
     }
   ]
 }
