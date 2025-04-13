@@ -26,22 +26,23 @@
     <section class="main__product">
       <h3>BST Tea Latte - Bánh Banaberry mới!</h3>
       <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
-        <div class="col" v-for="(product, index) in products" :key="index">
-          <CardProduct :url="product.url" :image="product.image" :title="product.title" :price="product.price"
-            :seller="product.seller" />
+        <div class="col" v-for="(tea) in listTea.slice(0, 3)" :key="tea.SKU">
+          <CardProduct  :url="'#'" :image="tea.image" :title="tea.name" :price="tea.price" />
+        </div>
+        <div class="col" v-for="(cake) in listCake.slice(0, 2)" :key="cake.SKU">
+          <CardProduct  :url="'#'" :image="cake.image" :title="cake.name" :price="cake.price" />
         </div>
       </div>
     </section>
     <section class="main__product">
       <h3>BEST SELLERS - TRÀ THƠM CHẤT LƯỢNG</h3>
       <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
-        <div class="col" v-for="(product, index) in products" :key="index">
-          <CardProduct :url="product.url" :image="product.image" :title="product.title" :price="product.price"
-            :seller="product.seller" />
+        <div class="col" v-for="(tea,) in listTea.slice(0, moreTea)" :key="tea.SKU">
+          <CardProduct :url="'#'" :image="tea.image" :title="tea.name" :price="tea.price" />
         </div>
       </div>
-      <div class="more-product">
-        <div class="view-more">
+      <div class="more-product" v-if="moreTea != 10" @click="moreTea = 10">
+        <div class="view-more" >
           <span>Xem thêm 5 sản phẩm
             <strong>BEST SELLERS - TRÀ THƠM CHẤT LƯỢNG</strong>
             <i class="bi bi-chevron-down"></i>
@@ -52,12 +53,11 @@
     <section class="main__product">
       <h3>BEST SELLERS - TRÀ SỮA ĐẬM VỊ</h3>
       <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
-        <div class="col" v-for="(product, index) in products" :key="index">
-          <CardProduct :url="product.url" :image="product.image" :title="product.title" :price="product.price"
-            :seller="product.seller" />
+        <div class="col" v-for="(teaMilk) in listMilkTea.slice(0, moreMilkTea)" :key="teaMilk.SKU">
+          <CardProduct :url="'#'" :image="teaMilk.image" :title="teaMilk.name" :price="teaMilk.price"/>
         </div>
       </div>
-      <div class="more-product">
+      <div class="more-product" v-if="moreMilkTea != 10" @click="moreMilkTea = 10">
         <div class="view-more">
           <span>Xem thêm 5 sản phẩm
             <strong>BEST SELLERS - TRÀ SỮA ĐẬM VỊ</strong>
@@ -72,8 +72,8 @@
         <span>Tin tức & Khuyến mãi của Phúc Long</span>
       </div>
       <div class="row">
-        <div v-for="(sale, index) in sales" :key="index" class="col-lg-3 col-md-6 mb-3">
-          <CardShale :title="sale.title" :image="sale.image" :url="sale.url" :view="sale.view" :time="sale.time" />
+        <div v-for="(sale) in sales.slice(0, 8)" :key="sale.id" class="col-lg-3 col-md-6 mb-3">
+          <CardShale :title="sale.title" :image="sale.img" :url="'#'" :view="sale.view" :time="sale.time_active" />
         </div>
       </div>
       <div class="view-more">
@@ -99,7 +99,7 @@
               <button>
                 <i class="bi bi-search"></i>
               </button>
-              <input type="text" placeholder="Tìm kiếm cửa hàng Phúc Long">
+              <input v-model="searchAddress" type="text" placeholder="Tìm kiếm cửa hàng Phúc Long">
               <button type="reset">
                 <i class="bi bi-x"></i>
               </button>
@@ -110,14 +110,14 @@
             <form action="">
               <div class="search-field">
                 <label for="">Tỉnh thành</label>
-                <input v-model="searchProvince"  type="text">
-                <button type="button" @click="searchProvince = '', selectedProvince= {}" class="delete">
+                <input v-model="searchProvince" @focus="showProvince = true"  type="text">
+                <button v-show="showProvince" type="button" @click="searchProvince = '', selectedProvince= {}, showWard = false, showDistric = false" class="delete">
                   <i class="bi bi-x"></i>
                 </button>
-                <button @click="isShow = !isShow" type="button">
-                  <i class="bi bi-caret-down-fill"></i>
+                <button type="button" @click="showProvince = !showProvince">
+                  <i :class="['bi', showProvince ? 'bi-caret-up-fill' : 'bi-caret-down-fill']"></i>
                 </button>
-                <select v-model="selectedProvince" @change="fetchDistricts" class="form-select" size="8"
+                <select v-show="showProvince" @click="showProvince = !showProvince" v-model="selectedProvince" @change="fetchDistricts" class="form-select" size="8"
                   aria-label="size 3 select example">
                   <option disabled v-if="provinces.length == 0" value="">Không tìm thấy !</option>
                   <option v-for="province in provinces" :key="province.code" :value="province">{{ province.name }}
@@ -126,30 +126,32 @@
               </div>
               <div class="search-field">
                 <label for="">Quận huyện</label>
-                <input :disabled="selectedProvince.code == null" v-model="searchDistric" type="text">
-                <button type="button" @click="searchDistric = ''" class="delete">
+                <input @focus="showDistric = true" :disabled="selectedProvince.code == null" v-model="searchDistric" type="text">
+                <button v-show="showDistric" type="button" @click="searchDistric = '', selectedDistrict = {}, showWard = false" class="delete">
                   <i class="bi bi-x"></i>
                 </button>
-                <button  type="button">
-                  <i class="bi bi-caret-down-fill"></i>
+                <button @click="showDistric = !showDistric" type="button" :disabled="selectedProvince.name == null">
+                  <i :class="['bi', showDistric ? 'bi-caret-up-fill' : 'bi-caret-down-fill']"></i>
                 </button>
-                <select v-model="selectedDistrict" @change="fetchWards"  class="form-select" size="8"
+                <select v-show="showDistric" v-model="selectedDistrict" @click="showDistric = false"  @change="fetchWards"  class="form-select" size="8"
                   aria-label="size 3 select example">
+                  <option disabled v-if="districts.length == 0" value="">Không tìm thấy !</option>
                   <option v-for="district in districts" :key="district.code" :value="district">{{ district.name }}
                   </option>
                 </select>
               </div>
               <div class="search-field">
                 <label for="">Phường xã</label>
-                <input :disabled="selectedDistrict.code == null" v-model="searchWard" type="text">
-                <button type="button" @click="searchWard = ''" class="delete">
+                <input @focus="showWard = true" :disabled="selectedDistrict.code == null" v-model="searchWard" type="text">
+                <button v-show="showWard" type="button" @click="searchWard = ''" class="delete">
                   <i class="bi bi-x"></i>
                 </button>
-                <button  type="button">
-                  <i class="bi bi-caret-down-fill"></i>
+                <button @click="showWard = !showWard"  type="button" :disabled="selectedDistrict.code == null">
+                  <i :class="['bi', showWard ? 'bi-caret-up-fill' : 'bi-caret-down-fill']"></i>
                 </button>
-                <select v-model="selectedWard"  class="form-select" size="8"
+                <select v-show="showWard" @click="showWard = false"  v-model="selectedWard"  class="form-select" size="8"
                   aria-label="size 3 select example">
+                  <option disabled v-if="wards.length == 0" value="">Không tìm thấy !</option>
                   <option v-for="ward in wards" :key="ward.code" :value="ward">{{ ward.name }}</option>
                 </select>
               </div>
@@ -161,9 +163,11 @@
           <div class="current-location-content">
             <h5>Danh sách cửa hàng</h5>
             <div class="content overflow-auto">
-              <div v-for="(store, index) in stores" :key="index" class="store_content">
-                <StoreAddress :title="store.title" :image="store.image" :address="store.address" :phone="store.phone"
-                  :timeActive="store.timeActive" :active="store.acvive" />
+              <div v-for="store in addresses" :key="store.id" class="store_content">
+                  <div class="content" @click="map(store.map)">
+                    <StoreAddress  :title="store.store_name" :image="store.img" :address="store.address" :phone="store.phone_number"
+                  :timeActive="store.opening_hours" :active="store.status" />
+                  </div>
               </div>
             </div>
           </div>
@@ -179,6 +183,10 @@ import CardShale from '../components/CardShale.vue';
 import StoreAddress from '../components/StoreAddress.vue';
 import axios from 'axios';
 import { ref, onMounted, watch } from 'vue'
+import { fetchData } from '../utils/apiUtils';
+
+const products = ref([]);
+const sales = ref([]);
 const provinces = ref([]);
 const districts = ref([]);
 const wards = ref([]);
@@ -188,17 +196,83 @@ const selectedWard = ref({});
 const searchProvince = ref('');
 const searchDistric = ref('');
 const searchWard = ref('');
-
+const addresses = ref([]);
+const searchAddress = ref('');
+const showProvince = ref(false);
+const showDistric = ref(false);
+const showWard = ref(false);
+const originalAddresses = ref([]);
+const listTea = ref([]);
+const listCake = ref([]);
+const listMilkTea = ref([]);
+const moreTea = ref(5);
+const moreMilkTea = ref(5);
+const map = (url) =>{
+  const iframe = document.querySelector('.map iframe');
+  iframe.src = url;
+};
+//theo dỗi tỉnh
 watch(selectedProvince, (newValue)=>{
   searchProvince.value = newValue.name;
+  
+  if(newValue.name){
+    addresses.value = originalAddresses.value.filter(a => 
+      a.address.toLowerCase().includes(newValue.name.trim().toLowerCase())
+    )
+  }else{
+    addresses.value = originalAddresses.value;
+  }
+  
 })
-watch(selectedDistrict, (newValue)=>{
+//theo doi quận huyện 
+watch(selectedDistrict, (newValue)=>{ 
   searchDistric.value = newValue.name;
+  if(newValue.name){
+    addresses.value = addresses.value.filter(a => 
+      a.address.toLowerCase().includes(newValue.name.trim().toLowerCase())
+    )
+  }else if(selectedProvince.value.name){
+    addresses.value = originalAddresses.value.filter(a => 
+      a.address.toLowerCase().includes(selectedProvince.value.name.trim().toLowerCase())
+    )
+  }
 })
+//theo doi phuong xa
 watch(selectedWard, (newValue)=>{
   searchWard.value = newValue.name;
+  if(newValue.name){
+    addresses.value = addresses.value.filter(a =>
+      a.address.toLowerCase().includes(newValue.name.trim().toLowerCase())
+    )
+  }else if(selectedDistrict.value.name && selectedProvince.value.name){
+    addresses.value = originalAddresses.value.filter(a =>
+      a.address.toLowerCase().includes(selectedProvince.value.name.trim().toLowerCase()) 
+      &&  a.address.toLowerCase().includes(selectedDistrict.value.name.trim().toLowerCase()) 
+    )
+  }
 })
-
+//Goi api news 
+const fetchNews = async ()=>{
+  const res = await fetchData('http://localhost:3000/news');
+  sales.value = res.reverse();
+}
+//Goi api lay products
+const fetchProducts = async() =>{
+   products.value = await fetchData('http://localhost:3000/products');
+   listTea.value = products.value.filter(p => p.name.toLowerCase().includes('trà') && !p.name.toLowerCase().includes('sữa') && p.size).reverse();
+   listCake.value = products.value.filter(p => p.name.toLowerCase().includes('bánh')).reverse();
+   listMilkTea.value = products.value.filter(p => p.name.toLowerCase().includes('trà sữa')).reverse();
+}
+//Goi api lay dia chi
+const fetchAddresses = async () => {
+  try {
+    const res = await axios.get(`http://localhost:3000/addresses`);
+    addresses.value = res.data;
+    originalAddresses.value = res.data;
+  } catch (error) {
+    console.error('Lỗi khi tải quận:', error);
+  }
+}
 // Gọi API lấy tỉnh
 const fetchProvinces = async () => {
   try {
@@ -208,6 +282,7 @@ const fetchProvinces = async () => {
     console.error('Lỗi khi tải tỉnh:', error);
   }
 }
+
 // Gọi API lấy quận
 const fetchDistricts = async () => {
   try {
@@ -218,7 +293,7 @@ const fetchDistricts = async () => {
     districts.value = res.data.districts || [];
   } catch (error) {
     console.error('Lỗi khi tải quận:', error);
-  }
+  }``
 }
 // Gọi API lấy phường
 const fetchWards = async () => {
@@ -230,7 +305,7 @@ const fetchWards = async () => {
     console.error('Lỗi khi tải phường:', error);
   }
 }
-
+//tim kiem tinh
 watch(searchProvince, (newValue)=>{
   districts.value = [];
   selectedDistrict.value = {};
@@ -244,6 +319,7 @@ watch(searchProvince, (newValue)=>{
     fetchProvinces();
   }
 })
+//tim kiem quan huyen
 watch(searchDistric, (newValue)=>{
   wards.value = [];
   selectedWard.value = {};
@@ -257,6 +333,7 @@ watch(searchDistric, (newValue)=>{
     fetchDistricts();
   }
 })
+//tim kiem phuong xa
 watch(searchWard, (newValue)=>{
   if(newValue != '' && newValue != undefined){
       const list = wards.value.filter(w =>
@@ -267,100 +344,30 @@ watch(searchWard, (newValue)=>{
     fetchWards();
   }
 })
-onMounted(fetchProvinces);
-const products = [
-  {
-    title: 'tieu de',
-    image: 'https://hcm.fstorage.vn/images/2025/03/may-20250305102251.png',
-    price: 495999,
-    url: '#',
-  },
-  {
-    title: 'tieu de',
-    image: 'https://hcm.fstorage.vn/images/2025/03/may-20250305102251.png',
-    price: 495999,
-    url: '#',
-  },
-  {
-    title: 'tieu de',
-    image: 'https://hcm.fstorage.vn/images/2025/03/may-20250305102251.png',
-    price: 495999,
-    url: '#',
-    seller: 'sale'
-  },
-  {
-    title: 'tieu de',
-    image: 'https://hcm.fstorage.vn/images/2025/03/may-20250305102251.png',
-    price: 495999,
-    url: '#',
-    seller: 'sale'
-  },
-  {
-    title: 'tra sua so mot the gioi',
-    image: 'https://hcm.fstorage.vn/images/2025/03/may-20250305102251.png',
-    price: 495999,
-    url: '#',
-  },
-]
-const sales = [
-  {
-    title: "sale gia re aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    image: "https://hcm.fstorage.vn/phuclong/2025/02/lsm_dine-in_valentine_2025_combo-01-20250214063834.jpg",
-    time: "12-03 24-02-2026",
-    view: 1999,
-    url: "/"
-  },
-  {
-    title: "sale gia re",
-    image: "https://hcm.fstorage.vn/phuclong/2025/02/lsm_dine-in_valentine_2025_combo-01-20250214063834.jpg",
-    time: "12-03 24-02-2026",
-    view: 1999,
-    url: "/"
-  },
-  {
-    title: "sale gia re",
-    image: "https://hcm.fstorage.vn/phuclong/2025/02/lsm_dine-in_valentine_2025_combo-01-20250214063834.jpg",
-    time: "12-03 24-02-2026",
-    view: 1999,
-    url: "/"
-  },
-  {
-    title: "sale gia re",
-    image: "https://hcm.fstorage.vn/phuclong/2025/02/lsm_dine-in_valentine_2025_combo-01-20250214063834.jpg",
-    time: "12-03 24-02-2026",
-    view: 1999,
-    url: "/"
+//tim kiem dia chi
+watch(searchAddress, (newValue)=>{
+  if(newValue != "" && newValue != undefined){
+    const list = addresses.value.filter(a => 
+      a.address.toLowerCase().includes(newValue.trim().toLowerCase())
+    )
+    addresses.value = list;
+  }else{
+    fetchAddresses();
   }
-]
-const stores = [
-  {
-    title: 'BDG-CH 44 Nguyen Dinh Chieu P.PC',
-    image: 'https://phuclong.com.vn/_next/static/images/phuclong-store-a0cba2f8c91fff15b6138d6d30982396.jpg',
-    address: '44 Nguyễn Đình Chiểu P. Phú Cường TP. Thủ Dầu Một T. Bình Dương',
-    phone: '(028) 7100 1968',
-    timeActive: '07:00 - 22:30',
-    acvive: 'Mở cửa',
-  },
-  {
-    title: 'BDG-CH 44 Nguyen Dinh Chieu P.PC',
-    image: 'https://phuclong.com.vn/_next/static/images/phuclong-store-a0cba2f8c91fff15b6138d6d30982396.jpg',
-    address: '44 Nguyễn Đình Chiểu P. Phú Cường TP. Thủ Dầu Một T. Bình Dương',
-    phone: '(028) 7100 1968',
-    timeActive: '07:00 - 22:30',
-    acvive: 'Mở cửa',
-  },
-  {
-    title: 'BDG-CH 44 Nguyen Dinh Chieu P.PC',
-    image: 'https://phuclong.com.vn/_next/static/images/phuclong-store-a0cba2f8c91fff15b6138d6d30982396.jpg',
-    address: '44 Nguyễn Đình Chiểu P. Phú Cường TP. Thủ Dầu Một T. Bình Dương',
-    phone: '(028) 7100 1968',
-    timeActive: '07:00 - 22:30',
-    acvive: 'Mở cửa',
-  },
-]
+})
+onMounted(async() =>{
+  await fetchProvinces(),
+  await fetchAddresses(),
+  await fetchProducts(),
+  await fetchNews();
+})
 </script>
 
 <style scoped>
+.content{
+  cursor: pointer;
+  z-index: 1;
+}
 /* slider  */
 .carousel-indicators button {
   display: inline-block;
@@ -593,10 +600,6 @@ svg {
   font-size: 14px;
 }
 
-.address-search .search-field input:focus+button {
-  opacity: 1;
-}
-
 
 .address-search .search-field button {
   position: absolute;
@@ -614,7 +617,6 @@ svg {
   transform: translateY(-50%);
   background: transparent;
   border: none;
-  opacity: 0;
 }
 
 .address-search .search-field i {
@@ -633,12 +635,7 @@ svg {
   left: 0;
   width: 100%;
   box-shadow: none;
-  opacity: 0;
 }
-.address-search .search-field input:focus ~ select{
-  opacity: 1;
-}
-
 .current-location {
   padding: 10px 0;
 }
@@ -662,4 +659,4 @@ svg {
   max-height: 500px;
   width: 100%;
 }
-</style>
+</style>  
