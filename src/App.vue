@@ -1,3 +1,7 @@
+<template>
+    <RouterView/>
+</template>
+
 <script setup>
 import { RouterView } from 'vue-router';
 import HeaderView from './layouts/HeaderView.vue'
@@ -23,5 +27,6 @@ import ListProductView from './views/AdminView/Product/ListProductView.vue'
 </template>
 
 <style scoped>
+
 
 </style>
