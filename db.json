@@ -230,35 +230,38 @@
       "id": "ORDER1744453765097",
       "userId": "bd13",
       "createdAt": "2025-04-12T10:29:25.097Z",
-      "status": "pending",
+      "status": "paid",
       "cartItems": [
         {
-          "id": "1",
+          "id": "af1d9c15-95fc-4199-b9cb-038966dc9ee3",
+          "name": "Trà Ô Long Dâu (L)",
+          "price": 65000,
+          "quantity": 2,
+          "size": "Size M",
+          "tea": "Trà: Ít",
+          "sugar": "Ngọt: Nhiều",
+          "ice": "Đá; Nhiều",
+          "totalPrice": 130000
+        },
+        {
+          "id": "5750b9a9-20a7-4e1c-b7ba-6aac1ea1cf7e",
           "name": "Trà Ô Long Dâu (L)",
           "price": 65000,
           "quantity": 5,
-          "size": "Size M",
-          "tea": "Trà: Ít",
-          "sugar": "Ngọt: Ít",
-          "ice": "Đá: Ít",
-          "totalPrice": 325000
-        }
-      ]
-    },
-    {
-      "id": "ORDER1744468029001",
-      "userId": "bd13",
-      "createdAt": "2025-04-12T14:27:09.001Z",
-      "status": "pending",
-      "cartItems": [
-        {
-          "id": "2",
-          "name": "Trà Ô Long Dâu (L)",
-          "price": 65000,
-          "quantity": 3,
           "size": "Size L",
           "tea": "Trà: Bình Thường",
           "sugar": "Ngọt: Bình Thường",
+          "ice": "Đá: Bình Thường",
+          "totalPrice": 325000
+        },
+        {
+          "id": "056899ad-6338-4e33-a7b9-62dd99e9d4ab",
+          "name": "Trà Ô Long Dâu (L)",
+          "price": 65000,
+          "quantity": 3,
+          "size": "Size M",
+          "tea": "Trà: Nhiều",
+          "sugar": "Ngọt: Ít",
           "ice": "Đá: Bình Thường",
           "totalPrice": 195000
         }
@@ -274,31 +277,53 @@
           "id": "3",
           "name": "Trà Ô Long Dâu (L)",
           "price": 65000,
-          "quantity": 6,
-          "size": "Size L",
-          "tea": "Trà: Bình Thường",
-          "sugar": "Ngọt: Bình Thường",
-          "ice": "Đá: Bình Thường",
-          "totalPrice": 390000
-        }
-      ]
-    },
-    {
-      "id": "ORDER1744470840304",
-      "userId": "bd10",
-      "createdAt": "2025-04-12T15:14:00.304Z",
-      "status": "pending",
-      "cartItems": [
-        {
-          "id": "abb07c1b-c256-43b8-9e67-9e90de0238df",
-          "name": "Trà Ô Long Dâu (L)",
-          "price": 65000,
           "quantity": 5,
           "size": "Size L",
           "tea": "Trà: Bình Thường",
           "sugar": "Ngọt: Bình Thường",
           "ice": "Đá: Bình Thường",
           "totalPrice": 325000
+        },
+        {
+          "id": "d8dc1783-6e5e-460d-8e7a-8254b4084255",
+          "name": "Trà Ô Long Dâu (L)",
+          "price": 65000,
+          "quantity": 1,
+          "size": "Size L",
+          "tea": "Trà: Nhiều",
+          "sugar": "Ngọt: Nhiều",
+          "ice": "Đá; Nhiều",
+          "totalPrice": 65000
+        }
+      ]
+    },
+    {
+      "id": "ORDER1744546091012",
+      "userId": "bd13",
+      "createdAt": "2025-04-13T12:08:11.012Z",
+      "status": "pending",
+      "cartItems": [
+        {
+          "id": "19a20b27-56ba-4f59-9297-66e911b08f0d",
+          "name": "Trà Ô Long Dâu (L)",
+          "price": 65000,
+          "quantity": 2,
+          "size": "Size L",
+          "tea": "Trà: Bình Thường",
+          "sugar": "Ngọt: Bình Thường",
+          "ice": "Đá: Bình Thường",
+          "totalPrice": 130000
+        },
+        {
+          "id": "69dd96a2-0635-4b20-8cd0-937f6a5b6290",
+          "name": "Trà Ô Long Dâu (L)",
+          "price": 65000,
+          "quantity": 3,
+          "size": "Size M",
+          "tea": "Trà: Bình Thường",
+          "sugar": "Ngọt: Nhiều",
+          "ice": "Đá: Bình Thường",
+          "totalPrice": 195000
         }
       ]
     }

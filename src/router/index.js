@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import App from '../App.vue'
 import HomeView from "../views/HomeView.vue";
-import ShoppingCard from "../views/ShoppingCard.vue";
+import ShoppingCard from "../views/AccountView/ShoppingCard.vue";
 import InfoView from "../views/AccountView/InfoView.vue";
 import VoucherView from "../views/AccountView/VoucherView.vue";
 import MemberView from "../views/AccountView/MemberView.vue";
@@ -23,7 +23,6 @@ const routes = [
     component: App,
     children: [
       { path: "", name: "home", component: HomeView },
-      { path: "shopping-card", name: "shopping-card", component: ShoppingCard },
       { path: 'product-detail', name: 'product-detail', component: ProductDetailView },
       { path: 'product-pack-detail', name: 'product-pack-detail', component: ProductPackDetailView },
     ],
@@ -41,6 +40,7 @@ const routes = [
       { path: "product-favorite", name: "product-favorite", component: ProductFavoriteView },
       { path: "ordered-product", name: "ordered-product", component: OrderedProductView },
       { path: "help-center", name: "help-center", component: HelpCenterView },
+      { path: "shopping-card", name: "shopping-card", component: ShoppingCard },
     ],
   },
   {

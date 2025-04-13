@@ -116,7 +116,8 @@
                 </div>
             </div>
         </div>
-        <ButtonShoppingCard :cartQuantity="cartQuantity"/>
+        <ButtonShoppingCard v-model:cartQuantity="cartQuantity" />
+
     </div>
 </template>
 
@@ -125,19 +126,31 @@ import Breadcrumb from '../components/Breadcrumb.vue';
 import ImgTraDau from '../assets/images/tra-o-long-dau.png'
 import QuantityButton from '../components/QuantityButton.vue';
 import ButtonShoppingCard from '../components/ButtonShoppingCard.vue';
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import axios from 'axios';
 
 const quantity = ref(1);
 const cartQuantity = ref(0); 
-const cartItems = ref([]); 
+const user = ref(null);
 
 const formatCurrency = (value) => {
     return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value);
 };
 
+// const checkLogin = () => {
+//     user.value = JSON.parse(localStorage.getItem('user'));
+//     if (!user.value) {
+//         alert("Vui lòng đăng nhập!");
+//         window.location.href = "/login";
+//         return false;
+//     }
+//     return true;
+// };
+
+
 const addToCart = async () => {
-   // localStorage.clear();
+   // if (!checkLogin()) return;
+
     const sizeElement = document.querySelector('input[name="size"]:checked');
     const teaElement = document.querySelector('input[name="tra"]:checked');
     const sugarElement = document.querySelector('input[name="ngot"]:checked');
@@ -156,14 +169,16 @@ const addToCart = async () => {
     };
 
     try {
-        let existingOrders = JSON.parse(localStorage.getItem('orders')) || [];
-        let userOrder = existingOrders.find(order => order.userId === "bd10");
+        const response = await axios.get('http://localhost:3000/orders');
+        let existingOrders = response.data;
+        // let userOrder = existingOrders.find(order => order.userId === user.value.id && order.status === "pending");
+        let userOrder = existingOrders.find(order => order.userId === "bd13" && order.status === "pending");
 
-        if (!userOrder) {
+        if (!userOrder|| userOrder.status !== 'pending') {
             // Nếu chưa có đơn hàng nào của user, tạo mới đơn hàng
             userOrder = {
                 id: `ORDER${Date.now()}`,
-                userId: "bd10",
+                userId: "bd13",
                 createdAt: new Date().toISOString(),
                 status: "pending",
                 cartItems: [newItem]
@@ -186,24 +201,18 @@ const addToCart = async () => {
                 existingItem.totalPrice = existingItem.quantity * existingItem.price;
             } else {
                 userOrder.cartItems.push(newItem); // Nếu chưa có, thêm sản phẩm mới vào giỏ hàng
+                cartQuantity.value++;
             }
-
+            
             await axios.put(`http://localhost:3000/orders/${userOrder.id}`, userOrder);
         }
 
-        // Lưu lại danh sách đơn hàng vào LocalStorage
-        localStorage.setItem('orders', JSON.stringify(existingOrders));
         console.log("Đơn hàng đã cập nhật!");
-
-        // Cập nhật số lượng sản phẩm trong biểu tượng giỏ hàng
-        cartQuantity.value = userOrder.cartItems.length;
-
+        
     } catch (error) {
         console.error("Lỗi khi lưu giỏ hàng:", error);
     }
 };
-
-
 
 
 
