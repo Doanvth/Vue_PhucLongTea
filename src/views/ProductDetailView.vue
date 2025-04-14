@@ -16,17 +16,16 @@
                         <h4 class="text-success">{{ formatCurrency(form.price) }}</h4>
                         <QuantityButton :quantity="quantity" @updateQuantity="quantity = $event" />
                     </div>
-                    <div v-if="hasSize" class="row mb-3">
-                        <div class="col-12 mb-2">
+                    <div  class="row mb-3">
+                        <div v-if="hasSize" class="col-12 mb-2">
                             <div class="text-success mb-2 fw-bold">Chọn kích cỡ</div>
                             <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
                                <div v-for="size in form.size">
-                                   <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off" value="Size M">
-                                   <label class="btn btn-outline-success rounded-2 p-0" for="sizeM">
+                                   <input type="radio" class="btn-check" name="size" :id="size.label" autocomplete="off" :value="`Size ${size.lable}`" checked>
+                                   <label class="btn btn-outline-success rounded-2 p-0" :for="size.label"  >
                                        <div class="border-bottom py-2 px-4">Size {{ size.label }}</div>
-                                       <div class="border-top">{{ formatCurrency(size.adjusted_price) }}</div>
+                                       <div class="border-top" id="price" value="size.adjusted_price"  @click="getPrice(), giam_gia = size.adjusted_price" >{{ formatCurrency(size.adjusted_price) }}</div>
                                    </label>
-
                                </div>
 
                 
@@ -94,7 +93,7 @@
                     </div>
                     <div class="d-flex justify-content-center my-3">
                         <button class="btn btn-success px-5" @click="addToCart"><i class="bi bi-cart-plus-fill me-2"></i>Thêm vào giỏ hàng:
-                            <span>{{ formatCurrency(form.price * quantity) }}</span></button>
+                            <span>{{ formatCurrency((form.price+ giam_gia) * quantity) }}</span></button>
                     </div>
                     <div >
                         <div v-if="hasProductInfo" class="infomation mb-3">
@@ -168,6 +167,11 @@ const categories = ref([])
 const route = useRoute()
 const router = useRouter()
 
+const giam_gia = ref('');
+const getPrice = () => {
+    console.log(giam_gia.value);  
+}
+
 const fetchProduct = async () => {
     try {
         const res = await axios.get(`http://localhost:3000/products/${route.params.id}`)
@@ -208,7 +212,9 @@ const formatCurrency = (value) => {
 };
 
 const checkLogin = () => {
-    user.value = JSON.parse(sessionStorage.getItem('user'));
+    user.value = sessionStorage.getItem('user');
+    console.log(user.value);
+    
     if (!user.value) {
         alert("Vui lòng đăng nhập!");
         window.location.href = "/auth/login";
@@ -227,15 +233,16 @@ const addToCart = async () => {
     const iceElement = document.querySelector('input[name="da"]:checked');
 
     const newItem = { 
-        id: form.id, 
-        name: form.name, 
-        price: form.price,
+        id: form.value.id, 
+        name: form.value.name, 
+        image: form.value.image,
+        price: form.value.price + giam_gia.value,
         quantity: quantity.value,
-        size: sizeElement?.closest('.d-none') ? "" : sizeElement?.value || "Size L",
+        size: sizeElement?.closest('.d-none') ? "M" : sizeElement?.value || "Size L",
         tea: teaElement?.closest('.d-none') ? "" : teaElement?.value || "Bình thường",
         sugar: sugarElement?.closest('.d-none') ? "" : sugarElement?.value || "Bình thường",
         ice: iceElement?.closest('.d-none') ? "" : iceElement?.value || "Bình thường",
-        totalPrice: quantity.value * form.price
+        totalPrice: quantity.value * ( form.value.price + giam_gia.value)
     };
 
     try {
@@ -249,7 +256,6 @@ const addToCart = async () => {
             userOrder = {
                 id: `ORDER${Date.now()}`,
                 userId: user.value,
-                image: form.image,
                 createdAt: new Date().toISOString(),
                 status: "pending",
                 cartItems: [newItem]

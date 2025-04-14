@@ -33,12 +33,14 @@
         <RouterView :key="$route.fullPath" />
       </div>
     </div>
+    <ButtonShoppingCard/>
   </div>
 </template>
 
 <script setup>
 import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { ref } from 'vue'
+import ButtonShoppingCard from '../../components/ButtonShoppingCard.vue'
 
 const categoriesNuocUong = [
   'Trà trái cây',

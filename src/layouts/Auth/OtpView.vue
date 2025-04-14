@@ -13,17 +13,17 @@
     <div class="form-login">
       <form action="" @submit.prevent="authentic">
         <div class="otp mb-2  d-flex">
-          <input @input="focusInput" type="number" min="0" max="9"
+          <input  type="number" min="0" max="9"
             class="form-control form-control-sm me-2 text-center">
-          <input @input="focusInput" type="number" min="0" max="9"
+          <input  type="number" min="0" max="9"
             class="form-control form-control-sm me-2 text-center">
-          <input @input="focusInput" type="number" min="0" max="9"
+          <input  type="number" min="0" max="9"
             class="form-control form-control-sm me-2 text-center">
-          <input @input="focusInput" type="number" min="0" max="9"
+          <input  type="number" min="0" max="9"
             class="form-control form-control-sm me-2 text-center">
-          <input @input="focusInput" type="number" min="0" max="9"
+          <input  type="number" min="0" max="9"
             class="form-control form-control-sm me-2 text-center">
-          <input @input="focusInput" type="number" min="0" max="9" class="form-control form-control-sm text-center">
+          <input  type="number" min="0" max="9" class="form-control form-control-sm text-center">
         </div>
         <div class="mb-3">
           <small v-if="check && otp != null"class="text-danger ">Mã xác nhận không chính xác</small>
@@ -70,6 +70,8 @@ const sendOTP = () => {
     otp_code: otp
   }
 
+  console.log("email:" + user.value.email);
+  
   // Gửi email qua EmailJS
   emailjs.send(
     'service_aleerha',    
@@ -82,24 +84,26 @@ const sendOTP = () => {
     console.log(err);
   })
 }
-sendOTP();
+
 const fetchUsers = async () =>{
   try {
     const res = await axios.get('http://localhost:3000/users');
     user.value = res.data.find(u => u.phone == phone);
+
+    sendOTP();
   } catch (error) {
     console.log(error);
   }
 }
 
-const focusInput = (e) => {
-  check.value = false;
-  const value = e.target.value;
-  e.target.value = value.slice(0, 1);
-  if (value != '' && e.target.nextElementSibling) {
-    e.target.nextElementSibling.focus();
-  }
-}
+// const focusInput = (e) => {
+//   check.value = false;
+//   const value = e.target.value;
+//   e.target.value = value.slice(0, 1);
+//   if (value != '' && e.target.nextElementSibling) {
+//     e.target.nextElementSibling.focus();
+//   }
+// }
 onMounted(fetchUsers);
 </script>
 

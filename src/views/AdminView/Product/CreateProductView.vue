@@ -11,13 +11,13 @@
 
                 <div class="mb-3">
                     <label class="form-label">Tên sản phẩm</label>
-                    <input v-model="form.name" type="text" class="form-control" required @change="v$.value.name.$touch()" />
+                    <input v-model="form.name" type="text" class="form-control" required />
                     <span class="text-danger" v-if="v$.name.$error">Tên sản phẩm phải có ít nhất 3 ký tự</span>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Giá (mặc định)</label>
-                    <input v-model.number="form.price" type="text" class="form-control" required @change="v$.value.price.$touch()" />
+                    <input v-model.number="form.price" type="text" class="form-control" required  />
                     <span class="text-danger" v-if="v$.price.$error">Giá không hợp lệ</span>
                 </div>
 
@@ -140,9 +140,11 @@
 <script setup>
 import { ref, onMounted, computed } from 'vue'
 import axios from 'axios'
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRouter } from 'vue-router';
 import useVuelidate from '@vuelidate/core'
 import { required, minLength, numeric, url } from '@vuelidate/validators'
+
+const router = useRouter();
 
 const form = ref({
     SKU: '',
@@ -261,6 +263,8 @@ const addDrink = async () => {
         console.log('Đã thêm:', res.data)
 
         resetForm()
+
+        router.push('/admin/product/list')
     } catch (error) {
         console.error('Lỗi khi thêm sản phẩm:', error)
     }

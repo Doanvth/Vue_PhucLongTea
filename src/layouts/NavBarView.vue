@@ -14,7 +14,7 @@
                     <div class="container">
                         <ul class="navbar-nav my-0 d-flex justify-content-center align-items-center gap-lg-5">
                             <li class="nav-item active">
-                                <a href="" class="nav-link fw-semibold">Trang chủ</a>
+                                <RouterLink  to="/" class="nav-link fw-semibold">Trang chủ</RouterLink>
                             </li>
                             <li class="nav-item position-relative menu-toggle">
                                 <RouterLink to="/menu" class="nav-link fw-semibold">Menu</RouterLink>

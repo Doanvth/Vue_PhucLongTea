@@ -19,12 +19,12 @@
     {
       "id": "bd02",
       "fullname": "Nguyễn Toàn",
-      "phone": "0987645421",
+      "phone": "0987648421",
       "gender": "Nam",
       "cccd": "234567890123",
       "birthday": "1992-05-15",
-      "email": "toan@gmail.com",
-      "password": "123",
+      "email": "nguyentritai2404@gmail.com",
+      "password": "123456",
       "city": "Cần Thơ",
       "district": "Ninh Kiều",
       "ward": "An Khánh",
@@ -39,14 +39,14 @@
       "gender": "Nam",
       "cccd": "345678901234",
       "birthday": "1995-07-20",
-      "email": "moc@gmail.com",
-      "password": "123",
+      "email": "ttknganct99999999@gmail.com",
+      "password": "123456456",
       "city": "Cần Thơ",
       "district": "Bình Thủy",
       "ward": "Bình Thủy",
       "address": "789 Đường LMN",
       "role": "user",
-      "isActive": true
+      "isActive": false
     },
     {
       "id": "bd03",
@@ -55,14 +55,14 @@
       "gender": "Nam",
       "cccd": "456789012345",
       "birthday": "1988-03-10",
-      "email": "hai@gmail.com",
-      "password": "123",
+      "email": "toannguyenmoc2526@gmail.com",
+      "password": "222222",
       "city": "Cần Thơ",
       "district": "Cái Răng",
       "ward": "Lê Bình",
       "address": "101 Đường OPQ",
       "role": "user",
-      "isActive": false
+      "isActive": true
     },
     {
       "id": "bd04",
@@ -235,6 +235,7 @@
         {
           "id": "af1d9c15-95fc-4199-b9cb-038966dc9ee3",
           "name": "Trà Ô Long Dâu (L)",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216081/i0so70zxnyr4ysnrfgd5.png",
           "price": 65000,
           "quantity": 2,
           "size": "Size M",
@@ -246,6 +247,7 @@
         {
           "id": "5750b9a9-20a7-4e1c-b7ba-6aac1ea1cf7e",
           "name": "Trà Ô Long Dâu (L)",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216081/i0so70zxnyr4ysnrfgd5.png",
           "price": 65000,
           "quantity": 5,
           "size": "Size L",
@@ -257,6 +259,7 @@
         {
           "id": "056899ad-6338-4e33-a7b9-62dd99e9d4ab",
           "name": "Trà Ô Long Dâu (L)",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216081/i0so70zxnyr4ysnrfgd5.png",
           "price": 65000,
           "quantity": 3,
           "size": "Size M",
@@ -276,6 +279,7 @@
         {
           "id": "3",
           "name": "Trà Ô Long Dâu (L)",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216081/i0so70zxnyr4ysnrfgd5.png",
           "price": 65000,
           "quantity": 5,
           "size": "Size L",
@@ -287,6 +291,7 @@
         {
           "id": "d8dc1783-6e5e-460d-8e7a-8254b4084255",
           "name": "Trà Ô Long Dâu (L)",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216081/i0so70zxnyr4ysnrfgd5.png",
           "price": 65000,
           "quantity": 1,
           "size": "Size L",
@@ -306,6 +311,7 @@
         {
           "id": "19a20b27-56ba-4f59-9297-66e911b08f0d",
           "name": "Trà Ô Long Dâu (L)",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216081/i0so70zxnyr4ysnrfgd5.png",
           "price": 65000,
           "quantity": 2,
           "size": "Size L",
@@ -317,6 +323,7 @@
         {
           "id": "69dd96a2-0635-4b20-8cd0-937f6a5b6290",
           "name": "Trà Ô Long Dâu (L)",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216081/i0so70zxnyr4ysnrfgd5.png",
           "price": 65000,
           "quantity": 3,
           "size": "Size M",
@@ -328,18 +335,114 @@
       ]
     },
     {
-      "id": "ORDER1744605097292",
-      "userId": 1,
-      "createdAt": "2025-04-14T04:31:37.293Z",
-      "status": "pending",
+      "id": "ORDER1744608536414",
+      "userId": "bd02",
+      "createdAt": "2025-04-14T05:28:56.414Z",
+      "status": "paid",
       "cartItems": [
         {
-          "quantity": 1,
-          "size": "Size L",
+          "id": "7f3b",
+          "name": "Trà Nhãn Lài (L)",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744216075/ehqiayhs5qp7gagt7opw.png",
+          "price": 35000,
+          "quantity": 4,
+          "size": "Size undefined",
+          "tea": "Trà: Bình Thường",
+          "sugar": "Ngọt: Bình Thường",
+          "ice": "Đá: Bình Thường",
+          "totalPrice": 140000
+        }
+      ]
+    },
+    {
+      "id": "ORDER1744617144243",
+      "userId": "bd03",
+      "createdAt": "2025-04-14T07:52:24.243Z",
+      "status": "paid",
+      "cartItems": [
+        {
+          "id": "1058",
+          "name": "Oreo Kem Đá Xay",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248594/nacnzflxgeabgvfbz7xp.png",
+          "price": "55000",
+          "quantity": 3,
+          "size": "Size undefined",
           "tea": "Bình thường",
           "sugar": "Bình thường",
           "ice": "Bình thường",
-          "totalPrice": null
+          "totalPrice": 165000
+        }
+      ]
+    },
+    {
+      "id": "ORDER1744617824085",
+      "userId": "bd03",
+      "createdAt": "2025-04-14T08:03:44.085Z",
+      "status": "paid",
+      "cartItems": [
+        {
+          "id": "5f44",
+          "name": "Test 2",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744617792/mndsbs0glrztyr3ac1sb.png",
+          "price": "50000",
+          "quantity": 3,
+          "size": "Size L",
+          "tea": "Trà: Bình Thường",
+          "sugar": "Bình thường",
+          "ice": "Bình thường",
+          "totalPrice": 150000
+        }
+      ]
+    },
+    {
+      "id": "ORDER1744618084873",
+      "userId": "bd03",
+      "createdAt": "2025-04-14T08:08:04.873Z",
+      "status": "pending",
+      "cartItems": [
+        {
+          "id": "d359",
+          "name": "Trà test",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744617539/gdfivi0axdtxzpxbvwfg.png",
+          "price": "50000",
+          "quantity": 2,
+          "size": "Size undefined",
+          "tea": "Trà: Bình Thường",
+          "sugar": "Ngọt: Bình Thường",
+          "ice": "Bình thường",
+          "totalPrice": 100000
+        },
+        {
+          "id": "d359",
+          "name": "Trà test",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744617539/gdfivi0axdtxzpxbvwfg.png",
+          "price": "50000",
+          "quantity": 3,
+          "size": "Size undefined",
+          "tea": "Trà: Nhiều",
+          "sugar": "Ngọt: Ít",
+          "ice": "Bình thường",
+          "totalPrice": 150000
+        }
+      ]
+    },
+    {
+      "id": "ORDER1744622637959",
+      "userId": "bd12",
+      "createdAt": "2025-04-14T09:23:57.959Z",
+      "status": "pending",
+      "cartItems": [
+        {
+          "id": "36d9",
+          "name": "Trà Bá Tước (L)",
+          "image": "https://res.cloudinary.com/dnt5lyoes/image/upload/v1744248780/ifewumgmhxcn54s355tl.png",
+          "price": 40000,
+          "quantity": 2,
+          "size": "undefined",
+          "tea": "Trà: Bình Thường",
+          "sugar": "Ngọt: Bình Thường",
+          "ice": "Đá: Bình Thường",
+          "totalPrice": 80000
         }
       ]
     }

@@ -81,7 +81,7 @@ const API = "http://localhost:3000/products"
 const productList = async () => {
     try {
         const response = await axios.get(API);
-        products.value = response.data
+        products.value = response.data.reverse();
     } catch (error) {
         console.log(error);
     }
@@ -100,7 +100,8 @@ const editProducts = (id) => {
 
 const deleteProduct = async (id) => {
     try {
-        await axios.delete(API + `${id}`);
+        await axios.delete(API + "/" + `${id}`);
+
         await productList();
     } catch (error) {
         console.error("Lỗi!", error);

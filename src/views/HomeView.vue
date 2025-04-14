@@ -27,18 +27,18 @@
       <h3>BST Tea Latte - Bánh Banaberry mới!</h3>
       <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
         <div class="col" v-for="(tea) in listTea.slice(0, 3)" :key="tea.SKU">
-          <CardProduct  :url="'#'" :image="tea.image" :title="tea.name" :price="tea.price" />
+          <CardProduct  :url="`/product-detail/${ tea.id }`"  :image="tea.image" :title="tea.name" :price="tea.price" />
         </div>
         <div class="col" v-for="(cake) in listCake.slice(0, 2)" :key="cake.SKU">
-          <CardProduct  :url="'#'" :image="cake.image" :title="cake.name" :price="cake.price" />
+          <CardProduct  :url="`/product-detail/${ cake.id }`"  :image="cake.image" :title="cake.name" :price="cake.price" />
         </div>
       </div>
     </section>
     <section class="main__product">
       <h3>BEST SELLERS - TRÀ THƠM CHẤT LƯỢNG</h3>
       <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
-        <div class="col" v-for="(tea,) in listTea.slice(0, moreTea)" :key="tea.SKU">
-          <CardProduct :url="'#'" :image="tea.image" :title="tea.name" :price="tea.price" />
+        <div class="col" v-for="tea in listTea.slice(0, moreTea)" :key="tea.SKU">
+          <CardProduct :url="`/product-detail/${ tea.id }`"  :image="tea.image" :title="tea.name" :price="tea.price" />
         </div>
       </div>
       <div class="more-product" v-if="moreTea != 10" @click="moreTea = 10">
@@ -54,7 +54,7 @@
       <h3>BEST SELLERS - TRÀ SỮA ĐẬM VỊ</h3>
       <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
         <div class="col" v-for="(teaMilk) in listMilkTea.slice(0, moreMilkTea)" :key="teaMilk.SKU">
-          <CardProduct :url="'#'" :image="teaMilk.image" :title="teaMilk.name" :price="teaMilk.price"/>
+          <CardProduct :url="`/product-detail/${ teaMilk.id }`" :image="teaMilk.image" :title="teaMilk.name" :price="teaMilk.price"/>
         </div>
       </div>
       <div class="more-product" v-if="moreMilkTea != 10" @click="moreMilkTea = 10">
@@ -174,6 +174,7 @@
         </div>
       </div>
     </section>
+    <ButtonShoppingCard />
   </main>
 </template>
 
@@ -184,6 +185,7 @@ import StoreAddress from '../components/StoreAddress.vue';
 import axios from 'axios';
 import { ref, onMounted, watch } from 'vue'
 import { fetchData } from '../utils/apiUtils';
+import ButtonShoppingCard from '../components/ButtonShoppingCard.vue';
 
 const products = ref([]);
 const sales = ref([]);

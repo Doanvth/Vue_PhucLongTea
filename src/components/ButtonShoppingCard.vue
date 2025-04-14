@@ -4,7 +4,7 @@
             <RouterLink :to="checkoutPath" class="btn btn-success rounded-circle cart-custom position-relative">
                 <i class="bi bi-cart-plus fs-4"></i>
                 <span class="position-absolute translate-middle badge rounded-circle bg-danger badge-custom">
-                    {{ cartQuantity == 0 ? "" : cartQuantity}} 
+                    {{ cartQuantity == 0 ? '' : cartQuantity}} 
                     
                 </span>
             </RouterLink>
@@ -24,7 +24,7 @@ const cartQuantity = defineModel('cartQuantity');
 
 // lấy userId từ LocalStorage
 onMounted(async() => {
-    user.value = JSON.parse(sessionStorage.getItem('user')) || null;
+    user.value = sessionStorage.getItem('user');
     // user.value = { id: "bd13", name: "Test User" };
     await restoreCartQuantity();
 });
@@ -35,7 +35,7 @@ const restoreCartQuantity = async () => {
 
     try {
         const response = await axios.get('http://localhost:3000/orders');
-        let userOrders = response.data.filter(order => order.userId === user.value.id && order.status === "pending");
+        let userOrders = response.data.filter(order => order.userId === user.value && order.status === "pending");
 
         cartQuantity.value = userOrders.reduce((total, order) => total + order.cartItems.length, 0);
     } catch (error) {
@@ -45,11 +45,11 @@ const restoreCartQuantity = async () => {
 
 // Điều hướng dựa trên trạng thái đăng nhập
 const checkoutPath = computed(() => {
-    let storedUser = JSON.parse(sessionStorage.getItem('user'));
+    let storedUser = sessionStorage.getItem('user');
     // let storedUser = ref({});
     // storedUser.id = "bd13";
-    // return storedUser ? `/account/shopping-card?userId=${storedUser.id}` : '/login';
-    return storedUser ? `/account/shopping-card` : '/login';
+    return storedUser ? `/account/shopping-card?userId=${storedUser}` : '/auth/login';
+    // return storedUser ? `/account/shopping-card` : '/auth/login';
 });
 
 </script>

@@ -18,7 +18,7 @@
                                         class="list-group-item d-flex justify-content-between align-items-start p-0 gap-3 py-3">
                                         <div class="col-auto">
                                             <div class="card card-product bg-secondary-subtle border-0">
-                                                <img src="" alt="">
+                                                <img :src="item.image" alt="">
                                             </div>
                                         </div>
                                         <div class="col">
@@ -425,7 +425,7 @@ const fetchOrders = async () => {
         const response = await axios.get('http://localhost:3000/orders');
 
         // Lọc đơn hàng của user đăng nhập 
-        orders.value = response.data.filter(order => order.userId === "bd13" && order.status === "pending");
+        orders.value = response.data.filter(order => order.userId === user && order.status === "pending");
 
     } catch (error) {
         console.error("Lỗi khi tải đơn hàng:", error);
@@ -489,7 +489,7 @@ const deleteItemById = async () => {
 
 const Payment = async () => {
     try {
-        const pendingOrders = orders.value.filter(order => order.userId === user.value && order.status === "pending");
+        const pendingOrders = orders.value.filter(order => order.userId === user && order.status === "pending");
 
         for (let order of pendingOrders) {
             const updatedOrder = {

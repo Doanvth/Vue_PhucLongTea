@@ -116,7 +116,7 @@ const register = async () =>{
     try {
         delete user.confirmPass;
         await axios.post('http://localhost:3000/users',user);
-        router.push('/');
+        router.push('/auth/login');
     } catch (error) {
         console.log(error);
     }

@@ -132,9 +132,10 @@
                         </div>
                     </div>
                     <div class="user-icon">
-                        <RouterLink to="/auth/login" class="text-success">
+                        <RouterLink :to="user == null  ? '/auth/login' : '/account/info'" class="text-success">
                             <i class="bi bi-person-circle fs-4"></i>
                         </RouterLink>
+                        
                     </div>
                 </div>
             </div>
@@ -143,7 +144,12 @@
 </template>
 
 <script setup>
-import { RouterView , RouterLink} from 'vue-router';
+import { RouterView , RouterLink, } from 'vue-router';
+import { ref } from 'vue';
+const user = ref(null);
+const session = sessionStorage.getItem('user'); 
+user.value = sessionStorage.getItem('user') 
+console.log(user.value);
 </script>
 
 <style scoped>

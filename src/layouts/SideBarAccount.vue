@@ -51,10 +51,10 @@
                     </RouterLink>
                 </li>
                 <li class="list-group-item gap-3">
-                    <RouterLink to="" class="text-decoration-none text-black">
+                    <a @click="logout"  class="text-decoration-none text-black btn p-0">
                         <img :src="ImgLogout" alt="">
                         <span class="ms-2">Đăng xuất</span>
-                    </RouterLink>
+                    </a>
                 </li>
             </ol>
         </div>
@@ -62,7 +62,7 @@
 </template>
 
 <script setup>
-import { RouterLink, useRoute } from 'vue-router';
+import { RouterLink, useRoute, useRouter } from 'vue-router';
 import ImgAccount from '../assets/images/account.png'
 import ImgAddress from '../assets/images/address.png'
 import ImgPromotion from '../assets/images/promotion.png'
@@ -72,9 +72,14 @@ import ImgOrder from '../assets/images/order.png'
 import ImgSupport from '../assets/images/support.png'
 import ImgLogout from '../assets/images/logout.png'
 
+const router = useRouter();
 const route = useRoute();
 
 const isActive = (path) => route.path === path;
+const logout = () =>{
+    sessionStorage.clear();
+    router.push('/');
+}
 </script>
 
 <style scoped>

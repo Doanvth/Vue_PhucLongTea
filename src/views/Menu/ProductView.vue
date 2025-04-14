@@ -12,10 +12,10 @@
             <p class="text-success fw-bold m-0">{{ formatPrice(item.price) }}</p>
           </div>
           <div class="card-button d-flex justify-content-center mb-3">
-            <button class="btn btn-success w-75 fw-semibold">
+            <RouterLink :to="`/product-detail/${item.id}`"  class="btn btn-success w-75 fw-semibold">
               <i class="bi bi-cart-plus"></i>
               Đặt mua
-            </button>
+            </RouterLink>
           </div>
         </div>
       </div>
