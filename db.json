@@ -1,3 +1,98 @@
 {
-    "users": []
+    "menu" : {
+      "title": "Menu",
+      "child": [
+        {
+          "title": "Thức uống",
+          "child": [
+            {
+              "title": "Bst mới tea latte"
+            },
+            {
+              "title": "Best seller"
+            },
+            {
+              "title": "Trà trái cây"
+            },
+            {
+              "title": "Trà sữa"
+            },
+            {
+              "title": "Kem silky"
+            },
+            {
+              "title": "Cà phê"
+            },
+            {
+              "title": "Đá xay"
+            },
+            {
+              "title": "Trà nguyên bản"
+            }
+          ]
+        },
+        {
+          "title": "Bánh",
+          "child": [
+            {
+              "title": "Bánh lạnh"
+            },
+            {
+              "title": "Bánh cookies - croissant"
+            },
+            {
+              "title": "Bánh mì"
+            }
+          ]
+        }
+      ]
+    },
+    "san-pham-dong-goi" :{
+      "title": "Sản phẩm đóng gói",
+      "child": [
+        {
+          "title": "Trà",
+          "child": [
+            {
+              "title": "Trà hộp giấy"
+            },
+            {
+              "title": "Trà gói cao cấp"
+            },
+            {
+              "title": "Trà túi lọc"
+            },
+            {
+              "title": "Trà túi tam giác"
+            },
+            {
+              "title": "Trà lài"
+            },
+            {
+              "title": "Trà xanh"
+            },
+            {
+              "title": "Trà sen"
+            },
+            {
+              "title": "Trà đen"
+            }
+          ]
+        },
+        {
+          "title": "Bánh",
+          "child": [
+            {
+              "title": "Cà phê hạt không bơ"
+            },
+            {
+              "title": "Bánh cookies - croissant"
+            },
+            {
+              "title": "Bánh mì"
+            }
+          ]
+        }
+      ]
+    }
 }
