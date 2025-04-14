@@ -26,24 +26,18 @@ import ListProductView from "../views/AdminView/Product/ListProductView.vue";
 import CreateProductView from "../views/AdminView/Product/CreateProductView.vue";
 import EditProductView from "../views/AdminView/Product/EditProductView.vue";
 import ProductLayoutView from "../views/AdminView/Product/ProductLayoutView.vue";
-import LayoutAdminView from "../views/AdminView/LayoutAdminView.vue";
-
 import Auth from "../views/AuthView.vue"
 import LoginView from "../layouts/Auth/LoginView.vue";
 import PasswordView from "../layouts/Auth/PasswordView.vue"
 import RegisterView from "../layouts/Auth/RegisterView.vue"
 import ForgotPassword from "../layouts/Auth/ForgotPassword.vue";
 import OtpView from "../layouts/Auth/OtpView.vue";
+
 const routes = [
-  {
-    path: "/",
-    component: App,
-    children: [
-      { path: "", name: "home", component: HomeView },
-      { path: 'product-detail', name: 'product-detail', component: ProductDetailView },
-      { path: 'product-pack-detail', name: 'product-pack-detail', component: ProductPackDetailView },
-    ],
-  },
+
+  { path: '/product-detail/:id', name: 'product-detail', component: ProductDetailView },
+  { path: '/product-pack-detail', name: 'product-pack-detail', component: ProductPackDetailView },
+  { path: "/", name: "home", component: HomeView },
   {
     path: "/account",
     component: LayoutAccount,
@@ -63,15 +57,16 @@ const routes = [
   {
     path: "/admin",
     component: LayoutAdmin,
-    meta: { requiresAdmin: true }, // Chỉ admin mới vào được
+    meta: { requiresAdmin: true, hideLayout: true }, // Chỉ admin mới vào được
     children: [
-      // { path: "dashboard", name: "dashboard", component: AdminDashboardView },
       {
         path: 'product',
+        component: ProductLayoutView,
+        redirect: "/admin/product/list",
         children: [
-          // { path: 'list', name: 'list', component: Table },
-          { path: 'insert', name: 'insert', component: InsertProductView },
-          // { path: 'update/:id', name: 'update', component: Update },
+          { path: 'list', name: 'list', component:ListProductView },
+          { path: 'create', name: 'insert', component: CreateProductView },
+          { path: 'edit/:id', name: 'edit', component: EditProductView },
         ],
       },
       { path: "user-management", name: "user-management", component: UserManagementView },
@@ -104,28 +99,10 @@ const routes = [
       }
     ]
   },
-
-  {
-    path: "/admin",
-    component: LayoutAdminView,
-    meta: { requiresAdmin: true }, 
-    children: [
-      // { path: "dashboard", name: "dashboard", component: AdminDashboardView },
-      {
-        path: 'product',
-        component: ProductLayoutView,
-        redirect: "/product/list",
-        children: [
-          { path: 'list', name: 'list', component:ListProductView },
-          { path: 'create', name: 'insert', component: CreateProductView },
-          { path: 'edit/:id', name: 'edit', component: EditProductView },
-        ],
-      }
-    ],
-  },
   {
       path: "/auth",
       component: Auth,
+      meta: { hideLayout: true },
       children: [
         { path: "login", name: "login", component: LoginView },
         { path: "password", name: "password", component:  PasswordView},

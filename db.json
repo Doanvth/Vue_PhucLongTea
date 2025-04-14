@@ -46,7 +46,7 @@
       "ward": "Bình Thủy",
       "address": "789 Đường LMN",
       "role": "user",
-      "isActive": false
+      "isActive": true
     },
     {
       "id": "bd03",
@@ -326,6 +326,22 @@
           "totalPrice": 195000
         }
       ]
+    },
+    {
+      "id": "ORDER1744605097292",
+      "userId": 1,
+      "createdAt": "2025-04-14T04:31:37.293Z",
+      "status": "pending",
+      "cartItems": [
+        {
+          "quantity": 1,
+          "size": "Size L",
+          "tea": "Bình thường",
+          "sugar": "Bình thường",
+          "ice": "Bình thường",
+          "totalPrice": null
+        }
+      ]
     }
   ],
   "category": [
@@ -427,7 +443,7 @@
         }
       ],
       "option": {
-        "tea": true,
+        "tea": false,
         "sugar": true,
         "ice": true
       },
@@ -1732,7 +1748,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà.<br> - Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "5e44"
     },
@@ -1750,7 +1766,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br> Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "5bbe"
     },
@@ -1768,7 +1784,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> - Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br> Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "dff9"
     },
@@ -1840,7 +1856,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Cho túi trà 2g vào bình hoặc chai chứa 350ml nước tinh khiết và đặt bình vào ngăn mát tủ lạnh khoảng 10-12 tiếng là có thể thưởng thức. \\n- Ngoài ra, có thể biến tấu hương vị trà ủ lạnh phù hợp khẩu vị bằng cách thêm vào những nguyên liệu quen thuộc như mật ong, chanh, gừng hay quế. \\n- Chai thủy tinh được khuyến khích sử dụng trong quá trình ủ lạnh để phản ánh trung thực vị trà, chất trà mềm mượt trọn vị, đồng thời thành phẩm không bị pha tạp mùi vị từ những chất liệu khác mang lại."
+        "cach_pha_tra": "- Cho túi trà 2g vào bình hoặc chai chứa 350ml nước tinh khiết và đặt bình vào ngăn mát tủ lạnh khoảng 10-12 tiếng là có thể thưởng thức. <br> Ngoài ra, có thể biến tấu hương vị trà ủ lạnh phù hợp khẩu vị bằng cách thêm vào những nguyên liệu quen thuộc như mật ong, chanh, gừng hay quế. <br> Chai thủy tinh được khuyến khích sử dụng trong quá trình ủ lạnh để phản ánh trung thực vị trà, chất trà mềm mượt trọn vị, đồng thời thành phẩm không bị pha tạp mùi vị từ những chất liệu khác mang lại."
       },
       "id": "e43f"
     },
@@ -1907,12 +1923,12 @@
       "description": "",
       "product_information": {
         "quy_cach": "2g x 12 gói",
-        "mo_ta": "Trà Ô Long ủ lạnh được chế biến độc đáo với công thức lên men bán tự nhiên. Sau khi thu hoạch theo nguyên lý “một búp ba lá”, trà được ủ lên men, khi thấy màu lá chuyển sang ba phần đỏ, bảy phần đen, là thời điểm trà được sao ủ tốt nhất để có được mùi vị thơm ngon nhất. \\n Hương dịu nhẹ tự nhiên - Vị đắng đậm, hậu ngọt mát - Sắc nước vàng sánh trong xanh"
+        "mo_ta": "Trà Ô Long ủ lạnh được chế biến độc đáo với công thức lên men bán tự nhiên. Sau khi thu hoạch theo nguyên lý “một búp ba lá”, trà được ủ lên men, khi thấy màu lá chuyển sang ba phần đỏ, bảy phần đen, là thời điểm trà được sao ủ tốt nhất để có được mùi vị thơm ngon nhất. <br> Hương dịu nhẹ tự nhiên - Vị đắng đậm, hậu ngọt mát - Sắc nước vàng sánh trong xanh"
       },
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Cho túi trà 2g vào bình hoặc chai chứa 350ml nước tinh khiết và đặt bình vào ngăn mát tủ lạnh khoảng 10-12 tiếng là có thể thưởng thức. \\n- Ngoài ra, có thể biến tấu hương vị trà ủ lạnh phù hợp khẩu vị bằng cách thêm vào những nguyên liệu quen thuộc như mật ong, chanh, gừng hay quế. \\n- Chai thủy tinh được khuyến khích sử dụng trong quá trình ủ lạnh để phản ánh trung thực vị trà, chất trà mềm mượt trọn vị, đồng thời thành phẩm không bị pha tạp mùi vị từ những chất liệu khác mang lại."
+        "cach_pha_tra": "- Cho túi trà 2g vào bình hoặc chai chứa 350ml nước tinh khiết và đặt bình vào ngăn mát tủ lạnh khoảng 10-12 tiếng là có thể thưởng thức. <br> Ngoài ra, có thể biến tấu hương vị trà ủ lạnh phù hợp khẩu vị bằng cách thêm vào những nguyên liệu quen thuộc như mật ong, chanh, gừng hay quế. <br> Chai thủy tinh được khuyến khích sử dụng trong quá trình ủ lạnh để phản ánh trung thực vị trà, chất trà mềm mượt trọn vị, đồng thời thành phẩm không bị pha tạp mùi vị từ những chất liệu khác mang lại."
       },
       "id": "7e41"
     },
@@ -1948,7 +1964,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br> Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "086e"
     },
@@ -1966,7 +1982,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br> Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "bb7a"
     },
@@ -1984,7 +2000,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br> Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "1c41"
     },
@@ -2002,7 +2018,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br> Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "a9f4"
     },
@@ -2020,7 +2036,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br> Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "f447"
     },
@@ -2038,7 +2054,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br> Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "277b"
     },
@@ -2056,7 +2072,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng \\n- Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. \\n- Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
+        "cach_pha_tra": "- Tráng ấm trà và tách trà bằng nước nóng <br> Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br> Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long"
       },
       "id": "877c"
     },
@@ -2074,7 +2090,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "59d9"
     },
@@ -2092,7 +2108,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "b39e"
     },
@@ -2110,7 +2126,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "823e"
     },
@@ -2128,7 +2144,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "1b26"
     },
@@ -2146,7 +2162,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "2022"
     },
@@ -2164,7 +2180,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "0a7c"
     },
@@ -2182,7 +2198,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "765c"
     },
@@ -2200,7 +2216,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "bbcb"
     },
@@ -2218,7 +2234,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "5615"
     },
@@ -2236,7 +2252,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "71ff"
     },
@@ -2254,7 +2270,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "b7a8"
     },
@@ -2272,7 +2288,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "08d0"
     },
@@ -2290,7 +2306,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "dd6f"
     },
@@ -2308,7 +2324,7 @@
       "instructions": {
         "bao_quan": "Nơi khô thoáng",
         "han_su_dung": "Xem trên bao bì",
-        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. \\n - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. \\n - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. \\n- Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. \\n- Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
+        "cach_pha_tra": "- Tráng phin và tách bằng nước nóng. <br> - Cho 3 - 4 muỗng cà phê (khoảng 15 - 20g) vào phin. Lắc nhẹ phin cho mặt cà phê bằng phẳng. Đậy lưới chèn cà phê, nhấn nhẹ. <br> - Đổ khoảng 25ml nước sôi vào phin cho cà phê ngấm đều. <br> Cho thêm khoảng 45ml nước sôi vào phin, đậy nắp phin. Khoảng 5 phút là có thể dùng được. <br> Có thể dùng chung với sữa hoặc đường tùy theo khẩu vị."
       },
       "id": "e362"
     },

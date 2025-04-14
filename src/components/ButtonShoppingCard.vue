@@ -24,14 +24,14 @@ const cartQuantity = defineModel('cartQuantity');
 
 // lấy userId từ LocalStorage
 onMounted(async() => {
-    // user.value = JSON.parse(localStorage.getItem('user')) || null;
-    user.value = { id: "bd13", name: "Test User" };
+    user.value = JSON.parse(sessionStorage.getItem('user')) || null;
+    // user.value = { id: "bd13", name: "Test User" };
     await restoreCartQuantity();
 });
 
 // Lấy số loại sản phẩm "pending" từ JSON dựa vào userId
 const restoreCartQuantity = async () => {
-    // if (!user.value) return; 
+    if (!user.value) return; 
 
     try {
         const response = await axios.get('http://localhost:3000/orders');
@@ -45,9 +45,9 @@ const restoreCartQuantity = async () => {
 
 // Điều hướng dựa trên trạng thái đăng nhập
 const checkoutPath = computed(() => {
-    // let storedUser = JSON.parse(localStorage.getItem('user'));
-    let storedUser = ref({});
-    storedUser.id = "bd13";
+    let storedUser = JSON.parse(sessionStorage.getItem('user'));
+    // let storedUser = ref({});
+    // storedUser.id = "bd13";
     // return storedUser ? `/account/shopping-card?userId=${storedUser.id}` : '/login';
     return storedUser ? `/account/shopping-card` : '/login';
 });

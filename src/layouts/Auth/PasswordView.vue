@@ -79,6 +79,12 @@ const login = async() =>{
     if(!isValid){
         return;
     }
+    sessionStorage.setItem('user', user.id)
+
+    if(user.role == 'admin') {
+        router.push('/admin/user-management');
+        return;
+    }
     router.push('/');
 }
 const fetchUsers = async () => {

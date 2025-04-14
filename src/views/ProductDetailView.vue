@@ -5,111 +5,114 @@
             <div class="row g-4">
                 <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
                     <div class="card card-product-detail bg-secondary-subtle border-0 rounded-4">
-                        <img :src="ImgTraDau" alt="">
+                        <img :src="form.image" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-5">
-                    <h4 class="text-success">Trà Ô Long Dâu (<span>L</span>)</h4>
-                    <div>SKU: 65000107</div>
-                    <div class="badge text-bg-danger text-uppercase">MỚI - BST TEARAMISU</div>
+                    <h4 class="text-success">{{ form.name }}</h4>
+                    <div>SKU: {{ form.SKU }} </div>
+                    <div class="badge text-bg-danger text-uppercase">{{ form.description }}</div>
                     <div class="d-flex justify-content-between mt-3">
-                        <h4 class="text-success">65.000 đ</h4>
+                        <h4 class="text-success">{{ formatCurrency(form.price) }}</h4>
                         <QuantityButton :quantity="quantity" @updateQuantity="quantity = $event" />
                     </div>
-                    <div class="row mb-3">
+                    <div v-if="hasSize" class="row mb-3">
                         <div class="col-12 mb-2">
                             <div class="text-success mb-2 fw-bold">Chọn kích cỡ</div>
                             <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off" value="Size M">
-                                <label class="btn btn-outline-success rounded-2 p-0" for="sizeM">
-                                    <div class="border-bottom py-2 px-4">Size M</div>
-                                    <div class="border-top">-10.000 đ</div>
-                                </label>
+                               <div v-for="size in form.size">
+                                   <input type="radio" class="btn-check" name="size" id="sizeM" autocomplete="off" value="Size M">
+                                   <label class="btn btn-outline-success rounded-2 p-0" for="sizeM">
+                                       <div class="border-bottom py-2 px-4">Size {{ size.label }}</div>
+                                       <div class="border-top">{{ formatCurrency(size.adjusted_price) }}</div>
+                                   </label>
 
-                                <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off" value="Size L" checked>
+                               </div>
+
+                
+
+                                <!-- <input type="radio" class="btn-check" name="size" id="sizeL" autocomplete="off" value="Size L" checked>
                                 <label class="btn btn-outline-success rounded-2 p-0" for="sizeL">
                                     <div class="border-bottom py-2 px-4">Size L</div>
                                     <div class="border-top">0 đ</div>
-                                </label>
+                                </label> -->
                             </div>
                         </div>
-                        <div class="col-12 mb-2">
-                            <div class="text-success mb-2 fw-bold">Trà</div>
-                            <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="tra" id="tra-it" autocomplete="off" 
-                                    value="Trà: Ít">
-                                <label class="btn btn-outline-success rounded-2" for="tra-it">Ít</label>
-
-                                <input type="radio" class="btn-check" name="tra" id="tra-binhthuong"
-                                    value="Trà: Bình Thường" autocomplete="off" checked>
-                                <label class="btn btn-outline-success rounded-2" for="tra-binhthuong">Bình
-                                    thường</label>
-
-                                <input type="radio" class="btn-check" name="tra" id="tra-nhieu" autocomplete="off"
-                                    value="Trà: Nhiều">
-                                <label class="btn btn-outline-success rounded-2" for="tra-nhieu">Nhiều</label>
+                        <div v-if="hasOption">
+                            <div v-if="form.option.tea" class="col-12 mb-2">
+                                <div class="text-success mb-2 fw-bold">Trà</div>
+                                <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="tra" id="tra-it" autocomplete="off" 
+                                        value="Trà: Ít">
+                                    <label class="btn btn-outline-success rounded-2" for="tra-it">Ít</label>
+    
+                                    <input type="radio" class="btn-check" name="tra" id="tra-binhthuong"
+                                        value="Trà: Bình Thường" autocomplete="off" checked>
+                                    <label class="btn btn-outline-success rounded-2" for="tra-binhthuong">Bình
+                                        thường</label>
+    
+                                    <input type="radio" class="btn-check" name="tra" id="tra-nhieu" autocomplete="off"
+                                        value="Trà: Nhiều">
+                                    <label class="btn btn-outline-success rounded-2" for="tra-nhieu">Nhiều</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 mb-2">
-                            <div class="text-success mb-2 fw-bold">Ngọt</div>
-                            <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="ngot" id="ngot-it" autocomplete="off"
-                                    value="Ngọt: Ít">
-                                <label class="btn btn-outline-success rounded-2" for="ngot-it">Ít</label>
-
-                                <input type="radio" class="btn-check" name="ngot" id="ngot-binhthuong"
-                                    autocomplete="off" value="Ngọt: Bình Thường" checked>
-                                <label class="btn btn-outline-success rounded-2" for="ngot-binhthuong">Bình
-                                    thường</label>
-
-                                <input type="radio" class="btn-check" name="ngot" id="ngot-nhieu" autocomplete="off"
-                                    value="Ngọt: Nhiều">
-                                <label class="btn btn-outline-success rounded-2" for="ngot-nhieu">Nhiều</label>
+                            <div v-if="form.option.sugar" class="col-12 mb-2">
+                                <div class="text-success mb-2 fw-bold">Ngọt</div>
+                                <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="ngot" id="ngot-it" autocomplete="off"
+                                        value="Ngọt: Ít">
+                                    <label class="btn btn-outline-success rounded-2" for="ngot-it">Ít</label>
+    
+                                    <input type="radio" class="btn-check" name="ngot" id="ngot-binhthuong"
+                                        autocomplete="off" value="Ngọt: Bình Thường" checked>
+                                    <label class="btn btn-outline-success rounded-2" for="ngot-binhthuong">Bình
+                                        thường</label>
+    
+                                    <input type="radio" class="btn-check" name="ngot" id="ngot-nhieu" autocomplete="off"
+                                        value="Ngọt: Nhiều">
+                                    <label class="btn btn-outline-success rounded-2" for="ngot-nhieu">Nhiều</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 mb-2">
-                            <div class="text-success mb-2 fw-bold">Đá</div>
-                            <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
-                                <input type="radio" class="btn-check" name="da" id="da-it" autocomplete="off"
-                                    value="Đá: Ít">
-                                <label class="btn btn-outline-success rounded-2" for="da-it">Ít</label>
-
-                                <input type="radio" class="btn-check" name="da" id="da-binhthuong" autocomplete="off"
-                                    value="Đá: Bình Thường" checked>
-                                <label class="btn btn-outline-success rounded-2" for="da-binhthuong">Bình thường</label>
-
-                                <input type="radio" class="btn-check" name="da" id="da-nhieu" autocomplete="off"
-                                    value="Đá; Nhiều">
-                                <label class="btn btn-outline-success rounded-2" for="da-nhieu">Nhiều</label>
+                            <div v-if="form.option.ice" class="col-12 mb-2">
+                                <div class="text-success mb-2 fw-bold">Đá</div>
+                                <div class="btn-group gap-3" role="group" aria-label="Basic radio toggle button group">
+                                    <input type="radio" class="btn-check" name="da" id="da-it" autocomplete="off"
+                                        value="Đá: Ít">
+                                    <label class="btn btn-outline-success rounded-2" for="da-it">Ít</label>
+    
+                                    <input type="radio" class="btn-check" name="da" id="da-binhthuong" autocomplete="off"
+                                        value="Đá: Bình Thường" checked>
+                                    <label class="btn btn-outline-success rounded-2" for="da-binhthuong">Bình thường</label>
+    
+                                    <input type="radio" class="btn-check" name="da" id="da-nhieu" autocomplete="off"
+                                        value="Đá; Nhiều">
+                                    <label class="btn btn-outline-success rounded-2" for="da-nhieu">Nhiều</label>
+                                </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center mb-3">
+                    <div class="d-flex justify-content-center my-3">
                         <button class="btn btn-success px-5" @click="addToCart"><i class="bi bi-cart-plus-fill me-2"></i>Thêm vào giỏ hàng:
-                            <span>{{ formatCurrency(65000 * quantity) }}</span></button>
+                            <span>{{ formatCurrency(form.price * quantity) }}</span></button>
                     </div>
-                    <div class="d-none">
-                        <div class="infomation mb-3">
+                    <div >
+                        <div v-if="hasProductInfo" class="infomation mb-3">
                             <h3 class="text-success">Thông tin sản phẩm</h3>
                             <div class="">
-                                - Quy cách: 150 g <br>
-                                - Mô tả: Trà lài là sự kết hợp hoàn hảo giữa lá trà xanh chất lượng cao và hoa lài.
-                                Trà được lên men và pha trộn với hoa lài,
-                                quá trình này được lặp lại nhiều lần giúp cho trà có mùi thơm tự nhiên của hoa lài,
-                                trà lài khi pha có màu vàng đẹp,
-                                vị ngọt của hoa lài và vị đắng nhẹ của trà tạo nên cảm giác khoan khoái và thư giãn cho
-                                người dùng.
+                                <p>Quy cách: {{ form.product_information.quy_cach }}</p>
+                                <div> 
+                                    Mô tả:
+                                    {{ form.product_information.mo_ta }}
+                                </div>
                             </div>
                         </div>
-                        <div class="mb-3">
+                        <div v-if="hasInstructions" class="mb-3">
                             <h3 class="text-success">Hướng dẫn sử dụng</h3>
                             <div class="">
-                                - Bảo quản: Nơi khô thoáng <br>
-                                - Hạn sử dụng: Xem trên bao bì <br>
-                                - Cách pha trà: <br>
-                                + Tráng ấm trà và tách trà bằng nước nóng <br>
-                                + Dùng 100ml nước sôi rót vào ấm trà cùng với 5g trà. <br>
-                                + Đợi khoảng 2 - 3 phút là có thể dùng được với hương vị tự nhiên của trà Phúc Long <br>
+                                <p>Bảo quản: {{ form.instructions.bao_quan }}</p>
+                                <p>Hạn sử dụng: {{ form.instructions.han_su_dung }}</p>
+                                <p>Cách pha trà: <br>  <p v-html="form.instructions.cach_pha_tra"></p></p>
                             </div>
                         </div>
                     </div>
@@ -128,28 +131,95 @@ import QuantityButton from '../components/QuantityButton.vue';
 import ButtonShoppingCard from '../components/ButtonShoppingCard.vue';
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
+import { useRoute, useRouter } from 'vue-router'
 
 const quantity = ref(1);
 const cartQuantity = ref(0); 
 const user = ref(null);
+const form = ref({
+    SKU: '',
+    image: '',
+    name: '',
+    price: null,
+    category: '',
+    description: '',
+    size: [],
+    option: {
+        tea: false,
+        sugar: false,
+        ice: false
+    },
+    product_information: {
+        quy_cach: '',
+        mo_ta: ''
+    },
+    instructions: {
+        bao_quan: '',
+        han_su_dung: '',
+        cach_pha_tra: ''
+    }
+})
+
+const hasSize = ref(true)
+const hasOption = ref(true)
+const hasProductInfo = ref(false)
+const hasInstructions = ref(false)
+const categories = ref([])
+const route = useRoute()
+const router = useRouter()
+
+const fetchProduct = async () => {
+    try {
+        const res = await axios.get(`http://localhost:3000/products/${route.params.id}`)
+        const product = res.data
+
+        form.value = {
+            ...form.value,
+            ...product,
+            option: product.option || { tea: false, sugar: false, ice: false },
+            size: product.size || [],
+            product_information: product.product_information || {
+                quy_cach: '',
+                mo_ta: ''
+            },
+            instructions: product.instructions || {
+                bao_quan: '',
+                han_su_dung: '',
+                cach_pha_tra: ''
+            }
+        }
+
+        console.log(form.value)
+
+        hasOption.value = !!(product.option && Object.keys(product.option).length > 0)
+        hasSize.value = !!(product.size && product.size.length > 0)
+        hasProductInfo.value = !!(product.product_information && Object.keys(product.product_information).length > 0)
+        hasInstructions.value = !!(product.instructions && Object.keys(product.instructions).length > 0)
+
+    } catch (error) {
+        console.error('Lỗi khi lấy chi tiết sản phẩm:', error)
+    }
+}
+
+onMounted(fetchProduct)
 
 const formatCurrency = (value) => {
     return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(value);
 };
 
-// const checkLogin = () => {
-//     user.value = JSON.parse(localStorage.getItem('user'));
-//     if (!user.value) {
-//         alert("Vui lòng đăng nhập!");
-//         window.location.href = "/login";
-//         return false;
-//     }
-//     return true;
-// };
+const checkLogin = () => {
+    user.value = JSON.parse(sessionStorage.getItem('user'));
+    if (!user.value) {
+        alert("Vui lòng đăng nhập!");
+        window.location.href = "/auth/login";
+        return false;
+    }
+    return true;
+};
 
 
 const addToCart = async () => {
-   // if (!checkLogin()) return;
+   if (!checkLogin()) return;
 
     const sizeElement = document.querySelector('input[name="size"]:checked');
     const teaElement = document.querySelector('input[name="tra"]:checked');
@@ -157,28 +227,29 @@ const addToCart = async () => {
     const iceElement = document.querySelector('input[name="da"]:checked');
 
     const newItem = { 
-        id: crypto.randomUUID(), 
-        name: "Trà Ô Long Dâu (L)", 
-        price: 65000,
+        id: form.id, 
+        name: form.name, 
+        price: form.price,
         quantity: quantity.value,
         size: sizeElement?.closest('.d-none') ? "" : sizeElement?.value || "Size L",
         tea: teaElement?.closest('.d-none') ? "" : teaElement?.value || "Bình thường",
         sugar: sugarElement?.closest('.d-none') ? "" : sugarElement?.value || "Bình thường",
         ice: iceElement?.closest('.d-none') ? "" : iceElement?.value || "Bình thường",
-        totalPrice: quantity.value * 65000
+        totalPrice: quantity.value * form.price
     };
 
     try {
         const response = await axios.get('http://localhost:3000/orders');
         let existingOrders = response.data;
-        // let userOrder = existingOrders.find(order => order.userId === user.value.id && order.status === "pending");
-        let userOrder = existingOrders.find(order => order.userId === "bd13" && order.status === "pending");
+        let userOrder = existingOrders.find(order => order.userId === user.value && order.status === "pending");
+        // let userOrder = existingOrders.find(order => order.userId === "bd13" && order.status === "pending");
 
         if (!userOrder|| userOrder.status !== 'pending') {
             // Nếu chưa có đơn hàng nào của user, tạo mới đơn hàng
             userOrder = {
                 id: `ORDER${Date.now()}`,
-                userId: "bd13",
+                userId: user.value,
+                image: form.image,
                 createdAt: new Date().toISOString(),
                 status: "pending",
                 cartItems: [newItem]

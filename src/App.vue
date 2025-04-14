@@ -1,6 +1,6 @@
-<template>
+<!-- <template>
     <RouterView/>
-</template>
+</template> -->
 
 <script setup>
 import { RouterView } from 'vue-router';
@@ -15,16 +15,13 @@ import CreateProductView from './views/AdminView/Product/CreateProductView.vue'
 
 <template>
     <div  style="background-color: var(--primary-gray);">
-        <HeaderView/>
-        <NavBarView/>
+        <HeaderView v-if="!$route.meta.hideLayout"/>
+        <NavBarView v-if="!$route.meta.hideLayout"/>
     </div>
-    <div class="container my-3">
+    <div>
         <RouterView/>
-
-        <!-- <CreateProductView/> -->
-
     </div>
-    <FooterView/>
+    <FooterView v-if="!$route.meta.hideLayout" />
 </template>
 
 <style scoped>

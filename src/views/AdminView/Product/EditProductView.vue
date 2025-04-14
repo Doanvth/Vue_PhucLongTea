@@ -125,7 +125,7 @@
             </div>
 
             <div class="col-12 d-flex justify-content-end gap-3">
-                <button class="btn btn-secondary" type="button" @click="goBack">Quay lại</button>
+                <RouterLink to="/admin/product/list" class="btn btn-secondary">Quay lại</RouterLink>
                 <button class="btn btn-primary" type="submit">Lưu thay đổi</button>
             </div>
         </form>
@@ -137,6 +137,7 @@ import { ref, onMounted, computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import axios from 'axios'
 import useVuelidate from '@vuelidate/core'
+import { RouterLink } from 'vue-router';
 import { required, minLength, numeric, url } from '@vuelidate/validators'
 
 const form = ref({

@@ -1,35 +1,37 @@
 <template>
-  <div class="d-flex gap-1">
-      <RouterLink to="/" class="fw-semibold d-block mb-2">Trang chủ</RouterLink>
-      <span>/</span>
-      <RouterLink class="fw-semibold d-block mb-2">Sản phẩm</RouterLink>
-  </div>
-  <div class="row">
-    <div class="col-lg-2 sidebar mt-2">
-      <div>
-        <a class="menu-title fw-semibold  mb-2 d-block cursor-pointer" @click="toggleMenu(0)">Thức uống</a>
-        <div v-if="expandedIndex === 0">
-          <ul class="menu-list" v-for="item in categoriesNuocUong ">
-            <li class="menu-item">
-              <RouterLink :to="`/menu/${slugify(item)}`" class="menu-link">{{ item }}</RouterLink>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <a class="menu-title mb-2 fw-semibold  d-block cursor-pointer" @click="toggleMenu(1)">Bánh</a>
-        <div v-if="expandedIndex === 1">
-          <ul class="menu-list" v-for="item in categoriesBanh" >
-            <li class="menu-item">
-              <RouterLink :to="`/menu/${slugify(item)}`" class="menu-link">{{ item }}</RouterLink>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <div class="container my-3">
+    <div class=" d-flex gap-1">
+        <RouterLink to="/" class="fw-semibold d-block mb-2">Trang chủ</RouterLink>
+        <span>/</span>
+        <RouterLink class="fw-semibold d-block mb-2">Sản phẩm</RouterLink>
     </div>
-
-    <div class="col-lg-10 product-list">
-      <RouterView :key="$route.fullPath" />
+    <div class="row">
+      <div class="col-lg-2 sidebar mt-2">
+        <div>
+          <a class="menu-title fw-semibold  mb-2 d-block cursor-pointer" @click="toggleMenu(0)">Thức uống</a>
+          <div v-if="expandedIndex === 0">
+            <ul class="menu-list" v-for="item in categoriesNuocUong ">
+              <li class="menu-item">
+                <RouterLink :to="`/menu/${slugify(item)}`" class="menu-link">{{ item }}</RouterLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <a class="menu-title mb-2 fw-semibold  d-block cursor-pointer" @click="toggleMenu(1)">Bánh</a>
+          <div v-if="expandedIndex === 1">
+            <ul class="menu-list" v-for="item in categoriesBanh" >
+              <li class="menu-item">
+                <RouterLink :to="`/menu/${slugify(item)}`" class="menu-link">{{ item }}</RouterLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-10 product-list">
+        <RouterView :key="$route.fullPath" />
+      </div>
     </div>
   </div>
 </template>

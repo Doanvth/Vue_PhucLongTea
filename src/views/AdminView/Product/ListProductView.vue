@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="m3">
         <div class="py-3 mb-2">
             <div>
                 <RouterLink to="/admin/product/create" class="btn btn-success px-3">

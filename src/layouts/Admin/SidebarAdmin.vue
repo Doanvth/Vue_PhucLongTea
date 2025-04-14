@@ -14,27 +14,6 @@
                         <span>Bảng điều khiển</span>
                     </RouterLink></li>
     
-                <li class="sidebar-item"><RouterLink to="#" class="sidebar-link has-dropdown collapsed"
-                        data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="film"> 
-                        <i class="bi bi-hdd-stack"></i> <span>Menu</span>
-                    </RouterLink>
-                    <ul id="menu" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item"><RouterLink to="" class="sidebar-link">Nước uống</RouterLink>
-                        </li>
-                        <li class="sidebar-item"><RouterLink to="" class="sidebar-link">Các loại bánh</RouterLink></li>
-                    </ul>
-                </li>
-
-                <li class="sidebar-item"><RouterLink to="#" class="sidebar-link has-dropdown collapsed"
-                        data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false" aria-controls="film"> 
-                        <i class="bi bi-box2"></i> <span>Sản phẩm đóng gói</span>
-                    </RouterLink>
-                    <ul id="product" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item"><RouterLink to="" class="sidebar-link">Trà</RouterLink>
-                        </li>
-                        <li class="sidebar-item"><RouterLink to="" class="sidebar-link">Cafe</RouterLink></li>
-                    </ul>
-                </li>
 
                 <li class="sidebar-item">
                     <RouterLink to="/admin/user-management" class="sidebar-link">
@@ -43,9 +22,9 @@
                     </RouterLink>
                 </li>
                 <li class="sidebar-item">
-                    <RouterLink to="" class="sidebar-link">
+                    <RouterLink to="/admin/product" class="sidebar-link">
                         <i class="bi bi-ticket-perforated"></i>
-                        <span>Danh sách đơn hàng</span>
+                        <span>Quản lý sản phẩm</span>
                     </RouterLink>
                 </li>
                 <li class="sidebar-item"><RouterLink to="" class="sidebar-link"> <i

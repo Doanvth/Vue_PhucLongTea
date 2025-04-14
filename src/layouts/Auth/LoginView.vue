@@ -1,5 +1,5 @@
 <template>
-    <div class="login">
+    <div class="login mt-3">
         <div class="logo">
             <img src="/src/assets/images/logo.png" alt="img">
             <router-link to="/"><i class="bi bi-house-door"></i></router-link>

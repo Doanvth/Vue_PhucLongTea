@@ -132,7 +132,9 @@
                         </div>
                     </div>
                     <div class="user-icon">
-                        <i class="bi bi-person-circle fs-4"></i>
+                        <RouterLink to="/auth/login" class="text-success">
+                            <i class="bi bi-person-circle fs-4"></i>
+                        </RouterLink>
                     </div>
                 </div>
             </div>
@@ -141,7 +143,7 @@
 </template>
 
 <script setup>
-
+import { RouterView , RouterLink} from 'vue-router';
 </script>
 
 <style scoped>

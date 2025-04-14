@@ -1,4 +1,5 @@
 <template>
+  <div class="container my-3">
     <div class="d-flex gap-1">
         <RouterLink to="/" class="fw-semibold d-block mb-2">Trang chủ</RouterLink>
         <span>/</span>
@@ -31,6 +32,7 @@
         <RouterView :key="$route.fullPath" />
       </div>
     </div>
+  </div>
   </template>
   
   <script setup>

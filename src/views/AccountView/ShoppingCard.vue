@@ -399,7 +399,7 @@ import { ref, onMounted, computed } from 'vue';
 import axios from 'axios';
 
 const orders = ref([]);
-const user = localStorage.getItem('user');
+const user = sessionStorage.getItem('user');
 const isAgreed = ref(false);
 
 const hasProduct = computed(() => {
@@ -489,7 +489,7 @@ const deleteItemById = async () => {
 
 const Payment = async () => {
     try {
-        const pendingOrders = orders.value.filter(order => order.userId === "bd13" && order.status === "pending");
+        const pendingOrders = orders.value.filter(order => order.userId === user.value && order.status === "pending");
 
         for (let order of pendingOrders) {
             const updatedOrder = {
